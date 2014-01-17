@@ -192,12 +192,12 @@ hr {
   margin:0 0 20px;
 }
 
-footer {
+/*footer {
   width:270px;
   float:left;
   position:fixed;
-  bottom:50px;
-}
+  bottom:50px; 
+}  */
 /* code added to create new footer */
 footert {
   width: 100%;
