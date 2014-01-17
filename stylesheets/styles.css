@@ -177,7 +177,7 @@ header ul a strong {
 }
 
 section {
-  width:100%;
+  width:70%;
   /*width:625px;  */
   float:right;
   padding-bottom:0;
@@ -199,14 +199,13 @@ footer {
   float:left;
   position:fixed;
   bottom:50px; */
-  padding: -30px;
+  padding: 0;
   width: 100%;
-  display: inline-block;
+  display: inline;
   margin: 0 auto;
   float: none;
-  overflow: hidden;
+  /*overflow: hidden; */
   background: #484848; 
-  bottom: 0;
   position: relative;
 }  
 
