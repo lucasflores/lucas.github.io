@@ -198,13 +198,31 @@ footer {
   position:fixed;
   bottom:50px;
 }
-
+/* code added to create new footer */
 footert {
   width: 100%;
   display: inline-block;
   margin: 0 auto;
   float: none;
   background: #3b3b3b; }
+  
+ footert footer {
+    width: 100%;
+    display: inline;
+    float: left;
+    width: 77%;
+    margin: 0 1.5%;
+    max-width: 680px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    background: #3b3b3b;
+    height: 320px;
+    font-size: 22px;
+    color: #f9f9f9;
+    position: relative; }
+    
+/* end of code added*/
 
 @media print, screen and (max-width: 960px) {
   
