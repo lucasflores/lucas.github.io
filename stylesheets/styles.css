@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding:50px;
+  padding:0px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
@@ -199,6 +199,9 @@ hr {
   bottom:50px; 
 }  */
 /* code added to create new footer */
+.push {
+  height: 80px !important; }
+
 footert {
   width: 100%;
   display: inline-block;
@@ -222,6 +225,7 @@ footert {
     font-size: 22px;
     color: #246b8f;
     position: fixed; 
+    overflow: relative;
     
     }
     
