@@ -251,11 +251,12 @@ footer {
     margin:0;
   }
   
-  header, section, footer {
+  header, section {
     float:none;
     position: static;
-    width:100%;
+    width:auto;
   }
+  
   
   header {
     padding-right:320px;
