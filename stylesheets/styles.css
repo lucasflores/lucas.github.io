@@ -201,7 +201,7 @@ footer {
 /* code added to create new footer */
 footert {
   width: 100%;
-  display: inline-block;
+  display: inline;
   margin: 0 auto;
   float: none;
   background: #3b3b3b; }
