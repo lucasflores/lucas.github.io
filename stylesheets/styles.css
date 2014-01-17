@@ -193,24 +193,33 @@ hr {
   margin:0 0 20px;
 }
 
-/*footer {
-  width:270px;
+footer {
+  /*width:270px;
   float:left;
   position:fixed;
-  bottom:50px; 
-}  */
-/* code added to create new footer */
-.push {
-  height: 80px !important; }
-
-footert {
+  bottom:50px; */
+  
   width: 100%;
   display: inline-block;
   margin: 0 auto;
   float: none;
   overflow: hidden;
   background: #484848; 
-  /*padding-bottom: -80px */
+  bottom: 0;
+  position: relative;
+}  
+
+/* code added to create new footer */
+.push {
+  height: 80px !important; }
+
+/*footert {
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  float: none;
+  overflow: hidden;
+  background: #484848; 
   bottom: 0;
   position: relative;}
   
