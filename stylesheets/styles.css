@@ -249,7 +249,10 @@ something {
   border-bottom: 2px solid rgba(168, 168, 168, 0.7);
   position: static;
   width: 100%;
-  z-index: 5000; }
+  z-index: 5000; 
+  display: inline;
+  float: none;
+  }
     
 /* end of code added*/
 
