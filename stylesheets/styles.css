@@ -43,7 +43,7 @@ a {
 }
 
 a small {
-  font-size:11px;
+  font-size:18px;
   color:#777;
   margin-top:-0.6em;
   display:block;
@@ -169,7 +169,7 @@ header ul a strong {
 }
 
 section {
-  width:700px;
+  width:625px;
   float:right;
   padding-bottom:50px;
 }
