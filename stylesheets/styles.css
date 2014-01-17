@@ -255,7 +255,8 @@ footer {
   
   header, section {
     float:none;
-    position: static;
+  /*  position: static;  */
+    position: relative;
     width:auto;
   }
   
