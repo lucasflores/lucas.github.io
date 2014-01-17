@@ -204,7 +204,7 @@ footert {
   display: inline-block;
   margin: 0 auto;
   float: none;
-  
+  overflow: hidden;
   background: #484848; }
   
  footert footer {
@@ -222,7 +222,7 @@ footert {
     font-size: 22px;
     color: #246b8f;
     position: fixed; 
-    overflow: hidden;
+    
     }
     
 /* end of code added*/
