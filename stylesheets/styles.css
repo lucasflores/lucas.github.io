@@ -201,7 +201,7 @@ footer {
   bottom:50px; */
   padding: 0;
   width: 100%;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   float: none;
   /*overflow: hidden; */
