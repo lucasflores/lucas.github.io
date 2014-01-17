@@ -253,7 +253,7 @@ footer {
   
   header, section, footer {
     float:none;
-    position: realtive;
+    position: static;
     width:100%;
   }
   
