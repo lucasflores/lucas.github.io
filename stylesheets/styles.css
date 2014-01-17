@@ -34,6 +34,7 @@ h3, h4, h5, h6 {
 
 h5 {
   margin-top:40px;
+  margin-right:20px;
   font-size:40px;
 }
 
@@ -102,7 +103,7 @@ th {
 
 img {
   max-width:100%;
-  margin: 0 0 0 0;
+  margin: 0 0 0 50px;
 }
 
 img {
