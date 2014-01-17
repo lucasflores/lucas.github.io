@@ -208,7 +208,8 @@ footert {
   margin: 0 auto;
   float: none;
   overflow: hidden;
-  background: #484848; }
+  background: #484848; 
+  padding-bottom: 0;}
   
 /* footert footer {
     width: 100%;
