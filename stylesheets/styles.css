@@ -76,7 +76,7 @@ code, pre {
 }
 
 pre {
-  padding:0px 15px;
+  padding:8px 15px;
   background: #f8f8f8;  
   border-radius:5px;
   border:1px solid #e5e5e5;
@@ -198,7 +198,7 @@ footer {
   float:left;
   position:fixed;
   bottom:50px; */
-  
+  padding: -30px;
   width: 100%;
   display: inline-block;
   margin: 0 auto;
