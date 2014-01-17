@@ -199,6 +199,13 @@ footer {
   bottom:50px;
 }
 
+footert {
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  float: none;
+  background: #3b3b3b; }
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
