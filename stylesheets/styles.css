@@ -113,9 +113,9 @@ img {
 }
 
 header {
-  width:100%;
+  width:auto;
   float:left;
-  position:fixed;
+  position:relative;
 }
 
 header ul {
