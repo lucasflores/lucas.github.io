@@ -211,7 +211,7 @@ footert {
     display: inline;
     float: left;
     width: 77%;
-    margin: 0 1.5%;
+    margin: 0 0 0 0;
     max-width: 680px;
     display: block;
     margin: 0 auto;
