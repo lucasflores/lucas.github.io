@@ -209,8 +209,9 @@ footert {
   float: none;
   overflow: hidden;
   background: #484848; 
-  padding-bottom: -80px
-  margin-bottom: -80px;}
+  /*padding-bottom: -80px */
+  bottom: 0;
+  position: absolute;}
   
 /* footert footer {
     width: 100%;
