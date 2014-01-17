@@ -202,7 +202,7 @@ footer {
 footert {
   width: 100%;
   display: inline-block;
-  margin: 0 0 0 0;
+  margin: 0 auto;
   float: none;
   background: #3b3b3b; }
   
