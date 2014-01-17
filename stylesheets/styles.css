@@ -113,7 +113,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:100%;
   float:left;
   position:fixed;
 }
