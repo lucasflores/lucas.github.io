@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding:0 -59px 0 0;
-  border-left: 2px solid rgba(168, 168, 168, 0.7);
+  padding:0;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
@@ -120,6 +119,7 @@ header {
   float:left;
   position:fixed;
   margin: 80px -80px 0 0;
+  border-left: 2px solid rgba(168, 168, 168, 0.7);
 }
 
 header ul {
