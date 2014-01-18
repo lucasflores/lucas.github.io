@@ -200,8 +200,8 @@ hr {
 footer {
   /*width:270px;
   float:left;
-  position:fixed;
-  bottom:50px; */
+  position:fixed; */
+  bottom: 0; 
   padding: 0;
   width: 100%;
   display: inline-block;
