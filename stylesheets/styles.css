@@ -60,8 +60,9 @@ a small {
 }
 
 a:hover
-{ 
-color:#246b8f;
+{
+  color:#248f7d;
+  /*color:#246b8f; */
 }
 
 .wrapper {
