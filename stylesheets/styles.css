@@ -59,7 +59,7 @@ a small {
   display:block;
 }
 
-a, a:visited, a:active {
+a:visited, a:active {
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
