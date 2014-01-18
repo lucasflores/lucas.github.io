@@ -208,10 +208,11 @@ footer {
   display: inline-block;
   margin: 0 auto;
   float: none;
-  /*overflow: hidden; */
+  overflow: hidden; 
   background: #484848; 
   position: relative;
   text-align: center;
+  
 }  
 
 /* code added to create new footer */
