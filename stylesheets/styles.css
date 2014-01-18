@@ -37,7 +37,7 @@ h3, h4, h5, h6 {
 h5 {
   font: 14px/1.5 Baskerville, "Baskerville Old Face";
   margin-top:40px;
-  margin-left:40px;
+  margin-left:60px;
   font-size:33px;
 }
 
@@ -117,7 +117,7 @@ header {
   width:400px;
   float:left;
   position:fixed;
-  margin: 40px -50px 0 0;
+  margin: 40px -80px 0 0;
 }
 
 header ul {
