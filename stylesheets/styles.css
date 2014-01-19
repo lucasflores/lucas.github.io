@@ -123,7 +123,7 @@ th {
 }
 
 img {
-  max-width:100%;
+  max-width:1400px;
   margin: 70px 0 0 40px;
 }
 
@@ -221,7 +221,7 @@ footer {
   position:fixed; */
   bottom: 0; 
   padding: 0;
-  width: 90%;
+  width: 2000px;
   display: inline-block;
   margin:0 auto;
   float: none;
