@@ -242,13 +242,13 @@ hr {
   width: 100%;
   bottom: 0px;
   left:0px;
-  /*display: inline-block; 
+  display: inline-block; 
   /*margin:0 auto; */
   /*margin:0 -20px 0 0; 
   float: none; 
   overflow-x:hidden;*/
   background: #484848; 
-  position: absolute;
+  position: relative;
   text-align: center;
   
 }  
