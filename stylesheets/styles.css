@@ -7,6 +7,7 @@ body {
   font-weight:300;
   margin:0;
   overflow-x:hidden;
+  height:100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,6 +80,10 @@ a:hover
 .wrapper {
   width:860px;
   margin:0 auto;
+  /*added*/
+  min-height:100%;
+  position:relative;
+  /*  */
 }
 
 blockquote {
@@ -222,14 +227,15 @@ footer {
   float:left;
   position:fixed; */
   width: 100%;
-  bottom: 0; 
+  bottom: 0px;
+  left:0px;
   /*display: inline-block; 
   /*margin:0 auto; */
   /*margin:0 -20px 0 0; 
   float: none; 
   overflow-x:hidden;*/
   background: #484848; 
-  position: fixed;
+  position: absolute;
   text-align: center;
   
 }  
