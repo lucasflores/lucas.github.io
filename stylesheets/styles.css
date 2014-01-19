@@ -221,13 +221,12 @@ footer {
   /*width:270px;
   float:left;
   position:fixed; */
-  bottom: 0; 
-  padding: 0;
   width: 100%;
+  bottom: 0; 
   display: inline-block;
   /*margin:0 auto; */
-  margin:0 -20px 0 0;
-  float: none;
+  /*margin:0 -20px 0 0; 
+  float: none; */
   overflow-x:hidden;
   background: #484848; 
   position: relative;
