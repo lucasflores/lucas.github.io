@@ -231,7 +231,7 @@ footer {
   overflow:auto; 
   overflow-x:hidden;
   background: #484848; 
-  position: relative;
+  position: fixed;
   text-align: center;
   
 }  
@@ -273,7 +273,7 @@ something {
   width: 100%;
   padding: 20px 0 0 20px;
   border-bottom: 2px solid rgba(168, 168, 168, 0.7);
-  position: relative;
+  position: fixed;
   text-align: right;
   color:#39c;
   /*z-index: 5000; 
