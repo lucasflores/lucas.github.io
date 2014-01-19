@@ -232,7 +232,7 @@ footer {
   overflow:auto; 
   overflow-x:hidden;
   background: #484848; 
-  position: relative;
+  position: absolute;
   text-align: center;
   
 }  
