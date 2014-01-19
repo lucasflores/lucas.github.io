@@ -7,6 +7,7 @@ body {
   font-weight:300;
   margin:0;
   overflow:auto;
+  overflow-x:hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -125,6 +126,8 @@ th {
 img {
   max-width:100%;
   margin: 70px 0 0 40px;
+  overflow:auto; 
+  overflow-x:hidden;
 }
 
 img {
@@ -225,7 +228,8 @@ footer {
   display: inline-block;
   margin:0 auto;
   float: center;
-  overflow: hidden; 
+  overflow:auto; 
+  overflow-x:hidden;
   background: #484848; 
   position: relative;
   text-align: center;
@@ -304,6 +308,8 @@ something {
     border-width:1px 0;
     padding:0;
     margin:0 0 0 0;
+    overflow:auto; 
+  overflow-x:hidden;
   }
   
   header a small {
