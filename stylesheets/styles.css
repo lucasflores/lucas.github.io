@@ -291,7 +291,7 @@ something {
     margin:0;
   }
   
-  header, section {
+  header, section, footer {
     float:none;
   /*  position: static;  */
     position: relative;
