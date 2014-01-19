@@ -80,10 +80,16 @@ a:hover
 .wrapper {
   width:860px;
   margin:0 auto;
-  /*added*/
+  /*added
   min-height:100%;
   position:relative;
   /*  */
+}
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+  
 }
 
 blockquote {
@@ -222,10 +228,11 @@ hr {
   margin:0 0 20px;
 }
 
-footer {
+#footer {
   /*width:270px;
   float:left;
   position:fixed; */
+  height:100px;
   width: 100%;
   bottom: 0px;
   left:0px;
