@@ -221,7 +221,7 @@ footer {
   position:fixed; */
   bottom: 0; 
   padding: 0;
-  width: 1500px;
+  width: 960px;
   display: inline-block;
   margin:0 auto;
   float: center;
@@ -266,7 +266,7 @@ footer {
     } */
     
 something {  
-  width: 100%;
+  width: 960px;
   padding: 20px 0 0 20px;
   border-bottom: 2px solid rgba(168, 168, 168, 0.7);
   position: relative;
