@@ -124,7 +124,7 @@ th {
 }
 
 img {
-  max-width:100%;
+  max-width:100px;
   margin: 70px 0 0 40px;
   overflow:auto; 
   overflow-x:hidden;
