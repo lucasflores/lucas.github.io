@@ -228,7 +228,6 @@ footer {
   /*margin:0 auto; */
   margin:0 -20px 0 0;
   float: none;
-  overflow:auto; 
   overflow-x:hidden;
   background: #484848; 
   position: relative;
