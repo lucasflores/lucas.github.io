@@ -123,7 +123,7 @@ th {
 }
 
 img {
-  max-width:100px;
+  max-width:100%;
   margin: 70px 0 0 40px;
   overflow:auto; 
   overflow-x:hidden;
@@ -269,14 +269,15 @@ footer {
     
 something {  
   width: 100%;
-  padding: 20px 0 0 20px;
+ /* padding: 20px 0 0 20px; */
   border-bottom: 2px solid rgba(168, 168, 168, 0.7);
-  position: static;
+  position: fixed;
   text-align: right;
   color:#39c;
   /*z-index: 5000; 
   display: inline;*/
   float: left;
+  top: 0;
   
   }
     
