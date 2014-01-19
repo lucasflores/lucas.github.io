@@ -227,7 +227,7 @@ footer {
   width: 100%;
   display: inline-block;
   /*margin:0 auto; */
-  margin-left:10px;
+  margin:0 -20px 0 0;
   float: none;
   overflow:auto; 
   overflow-x:hidden;
