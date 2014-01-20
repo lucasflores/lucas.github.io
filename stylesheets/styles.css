@@ -304,7 +304,7 @@ something {
 @media print, screen and (max-width: 880px) {
   
   div.wrapper {
-    width:auto;
+    width:100%;
     margin:0;
   }
   
@@ -367,6 +367,7 @@ something {
   h5 {
     font-size:18pt;
     margin:0;
+    padding:5px;
   }
   section {
     width:100%;
