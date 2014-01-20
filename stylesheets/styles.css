@@ -304,7 +304,7 @@ something {
 @media print, screen and (max-width: 880px) {
   
   div.wrapper {
-    width:100%;
+    width:auto;
     margin:0;
   }
   
@@ -319,7 +319,7 @@ something {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:0;
-    margin:0 0 0 0;
+    margin:0;
     float:none;
   }
   
@@ -329,7 +329,7 @@ something {
   
   header ul {
     position:absolute;
-    right:50px;
+    /*right:50px; */
     top:52px;
   }
 }
