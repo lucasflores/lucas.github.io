@@ -45,7 +45,7 @@ h5 {
   width:100%;
   font: 14px/1.5 Baskerville, "Baskerville Old Face";
   margin-top:20px;
-  margin-left:70px; 
+  margin-left:85px; 
   font-size:34px;
 }
 
@@ -142,7 +142,7 @@ th {
 
 img {
   max-width:100%;
-  margin: 70px 0 0 70px;
+  margin: 70px 0 0 85px;
   overflow:auto; 
   overflow-x:hidden;
 }
