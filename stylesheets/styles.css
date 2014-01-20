@@ -219,7 +219,7 @@ header ul a strong {
 section {
   width:73%;
   /*width:625px;  */
-  float:center;
+  float:right;
   padding:50px 0 0 0;
 }
 
@@ -320,6 +320,7 @@ something {
     border-width:1px 0;
     padding:0;
     margin:0 0 0 0;
+    float:center;
   }
   
   header a small {
