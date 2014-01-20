@@ -358,6 +358,11 @@ something {
     padding:0;
   }
   
+  header {
+    float:center;
+  }
+  
+  
   h5 {
     font-size:18pt;
   }
