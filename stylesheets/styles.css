@@ -309,10 +309,10 @@ something {
     margin:0;
   }
   
-  header, section, #footer {
+  header {
     float:none;
-  /*  position: static;  */
-    position: relative;
+    position: static;  
+    /*position: relative; */
     width:auto;
   }
   
