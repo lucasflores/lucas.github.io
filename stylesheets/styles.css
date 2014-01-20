@@ -308,14 +308,14 @@ something {
     margin:0;
   }
   
-  header {
+/*  header {
     float:none;
     position: static;  
-    /*position: relative; */
+    /*position: relative; 
     width:auto;
   }
   
-  section {
+/*  section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:0;
@@ -329,9 +329,9 @@ something {
   
   header ul {
     position:absolute;
-    /*right:50px; */
+    right:50px; 
     top:52px;
-  }
+  } */
 }
 
 @media print, screen and (max-width: 720px) {
