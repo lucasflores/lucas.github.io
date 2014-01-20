@@ -303,10 +303,10 @@ something {
 
 @media print, screen and (max-width: 880px) {
   
- /* div.wrapper {
+  div.wrapper {
     width:auto;
     margin:0;
-  } */
+  } 
   
  header {
     float:none;
@@ -315,7 +315,7 @@ something {
     width:auto;
   }
   
-/*  section {
+  section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:0;
@@ -331,7 +331,7 @@ something {
     position:absolute;
     right:50px; 
     top:52px;
-  } */
+  } 
 }
 
 @media print, screen and (max-width: 720px) {
