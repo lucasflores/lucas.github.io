@@ -301,7 +301,7 @@ something {
     
 /* end of code added*/
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 880px) {
   
   div.wrapper {
     width:auto;
@@ -359,7 +359,8 @@ something {
   }
   
   header {
-    float:center;
+    float:none;
+    text-align: center;
   }
   
   
