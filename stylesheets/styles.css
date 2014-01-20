@@ -361,8 +361,6 @@ something {
 
 @media print, screen and (max-width: 480px) {
   body section h5 header {
-    margin:0;
-    border-left:0;
     word-wrap:break-word;
     padding:0;
   }
