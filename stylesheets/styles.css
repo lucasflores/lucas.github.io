@@ -84,7 +84,7 @@ a:hover
 }
 
 .wrapper {
-  width:1000px;
+  width:860px;
   margin:0 auto;
   /*added
   min-height:100%;
@@ -309,7 +309,7 @@ something {
     margin:0;
   }
   
-  header, section, footer {
+  header, section, #footer {
     float:none;
   /*  position: static;  */
     position: relative;
@@ -360,7 +360,7 @@ something {
 }
 
 @media print, screen and (max-width: 480px) {
-  body {
+  body section h5 {
     padding:0;
   }
   
