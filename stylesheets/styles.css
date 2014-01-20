@@ -303,10 +303,10 @@ something {
 
 @media print, screen and (max-width: 880px) {
   
-  div.wrapper {
+ /* div.wrapper {
     width:auto;
     margin:0;
-  }
+  } */
   
  header {
     float:none;
