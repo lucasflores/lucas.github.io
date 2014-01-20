@@ -287,14 +287,14 @@ hr {
     
 something {  
   width: 100%;
-  /*padding: 15px 0 0 0; */
+  padding: 15px 0 0 0; 
   border-bottom: 2px solid rgba(168, 168, 168, 0.7);
   position: relative;
   text-align: right;
   color:#39c;
   /*z-index: 5000; 
   display: inline;*/
-  float: none;
+  float: left;
   top:0;
   
   }
