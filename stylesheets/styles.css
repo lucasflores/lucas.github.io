@@ -84,7 +84,7 @@ a:hover
 }
 
 .wrapper {
-  width:860px;
+  width:760px;
   margin:0 auto;
   /*added
   min-height:100%;
@@ -254,8 +254,7 @@ hr {
 }  
 
 /* code added to create new footer */
-.push {
-  height: 80px !important; }
+
 
 /*footert {
   width: 100%;
@@ -360,7 +359,7 @@ something {
 }
 
 @media print, screen and (max-width: 480px) {
-  body section h5 header {
+  body {
     word-wrap:break-word;
     padding:0;
   }
@@ -372,7 +371,7 @@ something {
 
 @media print {
   body {
-    padding:0.4in;
+    /* padding:0.4in; */
     font-size:18pt;
     color:#444;
   }
