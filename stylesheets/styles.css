@@ -294,8 +294,8 @@ something {
   color:#39c;
   /*z-index: 5000; 
   display: inline;*/
-  float: left;
-  top: 0;
+  float: none;
+  top: 15px;
   
   }
     
