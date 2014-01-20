@@ -217,7 +217,7 @@ header ul a strong {
 }
 
 section {
-  width:73%;
+  width:auto;
   /*width:625px;  */
   float:right;
   padding:50px 0 0 0;
@@ -369,6 +369,7 @@ something {
   }
   section {
     padding:0;
+    float:none;
   }
   header ul {
     display:none;
