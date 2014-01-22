@@ -5,10 +5,7 @@ div.wrapper {
 
 
   body {
-	font: 12px/15px sans-serif;
-	background: #fff;
 	padding: 3px;
-	color: #000;
 	margin: 0;
         word-wrap:break-word;
 /*	#sidebar, #footer { 
