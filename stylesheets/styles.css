@@ -297,8 +297,7 @@ something {
   display: inline;*/
   float: left;
   top:0;
-  
-  }
+}
     
 /* end of code added*/
 
@@ -307,23 +306,26 @@ something {
 div.wrapper {
     width:auto;
     margin:0;
-  } 
+} 
 
 
-  body {
-        padding: 3px;
-        margin: 0;
-        word-wrap:break-word;
-/*        #sidebar, #footer { 
-        display: none;*/
+body {
+    padding: 3px;
+    margin: 0;
+    word-wrap:break-word;
         } 
                 
 header {
     float:none;
     position: static;  
+    text-align: center;
     /*position: relative; 
     width:auto; */
-  }
+}
+  
+something {
+    text-align:center; 
+}
   
 section {
     border:1px solid #e5e5e5;
@@ -331,9 +333,11 @@ section {
     padding:0;
     margin:0;
     float:none;
-  }
+    width:100%;
+}
   
 h1, h2, h3, h4, h5, h6 {
+        width: 100%;
         font-weight: normal;
         }
         
