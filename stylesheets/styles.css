@@ -301,6 +301,54 @@ something {
   }
     
 /* end of code added*/
+
+
+@media print, screen and (max-width: 480px) {
+div.wrapper {
+    width:auto;
+    margin:0;
+  } 
+
+
+  body {
+        padding: 3px;
+        margin: 0;
+        word-wrap:break-word;
+/*        #sidebar, #footer { 
+        display: none;*/
+        } 
+                
+header {
+    float:none;
+    position: static;  
+    /*position: relative; 
+    width:auto; */
+  }
+  
+section {
+    border:1px solid #e5e5e5;
+    border-width:1px 0;
+    padding:0;
+    margin:0;
+    float:none;
+  }
+  
+h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+        }
+        
+img { 
+        max-width: 250px;
+        }
+        
+.center {
+        width: 100% !important;
+        text-align: center;
+        }
+}
+/* -----------------------------------------------------*/
+
+
 /*
 @media print, screen and (max-width: 880px) {
   
