@@ -345,6 +345,7 @@ something {
     left:0;
     padding:0;
     text-align:center;
+    position:static;
 }
 
 somethingelse {
