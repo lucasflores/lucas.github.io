@@ -332,6 +332,7 @@ body {
                 
 header {
     float:none;
+    width:100%;
     position: static;  
     text-align: center;
     /*position: relative; 
@@ -362,6 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 h5 {
   margin:0;
   text-align:justify;
+  padding:10px;
 }
         
 img { 
