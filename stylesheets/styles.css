@@ -289,7 +289,7 @@ hr {
     
 something {  
   width: 100%;
-  padding: 30px 0 0 0; 
+  padding: 10px 0 0 0; 
   /*border-bottom: 2px solid rgba(168, 168, 168, 0.7); */
   position: relative;
   text-align: right;
@@ -303,7 +303,7 @@ something {
 
 somethingelse {
   width: 100%;
-  padding: 10px 0 0 0; 
+  padding:0; 
   border-bottom: 2px solid rgba(168, 168, 168, 0.7);
   position: relative;
   text-align:right;
