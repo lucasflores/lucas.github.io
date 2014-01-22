@@ -301,7 +301,7 @@ something {
   }
     
 /* end of code added*/
-
+/*
 @media print, screen and (max-width: 880px) {
   
   div.wrapper {
@@ -313,7 +313,7 @@ something {
     float:none;
     position: static;  
     /*position: relative; */
-    width:auto;
+ /*   width:auto;
   }
   
   section {
@@ -383,7 +383,7 @@ something {
 @media print {
   body {
     /* padding:0.4in; */
-    font-size:18pt;
+    /*font-size:18pt;
     color:#444;
   }
 }
