@@ -288,7 +288,7 @@ hr {
     } */
     
 something {  
-  width: 100%;
+  width: 300px;
   padding: 10px 0 0 0; 
   /*border-bottom: 2px solid rgba(168, 168, 168, 0.7); */
   position: relative;
