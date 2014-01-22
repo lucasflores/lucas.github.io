@@ -321,16 +321,17 @@ header {
     text-align: center;
     /*position: relative; 
     width:auto; */
+    margin-top:0;
 }
   
 something {
-    text-align:center; 
+    text-align:right; 
 }
   
 section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
-    padding:0;
+    padding:10px;
     margin:0;
     float:none;
     width:100%;
