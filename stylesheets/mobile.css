@@ -1,24 +1,24 @@
-html, 
+
 
   body {
-		font: 12px/15px sans-serif;
-		background: #fff;
-		padding: 3px;
-		color: #000;
-		margin: 0;
-		}
+	font: 12px/15px sans-serif;
+	background: #fff;
+	padding: 3px;
+	color: #000;
+	margin: 0;
+        word-wrap:break-word;
 /*	#sidebar, #footer { 
-		display: none;
-		} */
+	display: none;*/
+	} 
 		
-		header {
+header {
     float:none;
     position: static;  
     /*position: relative; 
     width:auto; */
   }
   
-   section {
+section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:0;
@@ -26,21 +26,16 @@ html,
     float:none;
   }
   
-	h1, h2, h3, h4, h5, h6 {
-		font-weight: normal;
-		}
-	#content img { 
-		max-width: 250px;
-		}
-	.center {
-		width: 100% !important;
-		text-align: center;
-		}
-	a:link, a:visited {
-		text-decoration: underline;
-		color: #0000CC;
-		}
-	a:hover, a:active {
-		text-decoration: underline;
-		color: #660066;
-		}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	}
+	
+img { 
+	max-width: 250px;
+	}
+	
+.center {
+	width: 100% !important;
+	text-align: center;
+	}
+
