@@ -337,7 +337,7 @@ header {
     text-align: center;
     /*position: relative; 
     width:auto; */
-    padding:20px 0 0 0;
+    padding:-30px 0 0 0;
     margin:60px 0 0 0;
     border-left:none;
 }
@@ -350,7 +350,7 @@ something {
 }
 
 somethingelse {
-  margin:-20px 0 -10px 0;
+  margin:-30px 0 -10px 0;
   top:0;
 }
   
