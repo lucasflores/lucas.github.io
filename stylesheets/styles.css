@@ -317,11 +317,8 @@ somethingelse {
     
 /* end of code added*/
 
-@media print, screen and (max-width: 880px) {
-  div.wrapper {
-    width:auto;
-    margin:0;
-}
+@media print, screen and (max-width: 920px) {
+
 
 header {
   width:350px;
@@ -341,7 +338,7 @@ body {
 
 
 
-@media print, screen and (max-width: 480px) {
+@media print, screen and (max-width: 520px) {
 div.wrapper {
     width:auto;
     margin:0;
