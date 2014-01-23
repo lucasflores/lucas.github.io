@@ -352,6 +352,7 @@ something {
 somethingelse {
   margin:-30px 0 -10px 0;
   top:0;
+  bottom:20px;
 }
   
 section {
