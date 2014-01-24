@@ -298,7 +298,7 @@ something {
   color:#39c;
   /*z-index: 5000; 
   display: inline;*/
-  float: left;
+  float: right;
 }
 
 somethingelse {
@@ -310,7 +310,7 @@ somethingelse {
   text-align:right;
   /*z-index: 5000; 
   display: inline;*/
-  float: left;
+  float: right;
 
 }
 
@@ -325,7 +325,7 @@ somethingleft {
   color:#39c;
   /*z-index: 5000; 
   display: inline;*/
-  float: right;
+  float: left;
     
 /* end of code added*/
 
