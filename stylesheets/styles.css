@@ -332,11 +332,10 @@ somethingleft {
   /*z-index: 5000; 
   display: inline;*/
   float: left;
-    
+}
 /* end of code added*/
 
 @media print, screen and (max-width: 920px) {
-
 
 header {
   width:350px;
