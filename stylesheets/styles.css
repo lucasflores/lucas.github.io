@@ -298,7 +298,8 @@ something {
   /*z-index: 5000; 
   display: inline;*/
   float: left;
-  top:-10px;
+  top:-5px;
+  bottom:-15px;
 }
 
 somethingelse {
