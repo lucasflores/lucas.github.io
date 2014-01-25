@@ -357,6 +357,17 @@ h5 {
   
 }
 
+img {
+  max-width:65%;
+  margin: 70px 0 0 60px;
+  overflow:auto; 
+  overflow-x:hidden;
+}
+
+img {
+    max-height:100%;
+}
+
 }
 
 
