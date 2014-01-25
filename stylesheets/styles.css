@@ -409,9 +409,10 @@ something {
 }
 
 somethingelse {
-  margin:-50px 0 -30px 0; 
+  display:none;
+ /* margin:-50px 0 -30px 0; 
   top:0;
-  bottom:20px;
+  bottom:20px; */
 }
   
 section {
