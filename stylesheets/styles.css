@@ -401,10 +401,11 @@ header {
 }
   
 something {
-    left:0;
+    display:none;
+  /*  left:0;
     padding:0;
     text-align:center;
-    position:static;
+    position:static; */
 }
 
 somethingelse {
