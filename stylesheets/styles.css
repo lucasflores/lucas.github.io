@@ -343,7 +343,7 @@ header {
 
 section {
   width:65%;
-  padding:;
+  padding:0;
 }
 
 body {
@@ -359,7 +359,7 @@ h5 {
 
 img {
   max-width:100%;
-  margin: 70px 0 0 60px;
+  margin: 70px 0 0 20px;
   overflow:auto; 
   overflow-x:hidden;
 }
