@@ -4,6 +4,8 @@
     <!--<link rel="stylesheet" media="only screen and (max-width: 480px)" href="stylesheets/mobile.css" />
     <link rel="stylesheet" media="only screen and (min-width: 481px)" href="stylesheets/styles.css" />
      <link rel="stylesheet" media="only screen and (min-width: 481px)" href="stylesheets/pygment_trac.css" /> -->
+    <link rel="stylesheet" href="stylesheets/slicknav.css" />
+    <script src="jquery.slicknav.min.js"></script>
     <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -45,8 +47,26 @@
         <p class="view"><a href="/Social">&nbsp;&nbsp;Social</a></p>
         <!--  <p class="view"><a href="http://www.linkedin.com/pub/lucas-flores/73/1a8/751">&nbsp;&nbsp;Linkedin</a></p>
         <p class="view"><a href="/lucasflores">&nbsp;&nbsp;GitHub Profile</a></p>   -->
+        
+        <ul id="menu">
+	    <li><a href="#">item 1</a></li>
+	    <li><a href="#">item 2</a></li>
+	    <li><a href="#">item 3</a></li>
+	    <li><a href="#">item 4</a></li>
+      </ul>
+      <script>
+	      $(function(){
+		    $('#menu').slicknav();
+	      });
+      </script>
        
       </header>
+      
+      
+      
+      
+      
+      
   
       <section>
         <h5>I am a Physics and Math undergraduate interested in Experimental High Energy Particle Physics. You can read <a href="http://lucasflores.github.io/About/">about me</a>, take a look at <a href="http://lucasflores.github.io/CV/" Title="Curriculum Vitae">my CV</a>, see what cool <a href="http://lucasflores.github.io/Projects/">personal projects</a> occupy my time, or <a href="mailto:lflor017@ucr.edu">contact me</a> for a chat.
