@@ -163,7 +163,7 @@ header {
   float:left;
   position:fixed;
   text-align:left;
-  margin: 80px 50px 0 0;
+  margin: 80px 0 0 -50px;
   border-left: 2px solid rgba(168, 168, 168, 0.7);
 }
 
