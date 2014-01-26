@@ -41,7 +41,8 @@
 <!-----------------------------------------=------------------------------=------->  
 <!-----------------------------------------=------------------------------=------->
 <!-----------------------------------------=------------------------------=------->
-<a style="float:right" id="simple-menu" href="#sidr"><i class="fa fa-bars"></i></a>
+
+<a style="text-align:right" id="right-menu" href="#right-menu"><i class="fa fa-bars"></i></a>
  
 <div id="sidr">
   <!-- Your content -->
@@ -54,7 +55,10 @@
  
 <script>
 $(document).ready(function() {
-  $('#simple-menu').sidr();
+  $('#right-menu').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
 });
 </script>
 <!-----------------------------------------=------------------------------=------->
