@@ -338,7 +338,7 @@ h1 {
 }  
 
 headermobile {
-    display:inline;
+    display:inline-block;
     border-bottom: 2px solid rgba(168, 168, 168, 0.7);
     position: relative;
     width: 100%;
