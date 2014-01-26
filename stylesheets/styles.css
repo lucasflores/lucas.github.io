@@ -418,14 +418,13 @@ header {
 h1 {
   font-size:30px;
   margin:25px 20px 0;
-  border-bottom: 2px solid rgba(168, 168, 168, 0.7);
-  position: relative;
 }  
 
 headermobile {
     display:inline;
     border-bottom: 2px solid rgba(168, 168, 168, 0.7);
     position: relative;
+    width: 100%;
 }  
 
 something {
