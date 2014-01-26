@@ -5,7 +5,7 @@
     <link rel="stylesheet" media="only screen and (min-width: 481px)" href="stylesheets/styles.css" />
      <link rel="stylesheet" media="only screen and (min-width: 481px)" href="stylesheets/pygment_trac.css" /> -->
     <link rel="stylesheet" href="SlickNav-master/slicknav.css">
-    
+    <link rel="stylesheet" href="sidr-package-1.2.1/stylesheets/jquery.sidr.dark.css">
     <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -27,7 +27,8 @@
   <body>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 	</script>
-      <script src="SlickNav-master/jquery.slicknav.min.js"></script>
+      <script src="sidr-package-1.2.1/jquery.sidr.min.js"></script>
+     <!-- <script src="SlickNav-master/jquery.slicknav.min.js"></script> -->
    
       <somethingelse>
         <something>  
@@ -41,20 +42,22 @@
 <!-----------------------------------------=------------------------------=------->  
 <!-----------------------------------------=------------------------------=------->
 <!-----------------------------------------=------------------------------=------->
-<ul id="menu">
-	<li><a class="scroll" href="#features">Features</a></li>
-	<li><a class="scroll" href="#usage">Usage Instructions</a></li>
-	<li><a class="scroll" href="#examples">Examples</a></li>
-	<li><a href="http://github.com">View on Github</a></li>
-</ul>
-
-
-	<script>
-	$('#menu').slicknav({
-		prependTo:'#demo1'
+<a id="simple-menu" href="#sidr">Toggle menu</a>
+ 
+<div id="sidr">
+  <!-- Your content -->
+  <ul>
+    <li><a href="#">List 1</a></li>
+    <li class="active"><a href="#">List 2</a></li>
+    <li><a href="#">List 3</a></li>
+  </ul>
+</div>
+ 
+<script>
+$(document).ready(function() {
+  $('#simple-menu').sidr();
 });
-
-	</script>
+</script>
 <!-----------------------------------------=------------------------------=------->
 <!-----------------------------------------=------------------------------=------->
 <!-----------------------------------------=------------------------------=------->
