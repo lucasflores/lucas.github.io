@@ -417,6 +417,7 @@ header {
   
 h1 {
   font-size:34px;
+  margin:0;
 }  
 
 headermobile {
@@ -449,13 +450,13 @@ section {
     width:100%;
 }
   
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
         width: 100%;
         font-weight: normal;
         }
 
 h5 {
-  margin:30px 0 40px 0;
+  margin:40px 0 40px 0;
   font-size:25px;
 }
         
