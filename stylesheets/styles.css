@@ -316,7 +316,7 @@ img {
 
 }
 
-@media print, screen and (max-width: 520px) {
+@media print, screen and (max-width: 620px) {
 div.wrapper {
     width:auto;
     margin:0;
