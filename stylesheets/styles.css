@@ -94,10 +94,6 @@ a:hover
 .wrapper {
   width:760px;
   margin:0 auto;
-  /*added
-  min-height:100%;
-  position:relative;
-  /*  */
 }
 
 #wrapp {
@@ -244,67 +240,24 @@ hr {
 }
 
 #footer {
-  /*width:270px;
-  float:left;
-  position:fixed; */
   height:300px;
   width: 100%;
   bottom: 0px;
   left:0px;
   display: inline-block; 
-  /*margin:0 auto; */
-  /*margin:0 -20px 0 0; 
-  float: none; 
-  overflow-x:hidden;*/
   background: #484848; 
   position: relative;
   text-align: center;
-  
 }  
 
-/* code added to create new footer */
-
-
-/*footert {
-  width: 100%;
-  display: inline-block;
-  margin: 0 auto;
-  float: none;
-  overflow: hidden;
-  background: #484848; 
-  bottom: 0;
-  position: relative;}
-  
-/* footert footer {
-    width: 100%;
-    display: inline;
-    float: left;
-    width: 100%;
-    margin: 0 0 0 0;
-    max-width: 680px;
-    display: block;
-    margin: 0 auto;
-    float: none;
-    background: #246b8f;
-    height: 320px;
-    font-size: 22px;
-    color: #246b8f;
-    position: fixed; 
-    overflow: relative;
-    
-    } */
-    
 something {  
   width: 100%;
   padding:10px 0 10px 0; 
   font-size:22px;
-  /*border-bottom: 2px solid rgba(168, 168, 168, 0.7); */
   position: relative;
   text-align: right;
   left:-50px;
   color:#39c;
-  /*z-index: 5000; 
-  display: inline;*/
   float: right;
 }
 
@@ -315,29 +268,8 @@ somethingelse {
   border-bottom: 2px solid rgba(168, 168, 168, 0.7);
   position: relative;
   text-align:right;
-  /*z-index: 5000; 
-  display: inline;*/
   float: right;
 
-}
-
-somethingleft { 
-  width: 100%;
-  padding:10px 0 10px 0; 
-  font-size:22px;
-  /*border-bottom: 2px solid rgba(168, 168, 168, 0.7); */
-  position: relative;
-  text-align: left;
-  right:-50px;
-  color:#39c;
-  /*z-index: 5000; 
-  display: inline;*/
-  float: left;
-}
-/* end of code added*/
-
-.sidr {
-  display:none;
 }
 
 headermobile {
@@ -346,7 +278,6 @@ headermobile {
     position: static;  
     text-align: center;
     display:none;
-    
 }
 
 
@@ -385,33 +316,19 @@ img {
 
 }
 
-
-
-
-
 @media print, screen and (max-width: 520px) {
 div.wrapper {
     width:auto;
     margin:0;
 } 
 
-
 body {
     padding:0;
     margin: 0;
     word-wrap:break-word;
-        } 
+} 
                 
 header {
-   /* float:none;
-    width:300px;
-    position: static;  
-    text-align: center;
-    /*position: relative; 
-    width:auto; */
-   /*  padding:-30px 0 0 0;
-    margin:60px 0 0 0; 
-    border-left:none; */
     display:none;
 }
   
@@ -429,17 +346,10 @@ headermobile {
 
 something {
     display:none;
-  /*  left:0;
-    padding:0;
-    text-align:center;
-    position:static; */
 }
 
 somethingelse {
   display:none;
- /* margin:-50px 0 -30px 0; 
-  top:0;
-  bottom:20px; */
 }
   
 section {
@@ -454,7 +364,7 @@ section {
 h2, h3, h4, h5, h6 {
         width: 100%;
         font-weight: normal;
-        }
+}
 
 h5 {
   margin:80px 0 40px 0;
@@ -464,99 +374,10 @@ h5 {
 img { 
         margin:0;
         max-width: 100%;
-        }
+}
         
 .center {
         width: 100% !important;
         text-align: center;
-        }
 }
-/* -----------------------------------------------------*/
-
-
-/*
-@media print, screen and (max-width: 880px) {
-  
-  div.wrapper {
-    width:auto;
-    margin:0;
-  } 
-  
- header {
-    float:none;
-    position: static;  
-    /*position: relative; */
- /*   width:auto;
-  }
-  
-  section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:0;
-    margin:0;
-    float:none;
-  }
-  
-  header a small {
-    display:inline;
-  }
-  
-  header ul {
-    position:absolute;
-    right:50px; 
-    top:52px;
-  } 
 }
-
-@media print, screen and (max-width: 720px) {
-  body {
-    word-wrap:break-word;
-  }
-  
-  header {
-    padding:0;
-  }
-  
-  header ul, header p.view {
-    position:static;
-  }
-  
-  pre, code {
-    word-wrap:normal;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-  body {
-    word-wrap:break-word;
-    padding:0;
-  }
-  
-  header {
-    float:none;
-    text-align: center;
-  }
-  
-  
-  h5 {
-    font-size:18pt;
-    margin:0;
-    padding:5px;
-  }
-  section {
-    width:100%;
-    padding:0;
-    float:none;
-  }
-  header ul {
-    display:none;
-  }
-}
-
-@media print {
-  body {
-    /* padding:0.4in; */
-    /*font-size:18pt;
-    color:#444;
-  }
-} */
