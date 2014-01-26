@@ -334,7 +334,7 @@ header {
   
 h1 {
   font-size:24px;
-  margin:10px 10px 0;
+  margin:10px 10px 20px;
 }  
 
 headermobile {
@@ -353,8 +353,6 @@ somethingelse {
 }
   
 section {
-    border-top:1px solid #e5e5e5;
-    border-width:1px 0;
     padding:0;
     margin:0;
     float:none;
