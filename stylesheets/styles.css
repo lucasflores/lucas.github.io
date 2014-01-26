@@ -340,6 +340,10 @@ somethingleft {
   display:none;
 }
 
+headermobile {
+  display:none;
+}
+
 @media print, screen and (max-width: 955px) {
 
 header {
