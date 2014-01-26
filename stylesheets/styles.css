@@ -418,6 +418,8 @@ header {
 h1 {
   font-size:30px;
   margin:25px 20px 0;
+  border-bottom: 2px solid rgba(168, 168, 168, 0.7);
+  position: relative;
 }  
 
 headermobile {
@@ -442,7 +444,7 @@ somethingelse {
 }
   
 section {
-    border:1px solid #e5e5e5;
+    border-top:1px solid #e5e5e5;
     border-width:1px 0;
     padding:0;
     margin:0;
