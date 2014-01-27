@@ -95,7 +95,7 @@ a:hover
 
 .wrapper {
   width:760px;
-  min-height:100%;
+  margin: 0 auto
 /*  height: auto !important;
   height: 100%;
   margin: 0 auto -300px; */
