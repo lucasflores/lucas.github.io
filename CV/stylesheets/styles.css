@@ -154,10 +154,6 @@ img {
     max-height:100%;
 }
 
-.mask:hover .caption {  
-    opacity: 1;  
-}  
-
 .fade {
     opacity: 1;
     transition: opacity .25s ease-in-out;
@@ -182,7 +178,7 @@ img {
     -webkit-transition: opacity .25s ease-in-out;
 }  
 
-.fade:hover .caption {
+.fade:hover {
     opacity: 0.5;
 }
 
