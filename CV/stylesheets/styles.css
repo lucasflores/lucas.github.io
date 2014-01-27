@@ -106,7 +106,7 @@ a:hover
 	margin: 0 auto -300px;
 } */
 
-.push {
+.footer .push {
 	height: 300px; /* .push must be the same height as .footer */
 }
 
@@ -275,7 +275,7 @@ hr {
   margin:0 0 20px;
 }
 
-.footer {
+footer {
   height:300px;
   width: 100%;
   bottom: 0px;
