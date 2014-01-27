@@ -106,7 +106,7 @@ a:hover
 	margin: 0 auto -300px;
 } */
 
-.footer, .push {
+.push {
 	height: 300px; /* .push must be the same height as .footer */
 }
 
@@ -282,7 +282,7 @@ hr {
   left:0px;
   display: inline-block; 
   background: #484848; 
-  position: absolute;
+  position: static;
   text-align: center;
 }  
 
