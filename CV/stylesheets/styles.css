@@ -282,7 +282,7 @@ footer {
   left:0px;
   display: inline-block; 
   background: #484848; 
-  position: static;
+  position: relative;
   text-align: center;
 }  
 
