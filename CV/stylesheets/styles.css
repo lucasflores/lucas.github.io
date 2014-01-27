@@ -93,13 +93,21 @@ a:hover
 
 .wrapper {
   width:760px;
-  margin:0 auto;
+  min-height:100%;
+  height: auto !important;
+  height: 100%;
+	margin: 0 auto -300px;
 }
 
-#wrapp {
+/*.wrapp {
   min-height:100%;
   position:relative;
-  
+  height: auto !important;
+	margin: 0 auto -300px;
+} */
+
+.footer, .push {
+	height: 300px; /* .push must be the same height as .footer */
 }
 
 blockquote {
@@ -267,7 +275,7 @@ hr {
   margin:0 0 20px;
 }
 
-#footer {
+.footer {
   height:300px;
   width: 100%;
   bottom: 0px;
