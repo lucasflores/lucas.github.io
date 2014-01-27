@@ -4,6 +4,8 @@ html {
   height:100%;
   margin:0;
   padding:0;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
@@ -11,7 +13,7 @@ body {
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
-  margin:0;
+  margin:0 0 300px;
   overflow-x:hidden;
   height:100%;
   
@@ -94,9 +96,9 @@ a:hover
 .wrapper {
   width:760px;
   min-height:100%;
-  height: auto !important;
+/*  height: auto !important;
   height: 100%;
-  margin: 0 auto -300px;
+  margin: 0 auto -300px; */
 }
 
 /*.wrapp {
@@ -282,7 +284,7 @@ footer {
   left:0px;
   display: inline-block; 
   background: #484848; 
-  position: relative;
+  position: absolute;
   text-align: center;
 }  
 
