@@ -282,7 +282,7 @@ hr {
   left:0px;
   display: inline-block; 
   background: #484848; 
-  position: relative;
+  position: absolute;
   text-align: center;
 }  
 
