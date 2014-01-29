@@ -326,14 +326,15 @@ section {
   
 header {
   width:310px;
+  margin-left:40px;
 } 
 
 h5 {
-  margin-left:10px; 
+  margin-left:40px; 
 }
 
 img {
-  margin-left:10px;
+  margin-left:40px;
 }
   
 }
