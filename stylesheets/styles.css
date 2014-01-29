@@ -342,10 +342,11 @@ img {
   
 }
 
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 740px) {
 section {
   width:58%;
   padding:0;
+  margin-left:-25px;
 }
   
 header {
