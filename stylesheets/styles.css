@@ -362,17 +362,17 @@ header {
 section {
   width:50%;
   padding:0;
-    margin-right:140px;
+  margin-right:140px;
 }
   
 header {
   width:200px;
-  margin-left:0;
+  margin-left:5px;
   
 } 
 
 h1 {
-  font-size:60px;
+  font-size:53px;
 }
 
 
