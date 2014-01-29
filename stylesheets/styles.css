@@ -320,8 +320,9 @@ img {
 @media print, screen and (max-width: 900px) {
   
 section {
-  width:70%;
+  width:64%;
   padding:0;
+  margin-left:15;
 }
   
 header {
