@@ -225,7 +225,7 @@ section {
   width:80%;
   /*width:625px;  */
   float:right;
-  padding:50px 0 0 0;
+  padding:0;
 }
 
 small {
@@ -326,7 +326,7 @@ section {
   
 header {
   width:310px;
-  margin-left:40px;
+  margin-left:20px;
 } 
 
 h5 {
