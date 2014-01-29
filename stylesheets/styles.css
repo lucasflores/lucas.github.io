@@ -343,6 +343,17 @@ img {
 }
 
 @media print, screen and (max-width: 620px) {
+section {
+  width:58%;
+  padding:0;
+}
+  
+header {
+  width:260px;
+} 
+}
+
+@media print, screen and (max-width: 620px) {
 div.wrapper {
     width:auto;
     margin:0;
