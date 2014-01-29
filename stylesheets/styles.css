@@ -350,6 +350,7 @@ section {
   
 header {
   width:260px;
+  margin-left:0;
 } 
 
 h5 {
