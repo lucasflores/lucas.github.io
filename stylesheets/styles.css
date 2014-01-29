@@ -346,7 +346,7 @@ img {
 section {
   width:56%;
   padding:0;
-    margin-right:60px;
+    margin-right:70px;
 }
   
 header {
@@ -355,13 +355,22 @@ header {
   
 } 
 
-h5 {
- 
-}
-
-img {
 
 }
+
+@media print, screen and (max-width: 710px) {
+section {
+  width:50%;
+  padding:0;
+    margin-right:95px;
+}
+  
+header {
+  width:230px;
+  margin-left:0;
+  
+} 
+
 
 }
 
