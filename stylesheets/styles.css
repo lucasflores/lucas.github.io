@@ -344,13 +344,13 @@ img {
 
 @media print, screen and (max-width: 760px) {
 section {
-  width:58%;
+  width:56%;
   padding:0;
 }
   
 header {
   width:260px;
-  margin-left:0;
+  margin-left:30px;
   
 } 
 
