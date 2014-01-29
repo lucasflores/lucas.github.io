@@ -346,11 +346,12 @@ img {
 section {
   width:56%;
   padding:0;
+    margin-right:30px;
 }
   
 header {
   width:260px;
-  margin-left:60px;
+  margin-left:0;
   
 } 
 
