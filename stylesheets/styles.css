@@ -342,7 +342,7 @@ img {
   
 }
 
-@media print, screen and (max-width: 620px) {
+@media print, screen and (max-width: 720px) {
 section {
   width:58%;
   padding:0;
