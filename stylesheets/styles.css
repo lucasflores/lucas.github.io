@@ -362,7 +362,7 @@ header {
 section {
   width:50%;
   padding:0;
-    margin-right:125px;
+    margin-right:140px;
 }
   
 header {
@@ -371,7 +371,9 @@ header {
   
 } 
 
-font-size:30px;
+h1 {
+  font-size:60px;
+}
 
 
 }
