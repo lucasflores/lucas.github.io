@@ -362,14 +362,16 @@ header {
 section {
   width:50%;
   padding:0;
-    margin-right:115px;
+    margin-right:125px;
 }
   
 header {
-  width:190px;
+  width:200px;
   margin-left:0;
   
 } 
+
+font-size:30px;
 
 
 }
