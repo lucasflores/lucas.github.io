@@ -324,6 +324,17 @@ section {
   padding:0;
 }
   
+header {
+  width:310px;
+} 
+
+h5 {
+  margin-left:10px; 
+}
+
+img {
+  margin-left:10px;
+}
   
 }
 
