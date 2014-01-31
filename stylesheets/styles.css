@@ -411,7 +411,7 @@ header {
   
 h1 {
   font-size:28px;
-  margin:25px 15px 25px;
+  margin:25px 20px 25px;
 }  
 
 headermobile {
@@ -442,7 +442,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h5 {
-  margin:60px 0 40px 0;
+  margin:40px 0 40px 0;
   font-size:25px;
 }
         
