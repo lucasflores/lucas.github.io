@@ -407,7 +407,7 @@ h1 {
 
 headermobile {
     display:inline-block;
-    border-bottom: 2px solid rgba(168, 168, 168, 0.7);
+  /*  border-bottom: 2px solid rgba(168, 168, 168, 0.7); */
     position: relative;
     width: 100%;
 }  
