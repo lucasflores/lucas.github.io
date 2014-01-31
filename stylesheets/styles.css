@@ -280,6 +280,12 @@ headermobile {
     display:none;
 }
 
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
 
 @media print, screen and (max-width: 955px) {
 
