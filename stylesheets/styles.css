@@ -395,6 +395,10 @@ div.wrapper {
     margin:0;
 } 
 
+footer.shadow {
+  display:inline;
+}
+
 body {
     padding:0;
     margin: 0;
