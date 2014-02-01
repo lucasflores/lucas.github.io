@@ -444,6 +444,7 @@ h2, h3, h4, h5, h6 {
 h5 {
   margin:40px 0 40px 0;
   font-size:25px;
+  padding:0 0 0 10px;
 }
         
 img { 
