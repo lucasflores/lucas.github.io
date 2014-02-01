@@ -434,7 +434,6 @@ section {
     margin:0;
     float:none;
     width:100%;
-    border-left:5px solid white;
 }
   
 h2, h3, h4, h5, h6 {
@@ -445,7 +444,7 @@ h2, h3, h4, h5, h6 {
 h5 {
   margin:40px 0 40px 0;
   font-size:25px;
-  
+  border-left:5px solid white;
 }
         
 img { 
