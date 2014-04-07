@@ -256,7 +256,7 @@ something {
   font-size:22px;
   position: relative;
   text-align: right;
-  left:-50px;
+  /*left:-50px;*/
   color:#39c;
   float: right;
 }
