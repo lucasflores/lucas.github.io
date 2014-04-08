@@ -147,14 +147,17 @@ th {
 img {
   max-height:100%;
     width:100%; 
-    filter: blur(4px);
+    
+     -webkit-filter: opacity(.6);
+    filter: opacity(.6);
+    
+  /*  filter: blur(4px);
     -webkit-filter: blur(4px);
     -moz-filter: blur(4px);
     -o-filter: blur(4px);
-    -ms-filter: blur(4px);
+    -ms-filter: blur(4px);  */
     /*margin: -5px -10px -10px -5px; */
     margin:0;
-    border-bottom:8px solid rgba(225, 225, 225);
 }
 
 
