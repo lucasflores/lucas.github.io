@@ -320,11 +320,12 @@ h5 {
   margin: 70px 0 0 20px;
   overflow:auto; 
   overflow-x:hidden;
-}
+}*/
 
 img {
-    max-height:100%;
-}*/
+  
+    margin-left:0;
+}
 
 }
 
