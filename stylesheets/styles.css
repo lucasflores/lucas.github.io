@@ -148,8 +148,8 @@ img {
   max-height:100%;
     width:100%; 
     
-     -webkit-filter: opacity(.6);
-    filter: opacity(.6);
+     -webkit-filter: opacity(.9);
+    filter: opacity(.9);
     
   /*  filter: blur(4px);
     -webkit-filter: blur(4px);
