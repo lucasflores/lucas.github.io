@@ -224,7 +224,7 @@ header ul a strong {
 section {
   width:100%;
   /*width:625px;  */
-  /*loat:right; */
+  float:right;
   padding:0;
 }
 
