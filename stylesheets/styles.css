@@ -147,7 +147,6 @@ th {
 img {
   max-height:100%;
     width:100%; 
-    position:absolute;
     
      -webkit-filter: opacity(.9);
     filter: opacity(.9);
@@ -161,9 +160,7 @@ img {
     margin:0;
 }
 
-container {
-  position:relative;
-}
+
 
 header {
   width:400px;
