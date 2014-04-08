@@ -148,11 +148,12 @@ img {
   max-height:100%;
     width:100%; 
     filter: blur(4px);
-    -webkit-filter: blur(4px);
+    -webkit-filter: blur(0px);
     -moz-filter: blur(4px);
     -o-filter: blur(4px);
     -ms-filter: blur(4px);
-    margin: -5px -10px -10px -5px;
+    /*margin: -5px -10px -10px -5px; */
+    margin:0;
 }
 
 div.defined {
