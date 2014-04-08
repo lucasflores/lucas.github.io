@@ -141,14 +141,8 @@ dt {
 
 th {
   color:#444;
-}
 
-img {
-  max-width:100%;
-  margin:0;
-  overflow:auto; 
-  overflow-x:hidden;
-}
+
 
 img {
     max-height:100%;
@@ -162,7 +156,7 @@ img {
 }
 
 imgdiv {
-  overflow:hidden;
+  overflow: hidden;
 }
 
 header {
