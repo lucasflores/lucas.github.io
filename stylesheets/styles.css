@@ -148,7 +148,7 @@ img {
   max-height:100%;
     width:100%; 
     filter: blur(4px);
-    -webkit-filter: blur(0px);
+    -webkit-filter: blur(4px);
     -moz-filter: blur(4px);
     -o-filter: blur(4px);
     -ms-filter: blur(4px);
