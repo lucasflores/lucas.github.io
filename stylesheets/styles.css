@@ -394,14 +394,14 @@ h5 {
 
 }
 
-@media print, screen and (max-width: 710px) {
+@media print, screen and (max-width: 720px) {
 h1 {
   font-size:53px;
 }
 
 h5 {
 
-  line-height: 0.6;
+  line-height: 0.5;
   
 }
 
