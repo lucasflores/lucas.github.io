@@ -385,12 +385,7 @@ img {
   margin-left:0;
 }
 
-h5 {
 
-  line-height: 0.7;
-  font-size:30px;
-  
-}
   
 }
 
@@ -400,12 +395,6 @@ h5 {
     margin:0;
 } 
 
-h5 {
-
-  line-height: 0.6;
-  font-size:30px;
-  
-}
 
 }
 
@@ -416,7 +405,7 @@ h1 {
 
 h5 {
 
-  line-height: 0.5;
+  line-height: 0.75;
   
 }
 
