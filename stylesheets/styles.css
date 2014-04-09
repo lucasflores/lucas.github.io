@@ -315,10 +315,7 @@ header {
   width:350px;
 }
 
-section {
-  width:75%;
-  padding:0;
-}
+
 
 body {
     word-wrap:break-word;
@@ -348,11 +345,7 @@ img {
 
 @media print, screen and (max-width: 900px) {
   
-section {
-  width:64%;
-  padding:0;
-  margin-left:15;
-}
+
   
 header {
   margin-left:15px; 
@@ -372,11 +365,7 @@ img {
 }
 
 @media print, screen and (max-width: 760px) {
-section {
-  width:56%;
-  padding:0;
-    margin-right:70px;
-}
+
   
 header {
   width:260px;
@@ -388,12 +377,7 @@ header {
 }
 
 @media print, screen and (max-width: 710px) {
-section {
-  width:50%;
-  padding:0;
-  margin-right:140px;
-}
-  
+
 header {
   width:200px;
   margin-left:5px;
