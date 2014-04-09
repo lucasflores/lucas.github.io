@@ -296,6 +296,7 @@ something {
   /*left:-50px;*/
   color:#39c;
   float: right;
+  z-index: 2;
 }
 
 somethingelse {
@@ -306,7 +307,7 @@ somethingelse {
   position: relative;
   text-align:right;
   float: right;
-  z-index: 5;
+  z-index: 1;
 
 }
 
