@@ -239,6 +239,7 @@ section {
   width:70%;
   /*width:625px;  */
   padding:0;
+  float:center;
 }
 
 small {
