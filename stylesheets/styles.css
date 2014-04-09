@@ -167,11 +167,11 @@ img {
      -webkit-filter: opacity(.8);
     filter: opacity(.8);
     
-  /*  filter: blur(4px);
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);  */
+   filter: blur(1px);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);  
     /*margin: -5px -10px -10px -5px; */
     margin:0;
 }
