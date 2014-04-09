@@ -324,7 +324,7 @@ body {
 h5 {
   width:100%;
   margin-top:20px;
-  margin-left:20px; 
+
   
 }
 
@@ -366,28 +366,12 @@ img {
 
 @media print, screen and (max-width: 760px) {
 
-  
-header {
-  width:260px;
-  margin-left:0;
-  
-} 
-
-
 }
 
 @media print, screen and (max-width: 710px) {
-
-header {
-  width:200px;
-  margin-left:5px;
-  
-} 
-
 h1 {
   font-size:53px;
 }
-
 
 }
 
