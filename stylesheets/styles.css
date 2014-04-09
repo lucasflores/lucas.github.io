@@ -245,6 +245,13 @@ section {
   float:center;
 }
 
+section1 {
+  width:70%;
+  /*width:625px;  */
+  padding:0;
+  float:center;
+}
+
 small {
   font-size:11px;
 }
@@ -398,6 +405,14 @@ div.shadow {
   display:inline;
 }
 
+section1{
+  display:none;
+}
+
+div#relative {
+  display:none;
+}
+
 body {
     padding:0;
     margin: 0;
@@ -427,6 +442,7 @@ something {
 somethingelse {
   display:none;
 }
+
   
 section {
     padding:0;
