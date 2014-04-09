@@ -453,6 +453,10 @@ header {
     display:none;
 }
   
+#footer {
+  height:300px;
+}
+
 h1 {
   font-size:28px;
   margin:25px 20px 25px;
