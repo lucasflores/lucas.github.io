@@ -152,8 +152,8 @@ img {
   width:100%; 
   position:relative;
     
-     -webkit-filter: opacity(.9);
-    filter: opacity(.9);
+     -webkit-filter: opacity(.8);
+    filter: opacity(.8);
     
   /*  filter: blur(4px);
     -webkit-filter: blur(4px);
