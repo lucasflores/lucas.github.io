@@ -78,6 +78,7 @@ a {
   color:#39c;
   font-weight:400;
   text-decoration:none;
+  position relative;
   z-index: 5;
 }
 
