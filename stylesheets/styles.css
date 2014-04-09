@@ -340,7 +340,8 @@ body {
 
 h5 {
 
-  line-height: 0.9;
+  line-height: 0.88;
+  font-size:38px;
   
 }
 
@@ -368,11 +369,7 @@ header {
   width:300px;
 } 
 
-h5 {
-  line-height: 0.88;
-  font-size:36px;
-  
-}
+
 
 img {
   margin-left:0;
@@ -387,6 +384,13 @@ img {
     width:auto;
     margin:0;
 } 
+
+h5 {
+
+  line-height: 0.7;
+  font-size:30px;
+  
+}
 
 }
 
