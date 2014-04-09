@@ -324,11 +324,11 @@ headermobile {
 }
 
 
-@media print, screen and (max-width: 1450px) {
+@media print, screen and (max-width: 1550px) {
 
 h5 {
 
-  line-height: 1.2;
+  line-height: 1.0;
 }
 
 
