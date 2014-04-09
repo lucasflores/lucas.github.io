@@ -243,6 +243,7 @@ section {
   /*width:625px;  */
   padding:0;
   float:center;
+  display:none;
 }
 
 section1 {
@@ -449,6 +450,7 @@ section {
     margin:0;
     float:none;
     width:100%;
+    display:inline;
 }
   
 h2, h3, h4, h5, h6 {
