@@ -394,14 +394,14 @@ h5 {
 
 }
 
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 760px) {
 h1 {
   font-size:53px;
 }
 
 h5 {
 
-  line-height: 0.5;
+  line-height: 0.7;
   
 }
 
@@ -467,6 +467,7 @@ section {
 h2, h3, h4, h5, h6 {
         width: 100%;
         font-weight: normal;
+        line-height: 1.2;
 }
 
 h5 {
