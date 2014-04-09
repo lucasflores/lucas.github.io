@@ -365,6 +365,10 @@ img {
 }
 
 @media print, screen and (max-width: 760px) {
+  div.wrapper {
+    width:auto;
+    margin:0;
+} 
 
 }
 
