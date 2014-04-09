@@ -379,7 +379,7 @@ img {
   
 }
 
-@media print, screen and (max-width: 760px) {
+@media print, screen and (max-width: 800px) {
   div.wrapper {
     width:auto;
     margin:0;
@@ -397,6 +397,12 @@ h5 {
 @media print, screen and (max-width: 710px) {
 h1 {
   font-size:53px;
+}
+
+h5 {
+
+  top:60px;
+  
 }
 
 }
