@@ -54,6 +54,13 @@ h5 {
              4px 10px 20px rgba(0,0,0,0.1);
 }
 
+h7 {
+  width:100%;
+  font: 14px/1.5 Baskerville, "Baskerville Old Face";
+  color:#494949;
+  
+}
+
 h6 {
   font-size:22px;
   color:#777;
@@ -325,7 +332,7 @@ headermobile {
 }
 
 
-@media print, screen and (max-width: 1400px) {
+@media print, screen and (max-width: 1300px) {
 
 h5 {
 
@@ -475,10 +482,10 @@ h2, h3, h4, h5, h6 {
         
 }
 
-h5 {
+h7 {
  /* margin:40px 0 40px 0; */
   font-size:25px;
-  line-height: 1.2;
+  line-height: 1.7;
 /*  border-left:5px solid white;
   border-right:5px solid white; */
 }
