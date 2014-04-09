@@ -306,6 +306,7 @@ somethingelse {
   position: relative;
   text-align:right;
   float: right;
+  z-index: 5;
 
 }
 
