@@ -325,7 +325,7 @@ headermobile {
 }
 
 
-@media print, screen and (max-width: 1550px) {
+@media print, screen and (max-width: 1400px) {
 
 h5 {
 
@@ -406,6 +406,7 @@ h1 {
 h5 {
 
   line-height: 0.75;
+  font-size:35px;
   
 }
 
