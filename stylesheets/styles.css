@@ -264,6 +264,7 @@ section1 {
   /*width:625px;  */
   padding:0;
   float:center;
+  
 }
 
 section2 {
@@ -271,6 +272,7 @@ width:100%;
 height:100%;
 /*display:none; */
 margin:0;
+z-index:6;
 }
 
 /*section3 {
