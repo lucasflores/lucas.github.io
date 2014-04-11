@@ -175,21 +175,6 @@ img {
     /*margin: -5px -10px -10px -5px; */
     margin:0;
 }
-
-#img{
-   position relative;
-  z-index: 5;
-}
-
-
-.img {
-  position relative;
-  z-index: 6;
-  background: url(https://github.com/lucasflores/lucasflores.github.io/raw/master/images/DSCN0945.JPG) no-repeat;
-}
-
-
-
 #relative {
   position:relative;
   width:100%;
