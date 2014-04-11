@@ -265,6 +265,11 @@ section1 {
   float:center;
 }
 
+section2 {
+width:100%;
+
+}
+
 small {
   font-size:11px;
 }
