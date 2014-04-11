@@ -74,6 +74,15 @@ p {
   
   font-size:22px;
 }
+
+p2 {
+  bottom:10%;
+}
+
+p2b {
+  bottom:7%;
+}
+
 a {
   color:#39c;
   font-weight:400;
