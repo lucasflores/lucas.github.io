@@ -176,7 +176,15 @@ img {
     margin:0;
 }
 
+#img{
+   position relative;
+  z-index: 5;
+}
+
+
 .img {
+  position relative;
+  z-index: 6;
   background: url(../images/VanGoghh.png) no-repeat;
 }
 
