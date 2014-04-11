@@ -315,8 +315,8 @@ hr {
 }
 
 #footer {
-  height:auto;
-  width: auto;
+  height:100%;
+  width: 100%;
   bottom: 0px;
   left:0px;
   display: inline-block; 
