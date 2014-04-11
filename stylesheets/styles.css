@@ -83,8 +83,8 @@ p2 {
 
 p2b {
  /* bottom:7%; */
- 
-  margin-bottom:65px; 
+  top:80%;
+  margin:0; 
   position:absolute;
 }
 
