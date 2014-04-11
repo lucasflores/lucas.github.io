@@ -377,7 +377,7 @@ headermobile {
 }
 
 
-@media print, screen and (max-width: 1300px) {
+@media print, screen and (max-width: 1000px) {
 
 h5 {
 
