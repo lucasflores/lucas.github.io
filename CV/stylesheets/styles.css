@@ -127,9 +127,9 @@ a:hover
   
 a:hover img.imagedropshadow {
  
-  -webkit-transition: all 0.6s ease;
-  -moz-transition:    all 0.6s ease;
-  -o-transition:      all 0.6s ease;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition:    all 0.6s ease-in-out;
+  -o-transition:      all 0.6s ease-in-out;
   
   -webkit-box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.7);
   -moz-box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.7);
@@ -168,7 +168,7 @@ figure:hover figcaption {
   opacity: 1;
 }
 figure:before {
-  content: "?";
+  content: "";
   position: absolute;
   font-weight: 800;
   background: black;
