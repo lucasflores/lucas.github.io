@@ -253,7 +253,7 @@ img {
   width:100%; 
   position:relative;
     
-     -webkit-filter: opacity(.8);
+  /*   -webkit-filter: opacity(.8);
     filter: opacity(.8);
     
    filter: blur(1px);
