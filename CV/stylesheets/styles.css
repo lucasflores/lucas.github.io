@@ -194,7 +194,7 @@ figure:hover:before {
 .cap-left:hover figcaption { left: 0; }
 
 .cap-right:before { top:10px; right: 10px; }
-.cap-right figcaption { top: 33%; right: -30%; }
+.cap-right figcaption { top: 25%; right: -30%; }
 .cap-right:hover figcaption { right: 0; }
 
 .cap-top:before { top: 10px; left: 10px; }
