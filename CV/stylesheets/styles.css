@@ -120,12 +120,12 @@ a:hover
   transition: all 0.25s ease-in-out;
 }
 
-.CVhover a {
+.CVhover b {
   position: relative;
   display: inline-block;
 }
 
-.CVhover a:hover:before {
+.CVhover b:hover:before {
   content: '';
   display: block;
   background-image: url(https://github.com/lucasflores/lucasflores.github.io/raw/master/images/VanGoghh2.jpg); /* your background */
