@@ -273,7 +273,7 @@ img {
   
 }
 #relative {
-  height:auto;
+  height:100%;
   width: auto;
   position: relative;
   text-align: center;
