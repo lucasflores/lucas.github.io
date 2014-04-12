@@ -128,8 +128,8 @@ a:hover
 .CVhover a:hover:before {
   content: '';
   display: block;
-  background: url(https://github.com/lucasflores/lucasflores.github.io/raw/master/images/VanGoghh2.jpg) /* your background */
-  width: 20px; /* image width */
+  background-image: url(https://github.com/lucasflores/lucasflores.github.io/raw/master/images/VanGoghh2.jpg) /* your background */
+  width: 300px; /* image width */
   height: 100px; /* image height */
   position: absolute;
   top: 0;
