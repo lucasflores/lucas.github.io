@@ -134,8 +134,8 @@ c:hover img.imagedropshadow {
   -webkit-box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.7);
   -moz-box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.7);
   box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.7);
-  /*   -webkit-filter: opacity(.6);
-    filter: opacity(.6); */ 
+  -webkit-filter: opacity(0.6);
+    filter: opacity(0.6);  
 /*  filter: blur(0.7px);
   -webkit-filter: blur(0.7px);
   -moz-filter: blur(0.7px);
@@ -269,9 +269,7 @@ img {
 
 
 #blur img {
-  -webkit-filter: opacity(.8);
-    filter: opacity(.8);
-    
+  
   /* filter: blur(1px);
     -webkit-filter: blur(1px);
     -moz-filter: blur(1px);
