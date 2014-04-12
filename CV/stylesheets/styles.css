@@ -182,20 +182,6 @@ figure:hover:before {
 .cap-bot figcaption { left: 0; bottom: -30%;}
 .cap-bot:hover figcaption { bottom: 0; }
 
-
-
-#Library {
-   background-image: url('http://placekitten.com/100/101');
-   height: 70px;
-   width: 120px;
-}
-
-#Library:hover {
-   background-image: url('http://placekitten.com/100/100');
-   -webkit-filter: opacity(.4);
-    filter: opacity(.4);
-}
-
 .wrapper {
   width:760px;
   margin:0 auto;
@@ -254,7 +240,7 @@ img {
   width:100%; 
   position:relative;
     
-  /*   -webkit-filter: opacity(.8);
+   -webkit-filter: opacity(.8);
     filter: opacity(.8);
     
    filter: blur(1px);
