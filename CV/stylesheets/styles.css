@@ -122,7 +122,7 @@ a:hover
 
 
 .imagedropshadow { 
-  border:solid 1px #4c4c4c; 
+  border:solid 1px #727272; 
 }
   
 c:hover img.imagedropshadow {
@@ -154,7 +154,7 @@ figcaption {
   background: black;
   background: rgba(0,0,0,0.75);
   color: white;
-  padding: 10px 20px;
+  padding: 20px 40px;
   opacity: 0;
   -webkit-transition: all 0.6s ease;
   -moz-transition:    all 0.6s ease;
