@@ -240,7 +240,13 @@ img {
   width:100%; 
   position:relative;
     
-   -webkit-filter: opacity(.8);
+    /*margin: -5px -10px -10px -5px; */
+    margin:0;
+}
+
+
+.blur img {
+  -webkit-filter: opacity(.8);
     filter: opacity(.8);
     
    filter: blur(1px);
@@ -248,8 +254,7 @@ img {
     -moz-filter: blur(1px);
     -o-filter: blur(1px);
     -ms-filter: blur(1px);  
-    /*margin: -5px -10px -10px -5px; */
-    margin:0;
+  
 }
 #relative {
   height:auto;
