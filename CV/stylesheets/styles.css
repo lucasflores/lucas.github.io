@@ -177,7 +177,7 @@ figure:before {
   -moz-border-radius:    12px;
   border-radius:         12px;
   text-align: center;
-  font-size: 154px;
+  font-size: 64px;
   line-height: 24px;
   -moz-transition: all 0.6s ease;
   opacity: 0.75;
@@ -190,8 +190,8 @@ figure:hover:before {
 .cap-left figcaption { bottom: 0; left: -30%; }
 .cap-left:hover figcaption { left: 0; }
 
-.cap-right:before { bottom: 20px; right: 10px; }
-.cap-right figcaption { bottom: 0; right: -30%; }
+.cap-right:before { top:30px; right: 10px; }
+.cap-right figcaption { top: 0; right: -30%; }
 .cap-right:hover figcaption { right: 0; }
 
 .cap-top:before { top: 10px; left: 10px; }
