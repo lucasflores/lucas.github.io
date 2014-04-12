@@ -140,7 +140,7 @@ c:hover img.imagedropshadow {
   -moz-filter: blur(0.7px);
   -o-filter: blur(0.7px);
   -ms-filter: blur(0.7px);  
-  z-index:8;
+
 }
 
 figure {
