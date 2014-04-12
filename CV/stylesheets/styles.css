@@ -122,15 +122,15 @@ a:hover
 
 
 .imagedropshadow { 
-  padding: 5px;
-  border:solid 1px #EFEFEF; 
+  /*padding: 5px; */
+  border:solid 7px #EFEFEF; 
 }
   
 c:hover img.imagedropshadow {
   border: solid 1px #CCC; 
-  -moz-box-shadow: 1px 1px 5px #999;
-  -webkit-box-shadow: 1px 1px 5px #999;
-  box-shadow: 1px 1px 5px #999; 
+  -moz-box-shadow: 3px 3px 7px #999;
+  -webkit-box-shadow: 3px 3px 7px #999;
+  box-shadow: 3px 3px 7px #999; 
 }
 
 figure {
