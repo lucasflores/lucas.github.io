@@ -120,6 +120,22 @@ a:hover
   transition: all 0.25s ease-in-out;
 }
 
+CVhover {
+  position: relative;
+  display: inline-block;
+}
+
+CVhover:hover:before {
+  content: '';
+  display: block;
+  background: url(https://github.com/lucasflores/lucasflores.github.io/raw/master/images/VanGoghh2.jpg) /* your background */
+  width: 20px; /* image width */
+  height: 100px; /* image height */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .wrapper {
   width:760px;
   margin:0 auto;
