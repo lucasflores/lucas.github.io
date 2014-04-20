@@ -293,9 +293,9 @@ h5 {
 @media print, screen and (max-width: 670px) {
 div.wrapper {
     width:auto;
-    margin:20px 0 0 30px;
-    height:400px;
-    width:80%;
+    margin:25px 0 0 50px;
+    height:380px;
+    width:90%;
 } 
 
 section1{
