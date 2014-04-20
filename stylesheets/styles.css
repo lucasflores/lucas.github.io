@@ -219,7 +219,7 @@ headermobile {
 
 h5 {
 
-  line-height: 0.96;
+  line-height: 1.0;
 }
 
 
@@ -234,7 +234,6 @@ body {
 
 h5 {
 
-  line-height: 0.93;
   font-size:38px;
   
 }
