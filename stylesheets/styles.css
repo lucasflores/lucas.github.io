@@ -293,7 +293,7 @@ h5 {
 @media print, screen and (max-width: 670px) {
 div.wrapper {
     width:auto;
-    margin:0 0 0 20px;
+    margin:20px 0 0 30px;
     height:400px;
     width:80%;
 } 
