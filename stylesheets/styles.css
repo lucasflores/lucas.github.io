@@ -41,7 +41,7 @@ h3, h4, h5, h6 {
 }
 
 h5 {
-  width:100%;
+  width:70%;
   font: 14px/1.5 Baskerville, "Baskerville Old Face";
   margin-top:20px;
  line-height: 1.6;
@@ -219,7 +219,7 @@ headermobile {
 
 h5 {
 
-  line-height: 1.0;
+  line-height: 0.96;
 }
 
 
@@ -259,7 +259,10 @@ img {
     width:auto;
     margin:0;
 } 
-
+h5 {
+  width:80%;
+  
+}
 #relative2 {
  
   height:200px;
@@ -274,7 +277,7 @@ h1 {
 }
 
 h5 {
-
+  width:85%;
   line-height: 0.83;
   font-size:35px;
   
