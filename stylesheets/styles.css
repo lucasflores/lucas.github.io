@@ -290,10 +290,11 @@ h5 {
 
 }
 
-@media print, screen and (max-width: 650px) {
+@media print, screen and (max-width: 670px) {
 div.wrapper {
     width:auto;
     margin:0;
+    height:400px;
 } 
 
 section1{
