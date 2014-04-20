@@ -290,7 +290,7 @@ h5 {
 
 }
 
-@media print, screen and (max-width: 620px) {
+@media print, screen and (max-width: 650px) {
 div.wrapper {
     width:auto;
     margin:0;
@@ -344,6 +344,7 @@ section {
     float:none;
     width:100%;
     display:inline;
+    height:300px;
 }
   
 h2, h3, h4, h5, h6 {
