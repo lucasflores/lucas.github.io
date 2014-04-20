@@ -112,11 +112,11 @@ img {
      -webkit-filter: opacity(.8);
     filter: opacity(.8);
     
-   filter: blur(4px);
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);  
+   filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);  
     margin:0;
     overflow:hidden;
 }
