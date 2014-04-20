@@ -215,7 +215,7 @@ headermobile {
 }
 
 
-@media print, screen and (max-width: 1080px) {
+@media print, screen and (max-width: 1090px) {
 
 h5 {
 
@@ -270,7 +270,7 @@ h5 {
 
 }
 
-@media print, screen and (max-width: 760px) {
+@media print, screen and (max-width: 780px) {
 h1 {
   font-size:53px;
 }
