@@ -118,7 +118,7 @@ img {
     -o-filter: blur(0px);
     -ms-filter: blur(0px);  
     margin:0;
-    overflow:hidden;
+    
 }
 #relative {
   height:auto;
