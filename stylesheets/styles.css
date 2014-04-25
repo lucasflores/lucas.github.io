@@ -46,9 +46,9 @@ h5 {
   margin-top:20px;
  line-height: 1.4;
   font-size:44px;
-/*  text-shadow: 1px 4px 3px rgba(0,0,0,0.7),
-             2px 6px 13px rgba(0,0,0,0.4),
-             4px 10px 20px rgba(0,0,0,0.4); */
+  text-shadow: 1px 4px 3px rgba(0,0,0,0.4),
+             2px 6px 13px rgba(0,0,0,0.1),
+             4px 10px 20px rgba(0,0,0,0.1); 
              
 
 }
@@ -125,7 +125,7 @@ img {
     
 }
 
-img, img:hover
+img:hover
 {
  
    filter: brightness(70%);
@@ -134,11 +134,11 @@ img, img:hover
    -o-filter: brightness(70%);
    -ms-filter: brightness(70%); 
  
-  -moz-transition: all 0.45s ease-in-out;
-  -o-transition: all 0.45s ease-in-out;
-  -webkit-transition: all 0.45s ease-in-out;
-  -ms-transition: all 0.45s ease-in-out;
-  transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.65s ease-in-out;
+  -o-transition: all 0.65s ease-in-out;
+  -webkit-transition: all 0.65s ease-in-out;
+  -ms-transition: all 0.65s ease-in-out;
+  transition: all 0.65s ease-in-out;
 }
 
 #relative {
