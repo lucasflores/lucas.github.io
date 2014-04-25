@@ -238,7 +238,7 @@ headermobile {
                         inset 0 -7px 7px -7px #1f1f1f;
 }
 
-@media print, screen and (max-width: 1300px) {
+@media print, screen and (max-width: 2000px) {
 
 h5 {
   
