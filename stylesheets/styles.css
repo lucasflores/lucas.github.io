@@ -112,11 +112,7 @@ img {
   position:relative;
   padding:0;
   border:0;
-    filter: brightness(50%);
-	-webkit-filter: brightness(50%);
-	-moz-filter: brightness(50%);
-	-o-filter: brightness(50%);
-	-ms-filter: brightness(50%); 
+   
   /*   -webkit-filter: opacity(.8);
     filter: opacity(.8);
     
@@ -128,6 +124,23 @@ img {
     margin:0;
     
 }
+
+img:hover
+{
+ 
+   filter: brightness(70%);
+   -webkit-filter: brightness(70%);
+   -moz-filter: brightness(70%);
+   -o-filter: brightness(70%);
+   -ms-filter: brightness(70%); 
+ 
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
 #relative {
   height:auto;
   width: auto;
