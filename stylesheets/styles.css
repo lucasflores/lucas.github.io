@@ -50,11 +50,7 @@ h5 {
              2px 6px 13px rgba(0,0,0,0.4),
              4px 10px 20px rgba(0,0,0,0.4); */
              
-  filter: brightness(50%);
-	-webkit-filter: brightness(50%);
-	-moz-filter: brightness(50%);
-	-o-filter: brightness(50%);
-	-ms-filter: brightness(50%);
+
 }
 
 h7 {
@@ -116,7 +112,11 @@ img {
   position:relative;
   padding:0;
   border:0;
-    
+    filter: brightness(50%);
+	-webkit-filter: brightness(50%);
+	-moz-filter: brightness(50%);
+	-o-filter: brightness(50%);
+	-ms-filter: brightness(50%); 
   /*   -webkit-filter: opacity(.8);
     filter: opacity(.8);
     
