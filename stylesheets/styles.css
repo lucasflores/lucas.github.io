@@ -246,7 +246,14 @@ h5 {
   
 }
 }
+@media print, screen and (max-width: 1300px) {
 
+h5 {
+  
+  top:100px;
+  
+}
+}
 
 @media print, screen and (max-width: 1090px) {
 
