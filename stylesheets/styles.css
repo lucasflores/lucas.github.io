@@ -238,12 +238,22 @@ headermobile {
                         inset 0 -7px 7px -7px #1f1f1f;
 }
 
+@media print, screen and (max-width: 1300px) {
+
+h5 {
+  
+  margin-top:50px;
+  
+}
+}
+
 
 @media print, screen and (max-width: 1090px) {
 
 h5 {
 
   line-height: 1.0;
+  margin-top:20px;
 }
 
 
