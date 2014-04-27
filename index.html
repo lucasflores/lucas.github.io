@@ -43,11 +43,26 @@
 			    			<li><a href="/Projects">Projects</a></li>
 			  			</ul>
 					</div>
-					
+				<!--	
 				<script>
 					$(document).ready(function() {
 				  		$('#simple-menu').sidr();
 					});
+				</script>
+				-->
+				<script src="../TouchSwipe-Jqury-Plugin/jquery.touchwipe.js"></script>
+				<script>
+				      $(window).touchwipe({
+				        wipeLeft: function() {
+				          // Close
+				          $.sidr('close', 'sidr-main');
+				        },
+				        wipeRight: function() {
+				          // Open
+				          $.sidr('open', 'sidr-main');
+				        },
+				        preventDefaultEvents: false
+				      });
 				</script>
 				
 			    <a style="float:right" href="http://lucasflores.github.io/"><h1>LUCAS FLORES</h1></a>	
