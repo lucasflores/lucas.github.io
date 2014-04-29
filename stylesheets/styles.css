@@ -44,7 +44,7 @@ h5 {
   width:70%;
   font: 14px/1.5 Baskerville, "Baskerville Old Face";
   top:80px;
- line-height: 1.4;
+  line-height: 1.4;
   font-size:44px;
   text-shadow: 1px 4px 3px rgba(0,0,0,0.4),
              2px 6px 13px rgba(0,0,0,0.1),
@@ -113,22 +113,22 @@ img {
   padding:0;
   border:0;
    
-   filter: brightness(100%);
-   -webkit-filter: brightness(100%);
-   -moz-filter: brightness(100%);
-   -o-filter: brightness(100%);
-   -ms-filter: brightness(100%); 
+   filter: brightness(60%);
+   -webkit-filter: brightness(60%);
+   -moz-filter: brightness(60%);
+   -o-filter: brightness(60%);
+   -ms-filter: brightness(60%); 
  
-  -moz-transition: all 2.65s ease-in;
+/*  -moz-transition: all 2.65s ease-in;
   -o-transition: all 2.65s ease-in;
   -webkit-transition: all 2.65s ease-in;
   -ms-transition: all 2.65s ease-in;
-  transition: all 2.65s ease-in;
+  transition: all 2.65s ease-in;  */
     margin:0;
     
 }
 
-img:hover
+/*img:hover
 {
  
    filter: brightness(70%);
@@ -142,13 +142,13 @@ img:hover
   -webkit-transition: all 1.65s ease-in;
   -ms-transition: all 1.65s ease-in;
   transition: all 1.65s ease-in;
-}
+} */
 
 #relative {
   height:auto;
   width: auto;
   position: relative;
-  text-align: center;
+ /* text-align: center;*/
 }
 
 #relative2 {

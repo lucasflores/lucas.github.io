@@ -19,6 +19,8 @@
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
 			<script src="sidr-package-1.2.1/jquery.sidr.min.js"></script>
+			<script src="jquery.touchwipe.min.js"></script>
+			<script src="jquery.touchwipe.js"></script>
 	        	<!-- <script src="js/bootstrap.min.js"></script> -->
 	        
 			<somethingelse>
@@ -50,8 +52,13 @@
 					});
 				</script>
 				-->
-				<script src="../TouchSwipe-Jqury-Plugin/jquery.touchwipe.js"></script>
+				<script src="jquery.touchwipe.js"></script>
+				<script src="jquery.touchwipe.min.js"></script>
+				<script src="sidr-package-1.2.1/jquery.sidr.min.js"></script>
 				<script>
+					$(document).ready(function() {
+				  		$('#simple-menu').sidr();
+						});
 				      $(window).touchwipe({
 				        wipeLeft: function() {
 				          // Close
@@ -64,7 +71,9 @@
 				        preventDefaultEvents: false
 				      });
 				</script>
-				
+
+
+
 			    <a style="float:right" href="http://lucasflores.github.io/"><h1>LUCAS FLORES</h1></a>	
 			    
 			</headermobile>
