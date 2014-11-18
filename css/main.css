@@ -229,7 +229,7 @@ main {
 	width: 100%;
 }
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/tracks.jpg')}
+#slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
 
 /* Slide 2 */
  #slide-2 .bcg {background-image:url('../img/IMG_1097.jpg'); background-color: #010101; height: 100%; background-size: 100% 50%;  background-position: 50% 55%}
