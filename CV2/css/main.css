@@ -120,6 +120,9 @@ a:hover
         color: #1c1d1e;
         font-size: 32px;
         margin-bottom: 3px;
+        line-height:normal;
+       /* margin:25px 20px 25px;*/
+  
 }
 .entry-header a {
         font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
