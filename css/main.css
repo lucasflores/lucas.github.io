@@ -212,9 +212,9 @@ section {
 .loaded section,
 .no-js section {
 	opacity: 1;
-	-webkit-transition: opacity 600ms ease-out;
-	-moz-transition: opacity 600ms ease-out;
-	transition: opacity 600ms ease-out;
+	-webkit-transition: opacity 6ms ease-out;
+	-moz-transition: opacity 6ms ease-out;
+	transition: opacity 6ms ease-out;
 }
 main {
 	overflow-x: hidden;
