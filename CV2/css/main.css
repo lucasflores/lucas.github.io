@@ -110,8 +110,7 @@ a:hover
                               inset 0 -7px 7px -7px #696868;
 
         }
-.entry-header h1
-{
+.entry-header h1 {
   height: 100%;
         /* The html and body elements cannot have any padding or margin. */
         margin: 0;
@@ -122,6 +121,15 @@ a:hover
         font-size: 32px;
         margin-bottom: 3px;
 }
+.entry-header a {
+        font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color:#39c;
+        font-weight:100;
+        text-decoration:none;
+        position relative;
+        z-index: 99;
+        font-size:30px;
+      }
 
 /* @end */
 
