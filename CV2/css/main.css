@@ -69,7 +69,7 @@ a {
   position relative;
   z-index: 5;
 }
-/*
+
 a, a:visited, a:active {
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
@@ -86,7 +86,7 @@ a:hover
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
-*/
+
 .entry-header .inner {
         text-align: left;
         margin: 0 auto 20px auto;
