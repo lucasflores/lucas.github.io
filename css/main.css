@@ -274,88 +274,6 @@ main {
     z-index: 15;
 
 }
-.hsContentLeft {
-    max-width: 60%;
-    /*margin: 20px 0 0 0;*/
-    margin:auto;
-    display: inline-block;
-    vertical-align: middle;
-    horizontal-align: middle;
-    color: #ebebeb;
-    /*padding: 0 8%;*/
-    left:2%;
-
-    background-repeat:repeat-x;
-    background-position: right bottom;
-
-    overflow: hidden;
-    position: relative;
-}
-
-
-.hsContentRight {
-    max-width: 60%;
-    /*margin: 20px 0 0 0;*/
-    margin:auto;
-    display: inline-block;
-    vertical-align: middle;
-    color: #ebebeb;
-    /*padding: 0 8%;*/
-    left:2%;
-    overflow: hidden;
-    position: relative;
-}
-
-.hsContentLeft3 {
-    max-width: 65%;
-    /*height: 100%;*/
-    /*margin: 20px 0 0 0;*/
-    /*margin:30px;
-    display: inline-block;*/
-    vertical-align: middle;
-
-    color: #ebebeb;
-    /*padding: 0 8%;*/
-    /*left:2%; */
-    
-    background-repeat:repeat-x;
-    background-position: right bottom;
-
-    overflow: hidden;
-    position: relative;
-
-
-    
-    margin: 0 auto 0 auto;
-   /* display: table-cell;*/
-    
-    
-    padding: 0 8%;
-    text-align: center;
-   
-    z-index: 15;
-
-
-}
-
-.hsContentRight3 {
-    max-width: 60%;
-    /*margin: 20px 0 0 0;*/
-    margin:auto;
-    display: inline-block;
-    vertical-align: middle;
-    color: #ebebeb;
-    /*padding: 0 8%;*/
-    left:2%;
-    
-    background-repeat:repeat-x;
-    background-position: right bottom;
-
-    overflow: hidden;
-    position: relative;
-}
-
-
 
 	.hsContent h2, 
 	.copy h2 {
@@ -370,36 +288,14 @@ main {
      
 	}
 
-    .hsContentLeft h2, .hsContentRight h2
-    {
-        color: #000000;
-        font-size: 65px;
-    }
-
-    .hsContentLeft3 h2
-    {
+    .hsContainer h2 {
         color: #ffffff;
         
         font-size: 65px;
         margin-bottom: 0;
-        margin-top: 12%;
-         /* text-shadow: 1px 4px 3px rgba(0,0,0,0.3),
-             2px 6px 13px rgba(0,0,0,0.1),
-             4px 10px 20px rgba(0,0,0,0.1);  */
-       
-    }
-
-    .hsContentRight3 h2
-    {
-       
-        color: #000000;
-        font-size: 45px;
-        text-shadow: 1px 4px 3px rgba(0,0,0,0.3),
-             2px 6px 13px rgba(0,0,0,0.1),
-             4px 10px 20px rgba(0,0,0,0.1);
+        text-align: center;
 
     }
-
 
 
 	.hsContent p {
@@ -425,32 +321,6 @@ main {
 		padding: 3px 10px;
 	}
 
- .hsContentLeft3 p
-    {
-        color: #ffffff;
-        font-weight:100;
-        font-size:25px;
-        
-        
-        text-align:justify;
-    }
-    .hsContentRight3 p
-    {
-        color: #ffffff;
-        font-weight:100;
-        font-size:25px;
-     }   
-
-     .hsContentLeft p
-    {
-        font-weight:100;
-        font-size:25px;
-    }
-     .hsContentRight p
-    {
-        font-weight:100;
-        font-size:25px;
-    }
 
 .multiple-borders {
     
@@ -677,53 +547,53 @@ figure a.close-caption.hidden {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+   @media print, screen and (max-width: 3000px) {
 
+   
+     .hsContainer p {
+        font-size:28px;
+     }
+    
+}
+   @media print, screen and (max-width: 2500px) {
+
+    
+     .hsContainer p {
+        font-size:25px;
+     }
+  
+}
+@media print, screen and (max-width: 2000px) {
+
+     .hsContainer p {
+        font-size:23px;
+     }
+ 
+}
+
+    @media print, screen and (max-width: 1500px) {
+
+     .hsContainer p {
+        font-size:20px;
+     }
+  
+}
 
 @media print, screen and (max-width: 1290px) {
 
-     .hsContentLeft3 p {
-        font-size:23px;
+     .hsContainer p {
+        font-size:18px;
      }
-     .hsContentRight p {
-        font-size:23px;
-     }
-     .hsContentLeft p {
-        font-size:23px;
-     }
-    .hsContentRight3 p {
-
-      font-size:23px;
-    }
-
-    .hsContentLeft3 h2, .hsContentRight h2, .hsContentLeft h2, .hsContentRight3 h2 {
-
-        /*font-size:50px; */
-
-    } 
 
     }
 
  @media print, screen and (max-width: 1110px) {
 
-     .hsContentLeft3 p {
-        font-size:20px;
+     .hsContainer p {
+        font-size:15px;
      }
-     .hsContentRight p {
-        font-size:20px;
-     }
-     .hsContentLeft p {
-        font-size:20px;
-     }
-    .hsContentRight3 p {
-
-      font-size:20px;
-    }
-
-    .hsContentLeft3 h2, .hsContentRight h2, .hsContentLeft h2, .hsContentRight3 h2 {
-
-        font-size:60px;
-
-    } 
+    
+  
 
     }
 
