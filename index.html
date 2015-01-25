@@ -237,14 +237,38 @@
 				{
 					background:url('img/CEUsphenixpostSMALL.jpg') no-repeat top left;
 					background-size: 566px 733px;
-					width:350px;
-				    height:350px;				    
+					width:70%;
+				    height:200px;				    
 				    border-radius:3px;
 				    /* Animate the positions of both of the backgrounds */
 				    transition:background-position 3s;
 				    z-index: 9;
+				    display: block;
+    				margin-left: auto;
+    				margin-right: auto 
+
 				}
 				.img2:hover{
+				    /* The same goes for properties like background-position and repeat */
+				    background-position: top right;
+				}
+
+				.img4
+				{
+					background:url('img/ceu-2014-poster(6)small.jpg') no-repeat top left;
+					background-size: 566px 733px;
+					width:70%;
+				    height:200px;				    
+				    border-radius:3px;
+				    /* Animate the positions of both of the backgrounds */
+				    transition:background-position 3s;
+				    z-index: 9;
+				    display: block;
+    				margin-left: auto;
+    				margin-right: auto 
+
+				}
+				.img4:hover{
 				    /* The same goes for properties like background-position and repeat */
 				    background-position: top right;
 				}
@@ -255,24 +279,85 @@
 					background-size: 350px 350px;
 				}
 
-				.img4
-				{
-					background:url('img/CEUsphenixpostSMALL.jpg') no-repeat top left;
-					background-size: 566px 733px;
-					width:350px;
-				    height:350px;				    
-				    border-radius:3px;
-				    /* Animate the positions of both of the backgrounds */
-				    transition:background-position 3s;
-				    z-index: 9;
-				}
-				.img2:hover{
-				    /* The same goes for properties like background-position and repeat */
-				    background-position: top right;
-				}
+				
 
 				p2{
-					
+					color: #000000;
+					font-weight:300; 
+					position:absolute; 
+					font-family: "Times New Roman", Times, serif;
+					 text-align: justify;
+					 line-height: 110%;
+				}
+
+				.p2abs
+				{
+					width:60%; 
+					left:20%; 
+					top:27%;
+					font-size: 15px;
+				}
+
+				.p2author
+				{
+					width:80%; 
+					left:10%; 
+					top:19%;
+					font-size: 15px;
+					text-align: center;
+				}
+
+				.p2uni
+				{
+					width:80%; 
+					left:10%; 
+					top:21%;
+					font-size: 15px;
+					text-align: center;
+					font-style: italic;
+				}
+
+
+				.p2affil
+				{
+					width:80%; 
+					left:10%; 
+					top:23%;
+					font-size: 15px;
+					text-align: center;
+				}
+
+				.p2column
+				{
+					width:80%; 
+					left:10%;
+					top:56%; 
+					position:absolute; 
+					-webkit-column-count: 2; 
+					font-size: 18px;
+					-webkit-column-gap: 40px;
+				}
+
+				.p3column
+				{
+					width:80%; 
+					left:10%;
+					top:15%; 
+					position:absolute; 
+					-webkit-column-count: 2; 
+					font-size: 18px;
+					-webkit-column-gap: 40px;
+				}
+
+				.pfigure
+				{
+					font-size: 12px;
+					line-height: 0px;
+				}
+
+				.p2subtitle
+				{
+					text-align: center;
 				}
 
 				p2b {
@@ -339,18 +424,31 @@
 		    	</div>
 		    </section>
 
-			<section id="slide-3" class="homeSlide ">
+			<section id="slide-3" class="homeSlide">
 
 				<div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 40%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-3">
 			    	<div class="hsContainer">			    								
 			    		
-						<h2 style="width:80%; left:10%; top:3%; position:absolute;" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data--2980-top="opacity: 0" data-anchor-target="#slide-3 h2">Research</h2>
+						<h2 style="width:80%; left:10%; top:7%; position:absolute; color: #000000; font-size: 25px; font: "Times New Roman", Times, serif;" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data--2980-top="opacity: 0" data-anchor-target="#slide-3 h2" >Undergraduate Research in Heavy Ion Physics</h2>
 
-											<p data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data--2980-top="opacity: 0" data-anchor-target="#slide-3 h2" style="color: #ffffff; font-weight:300; width:60%; left:20%; top:20%; position:absolute;">
+											 <p2 class="p2author" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data--2980-top="opacity: 0" data-anchor-target="#slide-3 h2">Lucas Flores</p2>
+
+											 <p2 class="p2uni" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data--2980-top="opacity: 0" data-anchor-target="#slide-3 h2">University of California Riverside</p2>
+
+											 <p2 class="p2affil" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data--2980-top="opacity: 0" data-anchor-target="#slide-3 h2">(UCR PHENIX Collaboration)</p2>
+
+											<p2 class="p2abs" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data--2980-top="opacity: 0" data-anchor-target="#slide-3 h2" >
 												My research involves doing particle detector studies on a future detector which is to be implemented in the larger PHENIX detector housed at Brookhaven National Laboratory along the Relativistic Heavy Ion Collider. The new detector, the Muon Piston Calorimeter Extension (MPC-EX), is an extension to the existing MPC that will allow for fine-grained information on the development of electromagnetic showers. The MPC-EX is also capable of tracking minimum ionizing particles (charged hadrons) that do not shower in the detector. The studies I am doing are done in a detailed simulation of the detector that takes into account all materials and geometries. I am looking at how well we will be able to measure particle collision products known as Jets with the MPC-EX in order to better elucidate gluonic structure functions. This could possibly lead to new physics known as the Color Glass Condensate. Such studies are relevant to the design of novel and improved detection and imaging systems. 
-											 </p>																  
+											 </p2>
+
+											 <p2 class="p2column" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data--2980-top="opacity: 0" data-anchor-target="#slide-3 h2" >
+
+												<center><b>I. CURRENT WORK </b> </center> <br/> 
+
+												My research involves doing particle detector studies on a future detector which is to be implemented in the larger PHENIX detector housed at Brookhaven National Laboratory along the Relativistic Heavy Ion Collider. The new detector, the Muon Piston Calorimeter Extension (MPC-EX), is an extension to the existing MPC that will allow for fine-grained information on the development of electromagnetic showers. The MPC-EX is also capable of tracking minimum ionizing particles (charged hadrons) that do not shower in the detector. The studies I am doing are done in a detailed simulation of the detector that takes into account all materials and geometries. I am looking at how well we will be able to measure particle collision products known as Jets with the MPC-EX in order to better elucidate gluonic structure functions. This could possibly lead to new physics known as the Color Glass Condensate. Such studies are relevant to the design of novel and improved detection and imaging systems. 
+											 </p2>																  
 								    		
-								    		<div  id="effect-4" class="imgcontainer" style="width:60%; left:20%; top:72%; position:absolute;" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-380-top="opacity: 0" data-anchor-target="#slide-3 h2" >
+								    <!--		<div  id="effect-4" class="imgcontainer" style="width:60%; left:20%; top:72%; position:absolute;" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-380-top="opacity: 0" data-anchor-target="#slide-3 h2" >
 						      					<figure class="thumbnail" style="">
 								    				<a href="img/ceu-2014-poster(6).jpg" target="_blank"><img src="img/ceu-2014-poster(6)small.jpg" alt=""> </a>
 								    				<figcaption>
@@ -367,17 +465,63 @@
 								        				<a href="#" class="close-caption hidden">x</a>
 								    				</figcaption>
 												</figure>
-											</div>  		
+											</div>  		-->
 			    	</div>			    	
 			    </div> 
 			</section>
+
 			<section id="slide-4" class="homeSlide">
-				<div class="bcg" data-center="background-position: 10% 0px;" data-bottom-top="background-position: 10% 0px;" data-top-bottom="background-position: 10% -5px;" data-anchor-target="#slide-4">
+
+				<div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 40%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-4">
+			    	<div class="hsContainer">			    								
+			    		
+						<h2 style="width:80%; left:10%; top:7%; position:absolute; color: #000000; font-size: 25px; font: "Times New Roman", Times, serif;" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data--2980-top="opacity: 0" data-anchor-target="#slide-4 h2" ></h2>
+
+											 <p2 class="p3column" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data--2980-top="opacity: 0" data-anchor-target="#slide-4 h2" >
+
+												
+
+												My research involves doing particle detector studies on a future detector which is to be implemented in the larger PHENIX detector housed at Brookhaven National Laboratory along the Relativistic Heavy Ion Collider. <br/> <br/><div class="img2"></div> 
+												<span class="pfigure"> Figure 1. Poster at the 2012 Conference Experience for Undergraduates at the annual Fall Department of Nuclear Physics Meeting </span> <br/>
+
+												The MPC-EX is also capable of tracking minimum ionizing particles (charged hadrons) that do not shower in the detector. The studies I am doing are done in a detailed simulation of the detector that takes into account all materials and geometries. I am looking at how well we will be able to measure particle collision products known as Jets with the MPC-EX in order to better elucidate gluonic structure functions.<br/><br/> <center><b>I. PAST WORK </b> </center> <br/> This could possibly lead to new physics known as the Color Glass Condensate. Such studies are relevant to the design of novel and improved detection and imaging systems. My research involves doing particle detector studies on a future detector which is to be implemented in the larger PHENIX detector housed at Brookhaven National Laboratory along the Relativistic Heavy Ion Collider. The new detector, the Muon Piston Calorimeter Extension (MPC-EX), is an extension to the existing MPC that will allow for fine-grained information on the development of electromagnetic showers. The MPC-EX is also capable of tracking minimum ionizing particles (charged hadrons) that do not shower in the detector. The studies I am doing are done in a detailed simulation of the detector that takes into account all materials and geometries. 
+
+									
+					
+											 </p2>	
+
+				
+
+								    		
+								    <!--		<div  id="effect-4" class="imgcontainer" style="width:60%; left:20%; top:72%; position:absolute;" data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-380-top="opacity: 0" data-anchor-target="#slide-3 h2" >
+						      					<figure class="thumbnail" style="">
+								    				<a href="img/ceu-2014-poster(6).jpg" target="_blank"><img src="img/ceu-2014-poster(6)small.jpg" alt=""> </a>
+								    				<figcaption>
+								        				<h3>Jet Studies on he MPC-EX</h3>
+								        				<span>Poster at the 2014 Conference Experience for Undergraduates at the annual Fall Department of Nuclear Physics Meeting</span>
+								        				<a href="#" class="close-caption hidden">x</a>
+								    				</figcaption>
+												</figure>
+												<figure class="thumbnail" style="">
+								    				<a href="img/CEUsphenixpostSMALL.jpg" target="_blank"><img src="img/CEUsphenixpostSMALL.jpg" alt=""> </a>
+								    				<figcaption>
+								        				<h3>Jet Studies</h3>
+								        				<span>Poster at the 2012 Conference Experience for Undergraduates at the annual Fall Department of Nuclear Physics Meeting</span>
+								        				<a href="#" class="close-caption hidden">x</a>
+								    				</figcaption>
+												</figure>
+											</div>  		-->
+			    	</div>			    	
+			    </div> 
+			</section>
+
+			<section id="slide-5" class="homeSlide">
+				<div class="bcg" data-center="background-position: 10% 0px;" data-bottom-top="background-position: 10% 0px;" data-top-bottom="background-position: 10% -5px;" data-anchor-target="#slide-5">
 					<div class="curtainContainer">
 			
-						<div class="curtain" data-bottom-top="opacity: 0" data-306-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-4"></div>
-						<div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--180-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-4 .copy">
-							<!--<h2>w</h2> -->
+						<div class="curtain" data-bottom-top="opacity: 0" data-306-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-5"></div>
+						<div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--180-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-5 .copy">
+							
 						</div>
 						<h2 style="font-size: 45px; color:#ffffff;width:80%; left:10%; top:10%; position:absolute; text-align:center;">Page Under Construction</h2>
 
@@ -397,7 +541,7 @@
 
 				</div>
 
-			</section>		       	
+			</section>		    	
 
 
 
