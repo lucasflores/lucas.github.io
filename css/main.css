@@ -205,7 +205,7 @@ h2 {
 	background: url('../img/ico_loading.gif') no-repeat center center;
 }
 section {
-	min-width: 960px;
+	min-width: 60px;
 	opacity: 0;
 
 }
@@ -238,10 +238,10 @@ main {
 /*4320 × 2432*/
 /* Slide 3 */
 /*#slide-3 .bcg {background-image:url('../img/bluewall.jpg'); background-size: 130% 120%;}*/
-#slide-3 .bcg {background-color: #ffffff; height: 100%; background-size: 130% 120%;}
+#slide-3 .bcg {background-color: #ffffff; height: 100%; background-size: 100% 100%;}
 
 /* Slide 4 */
-#slide-4 .bcg {background-color: #ffffff; height: 100%; background-size: 130% 120%;}
+#slide-4 .bcg {background-color: #ffffff; height: 100%; background-size: 100% 100%;}
 /*
 .curtainContainer {width: 100%; height: 100%; position: relative;}
 .curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0}
