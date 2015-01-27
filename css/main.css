@@ -234,7 +234,7 @@ main {
 /*#slide-2 .bcg {background-image:url('../img/IMG1097.JPG'); background-color: #010101; height: 100%; background-size: 100% 50%;  background-position: 50% 55%}
 #slide-2 .bcg {background-image:url('../img/bcg_slide-3.jpg'); height: 730px;}*/
 /*#slide-2 .bcg {background-color: #ffffff; height: 100%; background-size: 100% 100%;} */
-#slide-2 .bcg {background-image:url('../img/bear.png');  background-size: 100% 100%;  }
+#slide-2 .bcg {background-image:url('../img/bear.png');    }
 #slide-2 h2 {
                     color:#000000;
                     width:90%; left:5%; top:-10%; position:absolute; 
@@ -859,7 +859,7 @@ figure a.close-caption.hidden {
                 .pfigure
                 {
                     font-size: 12px;
-                    line-height: 0px;
+                    line-height: -5px;
                 }
 
                 .p2subtitle
@@ -874,12 +874,6 @@ figure a.close-caption.hidden {
                   position:absolute;
                 }
 
-                .h2title
-                {
-                    
-                }
-
-               
                
 
                 .img2
