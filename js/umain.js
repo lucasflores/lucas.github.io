@@ -30,6 +30,8 @@
 		      
 		      // Resize sections
 		      adjustWindow();
+
+		      initAdjustWindow();
 		      
 		      // Init navigation
 		      initHomepageNav();
@@ -42,15 +44,6 @@
 	
 	function adjustWindow(){
 		
-		// Init Skrollr
-		var s = skrollr.init({
-		    forceHeight: false,
-		    render: function(data) {
-		    
-		        //Debugging - Log the current scroll position.
-		        //console.log(data.curTop);
-		    }
-		});
 		
 		// Get window size
 	    winH = $window.height();
@@ -65,14 +58,27 @@
 	    if( winW >= 768) {
 	 
 	        // Init Skrollr
-	        var s = skrollr.init({
-	            forceHeight: false
-	        });
+	        ///var s = skrollr.init({
+	        ///   forceHeight: false
+	        ///});
+
+	        // Init Skrollr
+			var s = skrollr.init({
+		    forceHeight: false,
+		    render: function(data) {
+		    
+		        //Debugging - Log the current scroll position.
+		        //console.log(data.curTop);
+		    }
+			});
 	 
 	        // Resize our slides
 	        $slide.height(winH);
+	        $slideTall.height(winH*2);
+	        $slideTall2.height(winH*3);
 	 
-	        s.refresh($('.homeSlide'));
+	        // Refresh Skrollr after resizing our sections
+	    	s.refresh($('.homeSlide'));
 	 
 	    } else {
 	 
@@ -89,13 +95,9 @@
 	        s.destroy();
 	    }
 	    
-	    // Resize our slides
-	    $slide.height(winH);
-	    $slideTall.height(winH*2);
-	    $slideTall2.height(winH*3);
 	    
-	    // Refresh Skrollr after resizing our sections
-	    s.refresh($('.homeSlide'));
+	    
+	    
 	    
 	}
 

@@ -75,9 +75,7 @@ hr {
 
 img {
     vertical-align: middle;
-            -webkit-box-shadow: inset 0px 200px 130px -11px rgba(0,0,0,0.75);
--moz-box-shadow: inset 0px 200px 130px -11px rgba(0,0,0,0.75);
-box-shadow: inset 0px 200px 130px -11px rgba(0,0,0,0.75);
+            
 }
 
 /*
@@ -555,7 +553,11 @@ figure a.close-caption.hidden {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-   @media print, screen and (max-width: 3000px) {
+
+
+
+
+ /*   @media print, screen and (max-width: 3000px) {
 
    
      .hsContainer p {
@@ -604,7 +606,7 @@ figure a.close-caption.hidden {
   
 
     }
-
+*/
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
