@@ -31,7 +31,7 @@
 		      // Resize sections
 		      adjustWindow();
 
-		      initAdjustWindow();
+		     
 		      
 		      // Init navigation
 		      initHomepageNav();
@@ -80,7 +80,8 @@
 	        // Refresh Skrollr after resizing our sections
 	    	s.refresh($('.homeSlide'));
 	 
-	    } else {
+	    }
+	     else {
 	 
 	        // Init Skrollr
 	        var s = skrollr.init();
@@ -93,11 +94,7 @@
 	        // Init Skrollr
 	        var s = skrollr.init();
 	        s.destroy();
-	    }
-	    
-	    
-	    
-	    
+	    }	    
 	    
 	}
 
@@ -123,10 +120,11 @@
 		var activeSlide = 1;
 		
 		// Build HTML for Nav
+		if( winW >= 768) {
 		$('<div/>', {
 		    'id' : 'slideNav'
 		}).append($('<ul><li class="slideNavPrev"><a class="disabled" href="#" title="Go to previous slide"><i class="fa fa-chevron-up"></i></a></li><li><span id="activeSlide">'+activeSlide+'</span>/<span id="maxSlides">'+slidesCount+'</span></li><li class="slideNavNext"><a href="#" title="Go to next slide"><i class="fa fa-chevron-down"></i></a></li></ul>')).appendTo('body').delay(1300).fadeIn(duration);
-		
+		}
 	//	$('<div/>', {
 	//	    'id' : 'slideNav2'
 	//	}).append($('<ul><li class="slideNavPrev"><a class="disabled" href="#" title="Go to previous slide"><i class="fa fa-chevron-up"></i></a></li><li><span id="activeSlide">'+activeSlide+'</span>/<span id="maxSlides">'+slidesCount+'</span></li><li class="slideNavNext"><a href="#" title="Go to next slide"><i class="fa fa-chevron-down"></i></a></li></ul>')).appendTo('body').delay(1300).fadeIn(duration);
