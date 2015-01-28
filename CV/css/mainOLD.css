@@ -57,8 +57,8 @@ body.grid {
 /* @group about */
 
 #about {
-  width: 950px;
-  padding: 80px 0 59px;
+  width: 100%;
+  padding: 80px 0 9px;
   margin: 0 auto;
   background: url(../img/line.png) repeat-x 0 bottom;
   overflow: hidden;
@@ -67,13 +67,20 @@ body.grid {
 #about h1 {
   margin-bottom: 4px;
   margin-top: 2px;
+  margin-left: 20px;
 }
 
 #about h2 {
-  font-size: 14px;
+  font-size: 25px;
   line-height: 20px;
   font-style: italic;
   margin-bottom: 14px;
+  margin-left: 20px;
+}
+
+#about p {
+  margin-left: 20px;
+  width: 90%;
 }
 
 /* --- */
@@ -89,21 +96,23 @@ body.grid {
 #picture {
   width: 180px;
   float: left;
+  margin-bottom: 20px;
+  margin-top: -20px;
 }
 
 /* @group contact */
 
 #contact {
-  width: 200px;
+  width: 100%;
   float: left;
-  padding-right: 50px;
-  padding-top: 96px;
+  padding-top: 9px;
+  padding-left: 20px;
   list-style-type: none;
   line-height: 20px;
 }
 
 #contact li {
-  width: 230px;
+  width: 90%;
   overflow: hidden;
   margin-bottom: 5px;
 }
@@ -131,24 +140,26 @@ body.grid {
 /* @group section */
 
 .section {
-  width: 950px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 0;
   background: url(../img/line.png) repeat-x 0 bottom;
   overflow: hidden;
 }
 
 .section h2 {
-  width: 160px;
-  padding-right: 30px;
+  width: 100%;
+  padding-left: 20px;
+
   float: left;
   padding-top: 0;
   line-height: 22px;
+  font-size: 32px;
 }
 
 .section h3 {
   line-height: 22px;
-  margin-bottom: 24px;
+  font-size: 24px;
   font-style: italic;
 }
 
@@ -161,13 +172,13 @@ body.grid {
 
 .section .date {
   position: absolute;
-  top: 6px;
-  right: 0;
+  top: 0px;
+  right: 20px;
 }
 
 .section .item {
-  width: 710px;
-  padding-left: 50px;
+  width: 90%;
+  padding-left: 10px;
   float: right;
   padding-top: 0;
   margin-bottom: 9px;
@@ -177,7 +188,7 @@ body.grid {
 }
 
 .section .description {
-  width: 510px;
+  width: 100%;
 }
 
 
@@ -228,7 +239,6 @@ body.small .section {
 body.small .section .item {
   width: 510px;
 }
-
 
 
 /*
@@ -596,55 +606,208 @@ figure a.close-caption.hidden {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-   @media print, screen and (max-width: 3000px) {
-
    
-     .hsContainer p {
-        font-size:28px;
-     }
-    
-}
-   @media print, screen and (max-width: 2500px) {
-
-    
-     .hsContainer p {
-        font-size:25px;
-     }
-  
-}
-@media print, screen and (max-width: 2000px) {
-
-     .hsContainer p {
-        font-size:23px;
-     }
- 
-}
-
-    @media print, screen and (max-width: 1500px) {
-
-     .hsContainer p {
-        font-size:20px;
-     }
-  
-}
-
-@media print, screen and (max-width: 1290px) {
-
-     .hsContainer p {
-        font-size:18px;
-     }
-
+@media only screen and (min-width: 768px) {
+     
+body, html {
+        height: auto;
     }
 
- @media print, screen and (max-width: 1110px) {
+body.grid {
+  background-image: url(../img/grid.png);
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* @group about */
 
-     .hsContainer p {
-        font-size:15px;
-     }
-    
-  
+#about {
+  width: 950px;
+  padding: 80px 0 59px;
+  margin: 0 auto;
+  background: url(../img/line.png) repeat-x 0 bottom;
+  overflow: hidden;
+}
 
-    }
+#about h1 {
+  margin-bottom: 4px;
+  margin-top: 2px;
+  margin-left: 0px;
+}
+
+#about h2 {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: italic;
+  margin-bottom: 14px;
+  margin-left: 0px;
+}
+
+#about p {
+  margin-left: 0px;
+}
+
+/* --- */
+
+#story {
+  font-size: 18px;
+  line-height: 30px;
+  width: 390px;
+  float: left;
+  padding-right: 90px;
+}
+
+#picture {
+  width: 180px;
+  float: left;
+
+
+}
+
+/* @group contact */
+
+#contact {
+  width: 200px;
+  float: left;
+  padding-right: 50px;
+  padding-top: 96px;
+  list-style-type: none;
+  line-height: 20px;
+  padding-left: 0px;
+}
+
+#contact li {
+  width: 230px;
+  overflow: hidden;
+  margin-bottom: 5px;
+
+}
+
+#contact li span {
+  float: left;
+}
+
+#contact li strong {
+  float: right;
+  text-align: right;
+  color: #3c3c3c;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group section */
+
+.section {
+  width: 950px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background: url(../img/line.png) repeat-x 0 bottom;
+  overflow: hidden;
+}
+
+.section h2 {
+  width: 160px;
+  padding-right: 30px;
+  float: left;
+  padding-top: 0;
+  line-height: 22px;
+  font-size: 30px;
+}
+
+.section h3 {
+  line-height: 22px;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.section h4 {
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.section .date {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.section .item {
+  width: 710px;
+  padding-left: 50px;
+  float: right;
+  padding-top: 0;
+  margin-bottom: 9px;
+  position: relative;
+  padding-bottom: 5px;
+  background: url(../img/separator.png) no-repeat 0 bottom;
+}
+
+.section .description {
+  width: 510px;
+}
+
+
+
+/* @end */
+
+/* @group small */
+
+body.small {
+}
+
+body.small #header ul  {
+  width: 750px;
+}
+
+body.small #about {
+  width: 750px;
+  position: relative;
+  padding-bottom: 65px;
+  min-height: 260px;
+}
+
+body.small #about #story {
+  float: none;
+}
+
+body.small #about #contact {
+  float: none;
+  padding-top: 0;
+  padding-right: 0;
+  clear: left;
+}
+
+body.small #about #picture {
+  clear: none;
+  float: none;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+/* --- */
+
+body.small .section {
+  width: 750px;
+}
+
+body.small .section .item {
+  width: 510px;
+}
+
+}
 
 
 @media only screen and (min-width: 35em) {
