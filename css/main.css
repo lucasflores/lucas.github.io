@@ -228,7 +228,7 @@ main {
 	width: 100%;
 }
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/tracks.jpg')}
+#slide-1 .bcg {background-image:url('../img/tracks.jpg'); background-size:100%; width:100%;}
 #slide-1 h2 {
                     
                     width:90%; left:5%; top:7%; position:absolute; 
@@ -240,13 +240,15 @@ main {
 /*#slide-2 .bcg {background-image:url('../img/IMG1097.JPG'); background-color: #010101; height: 100%; background-size: 100% 50%;  background-position: 50% 55%}
 #slide-2 .bcg {background-image:url('../img/bcg_slide-3.jpg'); height: 730px;}*/
 /*#slide-2 .bcg {background-color: #ffffff; height: 100%; background-size: 100% 100%;} */
-#slide-2 .bcg {background-image:url('../img/bear.png'); background-color: #ffffff;    }
+#slide-2 .bcg {background-image:url('../img/bear.png'); background-color: #ffffff; background-size:100%;
+width:100%;}
 #slide-2 h2 {
                     color:#000000;
                     width:90%; left:5%; top:-3%; position:absolute; 
                     font-size:50px;
                     line-height: 50px;
                     text-align: left;
+
                 }
 #slide-2 p {
                     color:#000000;
@@ -264,6 +266,7 @@ main {
                     width:90%; left:5%; top:-3%; position:absolute; 
                     font-size:24px;
                     line-height: 18px;
+                    font-family: "Times New Roman", Times, serif;
                 }
 
 /* Slide 4 */
@@ -753,11 +756,15 @@ figure a.close-caption.hidden {
         top: 50%;
     }
 
-    #slide-1 h2
-    {
-        font-size: 70px;
-        line-height: 57px;
-    }
+    #slide-1 h2 {
+                    
+                    width:90%; 
+                    position:absolute; 
+                    text-align: center;
+                    font-size: 70px;
+                    line-height: 57px;
+                    
+                }
     #slide-2 .hsContent {
         margin-left: -340px;
         top: auto;
@@ -906,7 +913,7 @@ figure a.close-caption.hidden {
                 .img4
                 {
                     background:url('../img/ceu-2014-poster(6).jpg') no-repeat top left;
-                    background-size: 766px 633px;
+                    background-size: 846px 633px;
                     width:90%;
                     height:200px;                   
                     border: 0px;
