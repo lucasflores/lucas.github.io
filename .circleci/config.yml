@@ -13,7 +13,7 @@ jobs:
           name: install deps
           command: apt-get update -y; apt-get install git build-essential -y
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json"  }}
+          key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: npm install
           command: npm install
