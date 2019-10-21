@@ -95,8 +95,6 @@ const Section = styled.div`
   ${props =>
     props.insta &&
     css`
-      width: 80%;
-      margin: 0 auto;
       padding-top: 0px;
       padding-bottom: 20px;
    `}
@@ -299,12 +297,6 @@ export default props => {
           <p>University of California Riverside</p>
         </Item>
       </Section>
-      <Section insta>
-        <Title small>Instagram</Title>
-        <Container 
-          nodes={props.data.allInstaNode} 
-        />
-      </Section>
       <Section map>
         <Map/>
       </Section>
@@ -369,34 +361,6 @@ export const pageQuery = graphql`
             sizes(maxWidth: 200, grayscale: true) {
               ...GatsbyImageSharpSizes_tracedSVG
             }
-          }
-        }
-      }
-    }
-    allInstaNode(filter: { username: { eq: "leeewcus" } }) {
-      edges {
-        node {
-          id
-          username
-          likes
-          caption
-          comments
-          localFile {
-            childImageSharp {
-              fluid(quality: 70, maxWidth: 300, maxHeight: 300) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
-          }
-          # Only available with the public api scraper
-          thumbnails {
-            src
-            config_width
-            config_height
-          }
-          dimensions {
-            height
-            width
           }
         }
       }
