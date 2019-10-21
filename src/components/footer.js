@@ -94,7 +94,7 @@ class Footer extends React.Component {
           <Box width={[4 / 5, 1 / 2, 1 / 3, 1 / 6]} pt={2}>
             <Flex alignItems="center" justifyContent="center">
                 <FooterText>
-                  Contact: 
+                  Contact: yeet
                 </FooterText>
             </Flex>
           </Box>
