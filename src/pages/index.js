@@ -1,0 +1,425 @@
+import React from 'react'
+import { graphql } from 'gatsby'
+import { Flex, Box } from 'grid-styled'
+import styled, { css } from 'styled-components'
+import Img from 'gatsby-image'
+import FlickrHero from 'react-flickr-hero'
+
+import { media } from '../utils/style'
+
+import Layout from '../components/layout'
+import NavBar from '../components/navbar'
+import HeroText from '../components/heroText'
+import SocialIcons from '../components/socialIcons'
+import Portfolio from '../components/portfolio'
+import Showcase from '../components/showcase'
+import Map from '../components/map'
+//import { Container } from '../components/Container'
+
+const Content = styled.div`
+  & > a {
+    visibility: hidden;
+    display: block;
+    height: 0;
+  }
+  & > h1 {
+    text-align: center;
+  }
+`
+
+const Title = styled.h1`
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  border: none;
+  color: #292929;
+
+  ${props =>
+    props.small &&
+    css`
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      line-height: 24px;
+    `}
+`
+
+const Section = styled.div`
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  a {
+    font-family: 'Lato';
+  }
+  img {
+    width: 17%;
+    height: auto;
+  }
+  p {
+    margin-bottom: 64px;
+    font-size: large;
+    color: #666;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    color: #292929;
+  }
+
+  h4 {
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #292929;
+  }
+
+  span {
+    color: #666;
+    opacity: 0.5;
+    display: block;
+  }
+
+  & > div:last-child {
+    border-bottom: none !important;
+  }
+  ${media.xs`
+    img {
+      width: 50%;
+    }
+  `}
+
+  ${props =>
+    props.map &&
+    css`
+      padding-top: 0px;
+      padding-bottom: 0px;
+   `}
+
+  ${props =>
+    props.center &&
+    css`
+      text-align: left;
+      & > * {
+        margin-left: 30vw;
+      }
+      h4 {
+        margin-left: 20vw;
+      }
+
+      ${media.xs`
+        & > div {
+          margin-left: 3vw !important;
+        }
+        h4 {
+          margin-left: 5vw;
+        }
+        h3 {
+          margin-left: 20vw;
+        }
+    `}
+    `}
+
+  ${props =>
+    props.dark &&
+    css`
+      background: #292929;
+      * {
+        color: #eee;
+      }
+      span {
+        text-align: left;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        opacity: 0.5;
+      }
+      span,
+      p {
+        color: #fefefe !important;
+      }
+      h6 {
+        color: #fff;
+        font-weight: 700;
+      }
+      h4 {
+        color: #fff;
+      }
+      div {
+        border-bottom: 1px solid #333 !important;
+      }
+    `}
+`
+
+const Item = styled.div`
+  width: 40%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid #eee;
+  h6 {
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding-top: 6px;
+  }
+  span,
+  p {
+    font-size: 13px;
+    line-height: 24px;
+    color: #666;
+  }
+  span {
+    opacity: 0.75;
+    float: right;
+    text-transform: uppercase;
+  }
+  p {
+    margin-bottom: 24px;
+    opacity: 0.5;
+  }
+  ${media.xs`
+    width: 90%;
+
+  `}
+`
+
+export default props => {
+  const content = (
+    <Content>
+      <FlickrHero
+        api_key="ad3be2301d4f44a034ca1f2d6c6b1bfc"
+        user_id="161538372@N02"
+        album_id="72157711430913826"
+        fillPage
+      />
+      <HeroText />
+      <SocialIcons
+        style={{
+          position: 'absolute',
+          margin: '0 auto',
+          left: 0,
+          right: 0,
+          bottom: 16,
+        }}
+        icons={[
+          {
+            name: 'github-alt',
+            href: 'https://github.com/lucasflores',
+          },
+          {
+            name: 'linkedin',
+            href: 'https://ie.linkedin.com/in/lucas-m-flores',
+          },
+          {
+            name: 'gitlab',
+            href: 'https://gitlab.cern.ch/luflores',
+          },
+        ]}
+      />
+      <a id="about-me">About Me</a>
+      <Section>
+        <img src="DSCF6289.png" alt="profile"/>
+        <Title>About Me</Title>
+        <Flex alignItems="center" flexDirection="column">
+          <Box px={2} width={[1, 1 / 2]}>
+            <p>
+               My name is Lucas Flores and I am pursuing my PhD at the University of Pennsylvania. 
+               My PhD work is in experimental high energy elementary particle physics,
+                working on the <a href="https://en.wikipedia.org/wiki/ATLAS_experiment">ATLAS experiment</a> located along the 
+               <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"> Large Hadron Collider</a> (LHC) at 
+               <a href="https://en.wikipedia.org/wiki/CERN"> CERN</a> (an international nuclear/accelerator research facility in Geneva, Switzerland). 
+               When I am not doing physics you can find me hiking, taking photos, working on my fitness, snowboarding, and taking a boat out on lake Geneva.  
+            </p>
+          </Box>
+        </Flex>
+      </Section>
+      <a id="portfolio">Blogfolio</a>
+      <Title small>Blogfolio</Title>
+      <Portfolio items={props.data.allMarkdownRemark.edges} />
+
+      <a id="experience">Experience</a>
+      <Section center dark>
+        <h4>Experience</h4>
+        <span>Where I've worked.</span>
+        <Item>
+          <span>AUG 2015 - CURRENT</span>
+          <h6>UNIVERSITY OF PENNSYLVANIA</h6>
+          <p>Reaserch Assistant</p>
+        </Item>
+        <Item>
+          <span>AUG 2015 - JUNE 2016</span>
+          <h6>UNIVERSITY OF PENNSYLVANIA</h6>
+          <p>Lab Teaching Assistant</p>
+        </Item>
+        <Item>
+          <span>JUNE 2012 - JUNE 2015</span>
+          <h6>UNIVERISTY OF CALIFORNIA RIVERSIDE | RELATIVISTIC HEAVY ION COLLIDER</h6>
+          <p>Undergraduate Researcher</p>
+        </Item>
+      </Section>
+
+      <a id="tech">Research</a>
+      <Section center>
+        <h4>Research</h4>
+        <h3>Conference Talks and Posters</h3>
+        <span>Work I have presented.</span>
+        <Item>
+          <span>2019</span>
+          <h6>Poster at The 29th International Symposium on Lepton Photon Interactions at High Energies</h6>
+          <p>The ATLAS Electron and Photon Trigger Performance in Run 2 <br/>
+               <a href="https://indico.cern.ch/event/688643/contributions/3429780/">  (contribution)</a> </p> 
+        </Item>
+        <Item>
+          <span>2019</span>
+          <h6>Poster at the APS Division of Particles and Fields Meeting</h6>
+          <p>A Search For 3-lepton Resonances In A Minimal SUSY B-L R-parity Violating Model <br/>
+               <a href="https://indico.cern.ch/event/782953/contributions/3515495/">  (contribution)</a> </p> 
+        </Item>
+        <Item>
+          <span>2019</span>
+          <h6>Talk at the APS Division of Particles and Fields Meeting</h6>
+          <p>A Search For 3-lepton Resonances In A Minimal SUSY B-L R-parity Violating Model <br/>
+               <a href="https://indico.cern.ch/event/782953/contributions/3459978/">  (contribution)</a> </p> 
+        </Item>
+        <Item>
+          <span>2017</span>
+          <h6>Talk at the annual APS April Meeting</h6>
+          <p>Electron Identification with the ATLAS Detector <br/>
+               <a href="http://meetings.aps.org/Meeting/APR17/Session/R9.2">  (contribution)</a> </p> 
+        </Item>
+        <h3>Selected Publications</h3>
+        <span>Work I have published.</span>
+        <Item>
+          <span>2019</span>
+          <h6>Electron and photon performance measurements with the ATLAS detector using the 2015-2017 LHC proton-proton collision data</h6>
+          <p>ATLAS Collaboration <br/>
+               <a href="https://arxiv.org/abs/1908.00005">  (paper)</a> </p> 
+        </Item>
+        <Item>
+          <span>2019</span>
+          <h6>Electron reconstruction and identification in the ATLAS experiment using the 2015 and 2016 LHC proton-proton collision data at √s = 13 TeV</h6>
+          <p>ATLAS Collaboration <br/>
+               <a href="https://link.springer.com/article/10.1140%2Fepjc%2Fs10052-019-7140-6">  (paper)</a> </p> 
+        </Item>
+      </Section>
+
+      <a id="education">Education</a>
+      <Section dark center>
+        <h4>EDUCATION</h4>
+        <span>Education I've recieved.</span>
+        <Item>
+          <span>2017 - Present</span>
+          <h6>PhD PARTICLE PHYSICS</h6>
+          <p>University of Pennsylvania</p>
+        </Item>
+        <Item>
+          <span>2015 - 2017</span>
+          <h6>MSC PARTICLE PHYSICS</h6>
+          <p>University of Pennsylvania</p>
+        </Item>
+        <Item>
+          <span>2010 - 2015</span>
+          <h6>BSC PHYSICS AND APPLIED MATHEMATICS (magna cum laude)</h6>
+          <p>University of California Riverside</p>
+        </Item>
+      </Section>
+
+      <a id="honoursAndAwards">Honors & Awards</a>
+      <Section center>
+        <h4>HONORS & AWARDS</h4>
+        <span>A list of honors and awards I have recieved for my work.</span>
+        <Item>
+          <span>2014-2015</span>
+          <h6>MARC U STAR SCHOLAR FELLOWSHIP</h6>
+          <p>University of California Riverside</p>
+        </Item>
+        <Item>
+          <span>2015</span>
+          <h6>THE ROBERT T. POE MEMORIAL SCHOLARSHIP AWARD for outstanding bachelor of science graduate</h6>
+          <p>University of California Riverside</p>
+        </Item>
+        <Item>
+          <span>2014</span>
+          <h6>BENJAMIN C.SHEN MEMORIAL UNDERGRADTUATE SCHOLARSHIP AWARD for outstanding academic achievment by a 3rd year undergraduate student </h6>
+          <p>University of California Riverside</p>
+        </Item>
+      </Section>
+      <Section map>
+        <Map/>
+      </Section>
+    </Content>
+  )
+  return (
+    <Layout location={props.location}>
+      <NavBar main children={content.props.children} />
+      {content}
+    </Layout>
+  )
+}
+
+export const pageQuery = graphql`
+  query indexQueryAndScrapingQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          timeToRead
+          excerpt(pruneLength: 120)
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            tags
+            image {
+              childImageSharp {
+                sizes(
+                  maxWidth: 500
+                  duotone: {
+                    highlight: "#333333"
+                    shadow: "#111111"
+                    opacity: 65
+                  }
+                  ) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    allImageSharp: allFile(filter: { relativePath: { regex: "/logos/" } }) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            sizes(maxWidth: 300, grayscale: true) {
+              ...GatsbyImageSharpSizes_tracedSVG
+            }
+          }
+        }
+      }
+    }
+    allFile(filter: { name: { regex: "/signature/" } }) {
+      edges {
+        node {
+          childImageSharp {
+            sizes(maxWidth: 200, grayscale: true) {
+              ...GatsbyImageSharpSizes_tracedSVG
+            }
+          }
+        }
+      }
+    }
+  }
+`
