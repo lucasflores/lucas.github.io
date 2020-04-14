@@ -102,7 +102,7 @@ class Map extends React.Component {
           <>
             <Marker position = {{ lat: 46.235280, lng: 6.055462 }} 
               map = {this.state.ATLAS}  
-              /*icon = {{url: "/cern_lhc_icon_ATLAS.svg", scaledSize: new google.maps.Size(100,100), anchor: new google.maps.Point(45, 49)}}*/
+              icon = {{url: "/cern_lhc_icon_ATLAS.svg", scaledSize: new window.google.maps.Size(100,100), anchor: new window.google.maps.Point(45, 49)}}
             />
           </>
         )}
@@ -110,7 +110,7 @@ class Map extends React.Component {
           <>
             <Marker position = {{ lat: 46.310180, lng: 6.076762 }} 
               map = {this.state.CMS}  
-              /*icon = {{url: "/cern_lhc_icon_CMS.svg", scaledSize: new google.maps.Size(100,100), anchor: new google.maps.Point(45, 49)}}*/
+              icon = {{url: "/cern_lhc_icon_CMS.svg", scaledSize: new window.google.maps.Size(100,100), anchor: new window.google.maps.Point(45, 49)}}
             />
           </>
         )}
@@ -119,7 +119,7 @@ class Map extends React.Component {
           <>
             <Marker 
               position = {this.state.progress[this.state.progress.length - 1]} 
-              /*icon = {{ path: google.maps.SymbolPath.CIRCLE, scale: 2, strokeColor: '#FF0000' }}*/
+              icon = {{ path: window.google.maps.SymbolPath.CIRCLE, scale: 2, strokeColor: '#FF0000' }}
             />
           </>
         )}
@@ -127,7 +127,7 @@ class Map extends React.Component {
           <>
             <Marker 
               position = {this.state.progress2[this.state.progress2.length - 1]} 
-              /*icon = {{ path: google.maps.SymbolPath.CIRCLE, scale: 2, strokeColor: '#FF0000' }}*/
+              icon = {{ path: window.google.maps.SymbolPath.CIRCLE, scale: 2, strokeColor: '#FF0000' }}
             />
           </>
         )}
