@@ -112,6 +112,8 @@ export default ({ data, location }) => {
   const tags = post.frontmatter.tags.map(function(tag) {
     return <li key={tag}>{tag}</li>
   })
+  const { frontmatter, excerpt, body, timeToRead } = post
+  const { title, slug, cover, showToc } = frontmatter
   return (
     <div>
       <Header>
@@ -132,7 +134,7 @@ export default ({ data, location }) => {
         <Tags>{tags}</Tags>
         <Bar />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <DiscussionEmbed {...disqusConfig} />
+        <DiscussionEmbed {...disqusConfig({ slug, title })} />
         <Timestamp>
           Posted: <TimeAgo date={post.frontmatter.date} />
         </Timestamp>
