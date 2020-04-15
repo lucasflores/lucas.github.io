@@ -97,9 +97,9 @@ const TimeToRead = styled.h5`
   display: inline-block;
 `
 
-export const disqusConfig = ({ slug, title }) => ({
+export const disqusConfig = ({ title }) => ({
   shortname: process.env.GATSBY_DISQUS_NAME,
-  config: { identifier: slug, title },
+  config: { identifier: title },
 })
 
 export default ({ data, location }) => {
@@ -134,7 +134,7 @@ export default ({ data, location }) => {
         <Tags>{tags}</Tags>
         <Bar />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <DiscussionEmbed {...disqusConfig({ slug, title })} />
+        <DiscussionEmbed {...disqusConfig({ title })} />
         <Timestamp>
           Posted: <TimeAgo date={post.frontmatter.date} />
         </Timestamp>
