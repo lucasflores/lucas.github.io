@@ -24,8 +24,9 @@ const StyledTypist = styled(Typist)`
   left: 3%;
   top: 15%;
   letter-spacing: 12px;
-  font-size: 45px;
-  line-height: 50px;
+  font-size: 66px;
+  font-weight: 150;
+  line-height: 75px;
 `}
   a {
     color: #ffffff;
