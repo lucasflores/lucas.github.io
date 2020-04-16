@@ -97,7 +97,9 @@ const TimeToRead = styled.h5`
   display: inline-block;
 `
 
-export const disqusConfig = ({ title }) => ({
+const poop = process.env.GATSBY_DISQUS_NAME
+
+export const disqusConfig = ({ slug, title }) => ({
   shortname: process.env.GATSBY_DISQUS_NAME,
   config: { identifier: title },
 })
@@ -119,7 +121,7 @@ export default ({ data, location }) => {
       <Header>
         <Flex flexWrap="wrap">
           <Box px={2} width={[1, 2 / 3, 1 / 3]}>
-            <Title>{post.frontmatter.title}</Title>
+            <Title>{poop}</Title>
           </Box>
           <Box px={2} width={[1, 2 / 3]}>
             <Breadcrumb crumbs={crumbs} />
@@ -134,7 +136,7 @@ export default ({ data, location }) => {
         <Tags>{tags}</Tags>
         <Bar />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <DiscussionEmbed {...disqusConfig({ title })} />
+        <DiscussionEmbed {...disqusConfig({ slug, title })} />
         <Timestamp>
           Posted: <TimeAgo date={post.frontmatter.date} />
         </Timestamp>
