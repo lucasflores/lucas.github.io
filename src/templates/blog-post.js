@@ -1,34 +1,37 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import styled from 'styled-components'
 import TimeAgo from 'react-timeago'
 import { Flex, Box } from 'grid-styled'
 import { media } from '../utils/style'
+import styled, { createGlobalStyle } from 'styled-components'
 
 import Breadcrumb from '../components/breadcrumb'
 import Bar from '../components/bar'
 import "katex/dist/katex.min.css"
 import { DiscussionEmbed } from "disqus-react"
 
+import Footer from '../components/footer'
 
+const GlobalStyle = createGlobalStyle`
+  @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
-//const imageleft = stlyed.div`
-//  display: block;
-//  margin-left: auto;
-//  margin-right: auto;
-//  float: right;
-//}
-//`
+  html {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+`
 
-//const iframe = styled.div`
-//  width: 800px
-//  ${media.md`
-//  width: 600px;
-//  `}
-//  ${media.xs`
-//  width: 200px;
-//  `}
-//`
+const Body = styled.div`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  width: 100vw;
+
+  img {
+    margin-bottom: 0;
+  }
+`
+
 const imgRight = styled.div`
   & > div {
     float: right;
@@ -116,6 +119,8 @@ export default ({ data, location }) => {
   const { title, slug, cover, showToc } = frontmatter
   return (
     <div>
+      <Body>
+      <GlobalStyle />
       <Header>
         <Flex flexWrap="wrap">
           <Box px={2} width={[1, 2 / 3, 1 / 3]}>
@@ -139,6 +144,8 @@ export default ({ data, location }) => {
           Posted: <TimeAgo date={post.frontmatter.date} />
         </Timestamp>
       </Content>
+      <Footer/>
+      </Body>
     </div>
   )
 }

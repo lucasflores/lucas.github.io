@@ -127,14 +127,15 @@ The procedure was as follows
 1. Pseudo-randomly place the dot on the screen such that it sampled the screen thoroughly. 
 2. For each dot placement have the dot obstruct the light source relative to the user (move head/source around s.t. this is the case).
 	 The user and the source must maintain a set distance away from the LCD screen (i.e. in a  plane) during the calibration due to the single camera limitation of our proof of concept. 
-3. For each iteration use the equation for a line in a plane to compute the transforms.
-4. Fit transforms to find best fit value.
-
+3. For each iteration use constraint equation for three points lying on the same line in some common space to compute the transforms.
+4. Fit transforms to find best fit (calibration) value.
 
 <div class="image-right">
 <img src="/images/eyeHUD/SnapChat.jpg" width="150" height="200" alt="First Hackathon: Pennapps XIV">
 <figcaption class="fig-spacing"><i>Teammates with expressions of great confidence</i></figcaption>
 </div><!-- /.page-image -->
+
+Below are these constraint equations of three points lying on the same line in real space, taking into account the possible shifted coordinate system in each digital space plane (LCD, face camera, Sun camera). 
 
 $$
 x_{2}=A_{0}x_{0}-A_{1}x_{1}+C_{x}
@@ -144,10 +145,10 @@ $$
 y_{2}=B_{0}y_{0}-B_{1}y_{1}+D_{y}
 $$
 
+Taking our LCD space to be the 'real space,' $(x_{2},y_{2})$, the best fit values $A_{0},A_{1},B_{0}$ and $B_{1}$ for the face camera $(x_{0},y_{0})$ and sun camera $(x_{1},y_{1})$ are determined from the procedure described previously. 
 
-Calibration procedure that we came up with to provide the right transforms between these pixel spaces that we were probably most proud of in the end. 
-
-Another difficulty was getting accurate tracking on the bright light on the far side of the monitor. 
+This calibration procedure that we came up with to provide the right transforms between these pixel spaces was probably what we were most proud of in the end. 
+The next difficulty after we finally got a working proof-of-concept was getting accurate tracking on the bright light on the far side of the monitor. 
 The web cam we were using was cheap and we had almost no access to the settings like aperture and exposure which made it so the light would easily saturate the CCD in the camera. 
 Because the light was saturating and the camera was trying to adjust its own exposure, other lights in the room were also saturating the CCD and so even bright spots on the white walls were being tracked as well. 
 We eventually solved this problem by reusing the radial diffuser that was on the backlight of the monitor we took apart. 
@@ -182,11 +183,11 @@ We did not arrive unscathed however, as upon start up of our hack it became appa
 </div><!-- /.page-image -->
 <figcaption class="fig-spacing"><i>Our team at the first round explaining to people why they need to sit on this orange milk crate and sit up straight to demo the hack</i></figcaption>
 
-The competition began and we began pitching our project hard in the competition hall.
+The expo began and we began pitching our project hard in the competition hall.
 In the above photo you'll find the team and our set up at the second table up from the bottom right. 
 You can see me in the grey shirt and khaki shorts (facing the camera) giving our pitch to a man in bright orange pants and a teal shirt. 
-We all felt that this whole first rouned expo thing went really well.
-It was hard to survey the popularity of other hacks at the expo purely we were all busy running the hack and pitching to a constant stream of people.
+We all felt that the whole first round of this expo thing went really well.
+It was hard for us to survey the popularity of other hacks at the expo purely because we were all busy running our hack and pitching to a constant stream of people.
 But maybe this was a good problem to have.
  
 <div class="page-image">
@@ -196,26 +197,27 @@ But maybe this was a good problem to have.
   <figcaption class="fig-spacing"><i>Our team at the first round explaining to people why they need to sit on this orange milk crate and sit up straight to demo the hack</i></figcaption>
 
 The next step was to simply wait for the results from the judges on which teams made it to the second round.
-Our team name was ultimately announced and were are still in the running! 
+Our team name was ultimately announced and we were still in the running! 
 Now unfortunately I wasn't able to source any photos from this round but it was in an entirely different hall that was up two floors from the expo hall.
 So naturally we lost a few more columns of pixels with this move. 
-This round also went pretty well but the judges were definitely more critical with their questions. 
+This round also went pretty well but the judges were definitely more critical with their questions, which I think we all fielded pretty well. 
 We ultimately only really had one judge in our corner who could really understand the potential applications of something like this, as well as just how difficult it was to throw this together in 48 hours.
-As this round came to and end we again wait to see if we made it into the top 10 teams that would present their hacks on stage in front of all the hackathon participants (and be live streamed) in the final round.
+As the second round came to an end we again waited to see if we made it into the next round which would be the final round made up of the top 10 teams of the hackathon.
+In this round each team is to present their hack on stage in front of all the hackathon participants as well as be live streamed.
 Well, spoilers: we made it!
 On to another building to break more pixels in our monitor!
 Continuing with the drama we had to go last due to our relatively complicated setup.
-In the picture below you can see the team up on stage doing our demo bit.
-We have Rob acting as the viewer, Sebastion moving the flashlight around, Dillon giving the pitch, and me with my hands on my hips staring at the big screen. 
-The pitch went well, the only hitch being something I mentioned previously with respect to the video demo (and can be more easily seen in the header image at the beginning of this post), which is unless you are the user sitting in the chair and having your face be tracked you really can't see how well it actually works. 
+In the picture below you can see our team up on stage doing our demo bit.
+We have Rob acting as the viewer, Sebastian moving the flashlight around, Dillon giving the pitch, and me with my hands on my hips staring at the big screen. 
+The pitch went well, the only hitch being something I mentioned previously with respect to the video demo (and can be more easily seen in the header image at the beginning of this post), which is unless you are the user sitting in the chair, and having your face being tracked, you really can't see how well it actually works. 
 But the hope was that, with some explanation in the pitch, the audience would be able to interpolate well enough what was happening. 
 With the demos being over we now waited to be judged, with prizes only being awarded to the top 3 of the 10 teams in the final. 
-We were hopeful as we had a lot of interest from the public through out the whole competition, and the level of difficulty was relatively high.
-However we really only felt we had one judge (out of 4) in our corner, so it was really up to him now to make our case for us. 
-I don't really know how to build suspense in written text so I'll just cut to the chase here.
+We were hopeful as we had a lot of interest from the public through out the whole competition, and the level of difficulty of our hack was relatively high.
+However we really only felt we had one judge (out of 4) in on our side, so it was really up to him now to make our case for us. 
+I don't really know how to build suspense in written text (as you've probably noticed) so I'll just cut to the chase here.
 We came in 3rd! Yay!
 There is a recorded stream of the final that exists somewhere, and if I feel like it adds to this post I'll track it down and add it in. 
-With that we had a choice of prizes but all ended up deciding on the Oculus rift. 
+With that we had a choice of prizes but all ended up deciding on an Oculus rift. 
 The fact that our tracking display worked at all we felt was a huge accomplishment.
 Every stage of this project felt like a big victory. 
 After a couple of mostly sleepless nights and constant battling with endless new problems it really was quite satisfying to come away with a cool hack and some swag.  

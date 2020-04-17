@@ -23,10 +23,10 @@ const StyledTypist = styled(Typist)`
   ${media.xs`
   left: 3%;
   top: 15%;
-  letter-spacing: 12px;
-  font-size: 66px;
+  letter-spacing: 8px;
+  font-size: 58px;
   font-weight: 150;
-  line-height: 75px;
+  line-height: 66px;
 `}
   a {
     color: #ffffff;
