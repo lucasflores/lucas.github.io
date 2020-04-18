@@ -15,6 +15,7 @@ import Portfolio from '../components/portfolio'
 import Showcase from '../components/showcase'
 import Map from '../components/map'
 //import { Container } from '../components/Container'
+import "katex/dist/katex.min.css"
 
 const Content = styled.div`
   & > a {
@@ -270,6 +271,26 @@ export default props => {
       <a id="tech">Research</a>
       <Section center>
         <h4>Research</h4>
+        <h3>Selected Publications</h3>
+        <span>Work I have published.</span>
+        <Item>
+          <span>2020</span>
+          <h6>Search for trilepton resonances from chargino and neutralino pair production in √s=13 TeV pp collisions with the ATLAS detector</h6>
+          <p>ATLAS Collaboration <br/>
+               <a href="https://cds.cern.ch/record/2715448">  (paper)</a> </p> 
+        </Item>
+        <Item>
+          <span>2019</span>
+          <h6>Electron and photon performance measurements with the ATLAS detector using the 2015-2017 LHC proton-proton collision data</h6>
+          <p>ATLAS Collaboration <br/>
+               <a href="https://arxiv.org/abs/1908.00005">  (paper)</a> </p> 
+        </Item>
+        <Item>
+          <span>2019</span>
+          <h6>Electron reconstruction and identification in the ATLAS experiment using the 2015 and 2016 LHC proton-proton collision data at √s = 13 TeV</h6>
+          <p>ATLAS Collaboration <br/>
+               <a href="https://link.springer.com/article/10.1140%2Fepjc%2Fs10052-019-7140-6">  (paper)</a> </p> 
+        </Item>
         <h3>Conference Talks and Posters</h3>
         <span>Work I have presented.</span>
         <Item>
@@ -295,20 +316,6 @@ export default props => {
           <h6>Talk at the annual APS April Meeting</h6>
           <p>Electron Identification with the ATLAS Detector <br/>
                <a href="http://meetings.aps.org/Meeting/APR17/Session/R9.2">  (contribution)</a> </p> 
-        </Item>
-        <h3>Selected Publications</h3>
-        <span>Work I have published.</span>
-        <Item>
-          <span>2019</span>
-          <h6>Electron and photon performance measurements with the ATLAS detector using the 2015-2017 LHC proton-proton collision data</h6>
-          <p>ATLAS Collaboration <br/>
-               <a href="https://arxiv.org/abs/1908.00005">  (paper)</a> </p> 
-        </Item>
-        <Item>
-          <span>2019</span>
-          <h6>Electron reconstruction and identification in the ATLAS experiment using the 2015 and 2016 LHC proton-proton collision data at √s = 13 TeV</h6>
-          <p>ATLAS Collaboration <br/>
-               <a href="https://link.springer.com/article/10.1140%2Fepjc%2Fs10052-019-7140-6">  (paper)</a> </p> 
         </Item>
       </Section>
 
