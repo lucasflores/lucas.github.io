@@ -228,7 +228,11 @@ export default props => {
       />
       <a id="about-me">About Me</a>
       <Section>
-        <img src="DSCF6289.png" alt="profile"/>
+        <picture>
+          <source type="image/webp" srcset="DSCF6289.webp"/>
+          <source type="image/png" srcset="DSCF6289.png"/>
+          <img src="DSCF6289.png" alt="profile"/>
+        </picture>
         <Title>About Me</Title>
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
