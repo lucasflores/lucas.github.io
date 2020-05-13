@@ -50,7 +50,11 @@ image: './images/eyeHUD/thumb3.jpg'
 </style>
  
 <div class="page-image">
-  <img src="./images/eyeHUD/pennapps3.jpg" class="page-feature-image" alt="First Hackathon: Pennapps XIV" itemprop="image">
+  <picture>
+    <source type="image/webp" srcset="./images/eyeHUD/pennapps3.webp"/>
+    <source type="image/png" srcset="./images/eyeHUD/pennapps3.jpg"/>
+    <img src="./images/eyeHUD/pennapps3.jpg" class="page-feature-image" alt="First Hackathon: Pennapps XIV" itemprop="image">
+  <picture/>
   <div class="image-credit">image source: <a href="https://www.facebook.com/pg/pennapps/photos/" itemprop="citation">PennApps facebook</a></div><!-- /.image-credit -->
 </div><!-- /.page-image -->
 

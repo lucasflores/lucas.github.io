@@ -78,7 +78,7 @@ class NavBar extends React.Component {
         if (el.props.id)
           return { name: el.props.children, href: `#${el.props.id}` }
       })
-      .filter(n => n != undefined)
+      .filter(n => n !== undefined)
       .reverse()
     const links = linkMap.map(function(link) {
       return (

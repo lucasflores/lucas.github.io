@@ -12,7 +12,6 @@ import NavBar from '../components/navbar'
 import HeroText from '../components/heroText'
 import SocialIcons from '../components/socialIcons'
 import Portfolio from '../components/portfolio'
-import Showcase from '../components/showcase'
 import Map from '../components/map'
 //import { Container } from '../components/Container'
 import "katex/dist/katex.min.css"
@@ -57,7 +56,7 @@ const Section = styled.div`
     font-family: 'Lato';
   }
   img {
-    width: 17%;
+    width: 15%;
     height: auto;
   }
   p {
@@ -229,9 +228,9 @@ export default props => {
       <a id="about-me">About Me</a>
       <Section>
         <picture>
-          <source type="image/webp" srcset="DSCF6289.webp"/>
-          <source type="image/png" srcset="DSCF6289.png"/>
-          <img src="DSCF6289.png" alt="profile"/>
+          <source type="image/webp" srcset="profile_new.webp"/>
+          <source type="image/png" srcset="profile_new.png"/>
+          <img src="profile_new.png" alt="profile"/>
         </picture>
         <Title>About Me</Title>
         <Flex alignItems="center" flexDirection="column">
@@ -429,6 +428,15 @@ export const pageQuery = graphql`
               ...GatsbyImageSharpSizes_tracedSVG
             }
           }
+        }
+      }
+    }
+    file(relativePath: { eq: "DSCF6289.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 125, height: 125) {
+          ...GatsbyImageSharpFixed
         }
       }
     }

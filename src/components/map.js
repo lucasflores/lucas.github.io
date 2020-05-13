@@ -1,5 +1,5 @@
 import React from 'react';
-import { InfoWindow, MarkerWithLabel, withScriptjs, withGoogleMap, GoogleMap, Marker, Circle, Polyline, DrawingManager} from 'react-google-maps';
+import { InfoWindow, MarkerWithLabel, withScriptjs, withGoogleMap, GoogleMap, Marker, Circle} from 'react-google-maps';
 
 class Map extends React.Component {
   state = {
@@ -47,7 +47,7 @@ class Map extends React.Component {
 
   moveObject = () => {
 
-    if (this.count == this.path.length) {this.count=0}
+    if (this.count === this.path.length) {this.count=0}
     let progress = this.path.slice(0, this.count)
     let progress2 = this.path2.slice(0, this.count)
     const { lat: lat1, lng: lng1 } = this.path[this.count]

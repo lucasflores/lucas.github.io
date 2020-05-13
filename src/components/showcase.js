@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { Flex, Box } from 'grid-styled'
 import Img from 'gatsby-image'
 import { media } from '../utils/style'

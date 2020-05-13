@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import FontAwesome from 'react-fontawesome'
 
 const Icon = ({ name, href }) => (
@@ -25,11 +25,11 @@ const Base = styled.div`
   & a:hover span.fa-linkedin {
     color: #4875b4;
   }
-  & a:hover span.fa-twitter {
-    color: #3cf;
+  & a:hover span.fa-gitlab {
+    color: #fc6d26;
   }
   & a:hover span.fa-github-alt {
-    color: #fc6d26;
+    color: #24292E;
   }
 `
 
