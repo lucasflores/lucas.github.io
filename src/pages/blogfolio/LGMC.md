@@ -51,10 +51,20 @@ image: './images/LGMC/thumb_LGMC.png'
 
 # Introduction
 
+Google Maps, everybody knows it, most people look at it daily for one reason or another. 
+Me being one of those people.
+And often when I was using Google Maps to get the tram times on my daily commute back home from work, work being at CERN, the nuclear accelerator laborotory based near Geneva, Switzerland and home to the Large Hadron Collider, I was wanting to see something that would be unmissable from your standard Google Maps ariel view if it weren't 100 meters underground, the Large Hadron Collider. 
+
+Now this may seem like a silly thing to want to see, but what you have to understand is the LHC is a gargantuan experiment
 
 # Setting Up The Google Maps API 
+So this seemed like a simple enough task, "Draw a big circle on a map."
+To do this Google Makes it relatievely easy with the Google Maps API, and you can actually choose a couple of laguages to use the API, which is nice. 
+And there is really good documentaiton as well.
+Good job Google.
+So first you will have too get an API key, which is fairly straight forward and you can follow Google's direction here. 
 
-# Some Inspiration
+# Drawing the Big Circle 
 
 
 # Re-writing (almost) Everything
