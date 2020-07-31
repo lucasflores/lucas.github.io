@@ -1,5 +1,4 @@
 import React from 'react'
-import Hovercard from 'hovercard'
 import { graphql } from 'gatsby'
 import { Flex, Box } from 'grid-styled'
 import styled, { css } from 'styled-components'
@@ -268,7 +267,7 @@ export default props => {
                My name is Lucas Flores and I am pursuing my PhD at the University of Pennsylvania. 
                My PhD work is in experimental high energy elementary particle physics,
                 working on the <a href="https://en.wikipedia.org/wiki/ATLAS_experiment">ATLAS experiment</a> located along the 
-               <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"> Large Hadron Collider</a> <span class="hovercard">Large Hadron Collider</span>(LHC) at 
+               <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"> Large Hadron Collider</a> (LHC) at 
                <a href="https://en.wikipedia.org/wiki/CERN"> CERN</a> (an international nuclear/accelerator research facility in Geneva, Switzerland). 
                When I am not doing physics you can find me hiking, taking photos, working on my fitness, snowboarding, and taking a boat out on lake Geneva.  
             </p>
