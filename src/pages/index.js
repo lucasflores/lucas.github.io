@@ -17,6 +17,14 @@ import Map from '../components/map'
 //import { Container } from '../components/Container'
 import "katex/dist/katex.min.css"
 
+//const MediaDesktop = ({ children }) => {
+//  const isDesktop = useMediaQuery({ minWidth: 992 })
+//  return isDesktop ? children : null
+//}
+//const MediaDefault = ({ children }) => {
+//  const isNotMobile = useMediaQuery({ minWidth: 768 })
+//  return isNotMobile ? children : null
+//}
 
 const Content = styled.div`
   & > a {
@@ -194,44 +202,15 @@ const Item = styled.div`
   `}
 `
 
-const MediaDesktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 992 })
-  return isDesktop ? children : null
-}
-const MediaTablet = ({ children }) => {
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
-  return isTablet ? children : null
-}
-const MediaMobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
-  return isMobile ? children : null
-}
-const MediaDefault = ({ children }) => {
-  const isNotMobile = useMediaQuery({ minWidth: 768 })
-  return isNotMobile ? children : null
-}
-
-
-
 export default props => {
   const content = (
     <Content>
-      <MediaDefault>
-        <FlickrHero
-          api_key="ad3be2301d4f44a034ca1f2d6c6b1bfc"
-          user_id="161538372@N02"
-          album_id="72157711430913826"
-          fillPage
-        />
-      </MediaDefault>
-      <MediaMobile>
-        <FlickrHero
-          api_key="ad3be2301d4f44a034ca1f2d6c6b1bfc"
-          user_id="161538372@N02"
-          album_id="72157715305777833"
-          fillPage
-        />
-      </MediaMobile>
+      <FlickrHero
+        api_key="ad3be2301d4f44a034ca1f2d6c6b1bfc"
+        user_id="161538372@N02"
+        album_id="72157711430913826"
+        fillPage
+      />
 
       <HeroText />
 
