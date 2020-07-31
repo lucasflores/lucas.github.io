@@ -42,9 +42,9 @@ const Title = styled.h1`
   ${props =>
     props.small &&
     css`
-      font-size: 12px;
+      font-size: 18px;
       letter-spacing: 2px;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 24px;
     `}
 `

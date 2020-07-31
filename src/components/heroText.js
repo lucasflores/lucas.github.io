@@ -69,7 +69,7 @@ class HeroText extends React.Component {
         <Typist.Backspace count={1} />
         <Typist.Delay ms={500} />
         <strong>,</strong> 
-        <Typist.Delay ms={1500} />
+        <Typist.Delay ms={700} />
         <span> And this is my website</span> 
         <strong>.</strong> 
         <Typist.Delay ms={1250} />
