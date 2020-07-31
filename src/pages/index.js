@@ -1,9 +1,11 @@
 import React from 'react'
+import Hovercard from 'hovercard'
 import { graphql } from 'gatsby'
 import { Flex, Box } from 'grid-styled'
 import styled, { css } from 'styled-components'
 import Img from 'gatsby-image'
 import FlickrHero from 'react-flickr-hero'
+import { useMediaQuery } from 'react-responsive'
 
 import { media } from '../utils/style'
 
@@ -15,6 +17,7 @@ import Portfolio from '../components/portfolio'
 import Map from '../components/map'
 //import { Container } from '../components/Container'
 import "katex/dist/katex.min.css"
+
 
 const Content = styled.div`
   & > a {
@@ -192,15 +195,41 @@ const Item = styled.div`
   `}
 `
 
+const Desktop = ({ children }) => {
+  const isDesktop = useMediaQuery({ minWidth: 992 })
+  return isDesktop ? children : null
+}
+const Tablet = ({ children }) => {
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
+  return isTablet ? children : null
+}
+const Mobile = ({ children }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 })
+  return isMobile ? children : null
+}
+const Default = ({ children }) => {
+  const isNotMobile = useMediaQuery({ minWidth: 768 })
+  return isNotMobile ? children : null
+}
 export default props => {
   const content = (
     <Content>
-      <FlickrHero
-        api_key="ad3be2301d4f44a034ca1f2d6c6b1bfc"
-        user_id="161538372@N02"
-        album_id="72157711430913826"
-        fillPage
-      />
+      <Default>
+        <FlickrHero
+          api_key="ad3be2301d4f44a034ca1f2d6c6b1bfc"
+          user_id="161538372@N02"
+          album_id="72157711430913826"
+          fillPage
+        />
+      </Default>
+      <Mobile>
+        <FlickrHero
+          api_key="ad3be2301d4f44a034ca1f2d6c6b1bfc"
+          user_id="161538372@N02"
+          album_id="72157715305777833"
+          fillPage
+        />
+      </Mobile>
       <HeroText />
       <SocialIcons
         style={{
@@ -239,7 +268,7 @@ export default props => {
                My name is Lucas Flores and I am pursuing my PhD at the University of Pennsylvania. 
                My PhD work is in experimental high energy elementary particle physics,
                 working on the <a href="https://en.wikipedia.org/wiki/ATLAS_experiment">ATLAS experiment</a> located along the 
-               <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"> Large Hadron Collider</a> (LHC) at 
+               <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"> Large Hadron Collider</a> <span class="hovercard">Large Hadron Collider</span>(LHC) at 
                <a href="https://en.wikipedia.org/wiki/CERN"> CERN</a> (an international nuclear/accelerator research facility in Geneva, Switzerland). 
                When I am not doing physics you can find me hiking, taking photos, working on my fitness, snowboarding, and taking a boat out on lake Geneva.  
             </p>
