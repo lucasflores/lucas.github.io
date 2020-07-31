@@ -196,6 +196,7 @@ const Item = styled.div`
 export default props => {
   const content = (
     <Content>
+      <div>
       <MediaQuery minDeviceWidth={768} >
         <FlickrHero
           api_key="ad3be2301d4f44a034ca1f2d6c6b1bfc"
@@ -212,9 +213,8 @@ export default props => {
           fillPage
         />
       </MediaQuery>
-
+      </div>
       <HeroText />
-
       <SocialIcons
         style={{
           position: 'absolute',
