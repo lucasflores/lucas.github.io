@@ -194,42 +194,47 @@ const Item = styled.div`
   `}
 `
 
-const Desktop = ({ children }) => {
+const MediaDesktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 })
   return isDesktop ? children : null
 }
-const Tablet = ({ children }) => {
+const MediaTablet = ({ children }) => {
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
   return isTablet ? children : null
 }
-const Mobile = ({ children }) => {
+const MediaMobile = ({ children }) => {
   const isMobile = useMediaQuery({ maxWidth: 767 })
   return isMobile ? children : null
 }
-const Default = ({ children }) => {
+const MediaDefault = ({ children }) => {
   const isNotMobile = useMediaQuery({ minWidth: 768 })
   return isNotMobile ? children : null
 }
+
+
+
 export default props => {
   const content = (
     <Content>
-      <Default>
+      <MediaDefault>
         <FlickrHero
           api_key="ad3be2301d4f44a034ca1f2d6c6b1bfc"
           user_id="161538372@N02"
           album_id="72157711430913826"
           fillPage
         />
-      </Default>
-      <Mobile>
+      </MediaDefault>
+      <MediaMobile>
         <FlickrHero
           api_key="ad3be2301d4f44a034ca1f2d6c6b1bfc"
           user_id="161538372@N02"
           album_id="72157715305777833"
           fillPage
         />
-      </Mobile>
+      </MediaMobile>
+
       <HeroText />
+
       <SocialIcons
         style={{
           position: 'absolute',
@@ -264,12 +269,12 @@ export default props => {
         <Flex alignItems="center" flexDirection="column">
           <Box px={2} width={[1, 1 / 2]}>
             <p>
-               My name is Lucas Flores and I am pursuing my PhD at the University of Pennsylvania. 
+               My name is Lucas Flores and I am pursuing my PhD at the University of Pennsylvania.
                My PhD work is in experimental high energy elementary particle physics,
-                working on the <a href="https://en.wikipedia.org/wiki/ATLAS_experiment">ATLAS experiment</a> located along the 
-               <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"> Large Hadron Collider</a> (LHC) at 
-               <a href="https://en.wikipedia.org/wiki/CERN"> CERN</a> (an international nuclear/accelerator research facility in Geneva, Switzerland). 
-               When I am not doing physics you can find me hiking, taking photos, working on my fitness, snowboarding, and taking a boat out on lake Geneva.  
+               working on the <a href="https://en.wikipedia.org/wiki/ATLAS_experiment">ATLAS experiment</a> located along the
+               <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"> Large Hadron Collider</a> (LHC) at
+               <a href="https://en.wikipedia.org/wiki/CERN"> CERN</a> (an international nuclear/accelerator research facility in Geneva, Switzerland).
+               When I am not doing physics you can find me hiking, taking photos, working on my fitness, snowboarding, and taking a boat out on lake Geneva.
             </p>
           </Box>
         </Flex>
