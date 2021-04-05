@@ -14,9 +14,14 @@ import HeroText from '../components/heroText'
 import SocialIcons from '../components/socialIcons'
 import Portfolio from '../components/portfolio'
 import Map from '../components/map'
+import Button from '../components/button'
 //import { Container } from '../components/Container'
 import "katex/dist/katex.min.css"
 
+const SocialIconsStyled = styled(SocialIcons)`
+  float: none;
+  display: inline;
+`
 const Content = styled.div`
   & > a {
     visibility: hidden;
@@ -254,8 +259,9 @@ export default props => {
                working on the <a href="https://en.wikipedia.org/wiki/ATLAS_experiment">ATLAS experiment</a> located along the
                <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"> Large Hadron Collider</a> (LHC) at
                <a href="https://en.wikipedia.org/wiki/CERN"> CERN</a> (an international nuclear/accelerator research facility in Geneva, Switzerland).
-               When I am not doing physics you can find me hiking, taking photos, working on my fitness, snowboarding, and taking a boat out on lake Geneva.
+               When I am not doing physics you can find me hiking, taking photos, working on my fitness, snowboarding, and taking a boat out on lake Geneva.<br/>
             </p>
+            <a href="resume.pdf"> <Button center >  résumé  </Button></a>
           </Box>
         </Flex>
       </Section>

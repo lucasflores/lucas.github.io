@@ -31,6 +31,12 @@ const Base = styled.div`
   & a:hover span.fa-github-alt {
     color: #24292E;
   }
+  & a:hover span.fa-download {
+    color: #24292E;
+  }
+  & a:hover span.fa-file {
+    color: #9C0000;
+  }
 `
 
 class SocialIcons extends React.Component {

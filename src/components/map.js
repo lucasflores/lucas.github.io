@@ -17,7 +17,7 @@ class Map extends React.Component {
   LNGcenter =  6.064695 
   radius = 0.03825
   count = 0
-  shift = 1.6*this.step
+  shift = ((Math.PI)/2)*this.step
 
   pathFunc = () => {
     let path_list = []

@@ -12,6 +12,8 @@ import { DiscussionEmbed } from "disqus-react"
 
 import Footer from '../components/footer'
 
+import SocialIcons from '../components/socialIcons'
+
 const GlobalStyle = createGlobalStyle`
   @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
@@ -23,7 +25,6 @@ const GlobalStyle = createGlobalStyle`
 
 const Body = styled.div`
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   width: 100vw;
 
@@ -48,9 +49,9 @@ const Header = styled.div`
   overflow: hidden;
 
   & > div {
-    padding-top: 60px;
+    padding-top: 30px;
     margin: auto;
-    max-width: 1000px;
+    max-width: 1100px;
   }
 `
 
@@ -65,6 +66,8 @@ const Tags = styled.ol`
     text-decoration: none;
     display: inline-block;
     color: #222;
+
+
   }
   & > li + li:before {
     padding: 0 8px;
@@ -77,6 +80,7 @@ const Tags = styled.ol`
 const Content = styled.div`
   margin: 0 auto;
   max-width: 960px;
+  min-width: 0;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 5vh;
   hr {

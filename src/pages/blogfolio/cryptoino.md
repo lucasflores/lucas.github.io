@@ -118,7 +118,7 @@ Here's the pitch:
 > State-of-the-art exchange schemes such as Diffie-Hellman asymmetric exchange are arithmetically expensive, a fact that prohibits their implementation on constrained-memory systems that sometimes use integer widths as small as 8 bits.
 > This observation led us to the idea of Tree Parity Machine symmetric key exchange, an idea pioneered by physicists in the early 2000's ([paper here](https://arxiv.org/abs/cond-mat/0208453)), and we tested their feasibility on an Arduino system.
 
-And thus came the hack "*Cryptoino*", the portmanteau of Cryptography and Arduino and not the superpartner to the Crypto boson (dumb particle physics joke pls keep reading im sry). 
+And thus came the hack "*Cryptoino*", the portmanteau of Cryptography and Arduino and not the fermionic superpartner to the Crypto boson (dumb particle physics joke pls keep reading im sry). 
 
 
 # The Theory 
