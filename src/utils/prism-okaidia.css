@@ -8,13 +8,15 @@ code[class*="language-"],
 pre[class*="language-"] {
 	color: #f8f8f2;
 	background: none;
+        width:inherit;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
 	text-align: left;
-	white-space: pre-wrap;
+	white-space: pre-line;
 	word-spacing: normal;
 	word-break: break-word;
+        word-wrap: normal;
 	line-height: 1.5;
 
 	-moz-tab-size: 4;
@@ -52,7 +54,6 @@ pre[class*="language-"] {
 	text-shadow: none;
 	padding: .14em .3em;
 	border-radius: .18em;
-	white-space: normal;
 }
 
 .token.comment,
