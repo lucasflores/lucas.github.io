@@ -50,3 +50,17 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     });
   });
 };
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /hovercard/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
