@@ -1,1 +1,0 @@
-appendices/statisticaltreatment.dvi appendices/statisticaltreatment.d : appendices/statisticaltreatment.tex   figs/rpvthreel/LikelihoodProfileCartoon.png.eps figs/rpvthreel/teststatdistpvalue.png.eps 
