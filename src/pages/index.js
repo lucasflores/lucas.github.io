@@ -17,6 +17,12 @@ import Map from '../components/map'
 import Button from '../components/button'
 //import { Container } from '../components/Container'
 import "katex/dist/katex.min.css"
+//import Hovercard from "hovercard"
+//const cards = new Hovercard({
+//    lang: "en"
+//});
+
+const isBrowser = typeof window !== "undefined"
 
 const SocialIconsStyled = styled(SocialIcons)`
   float: none;
@@ -252,14 +258,9 @@ export default props => {
         </picture>
         <Title>About Me</Title>
         <Flex alignItems="center" flexDirection="column">
-          <Box px={2} width={[1, 1 / 2]}>
+          <Box px={2} width={[1, 5 /8]}>
             <p>
-               My name is Lucas Flores and I am pursuing my PhD at the University of Pennsylvania.
-               My PhD work is in experimental high energy elementary particle physics,
-               working on the <a href="https://en.wikipedia.org/wiki/ATLAS_experiment">ATLAS experiment</a> located along the
-               <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"> Large Hadron Collider</a> (LHC) at
-               <a href="https://en.wikipedia.org/wiki/CERN"> CERN</a> (an international nuclear/accelerator research facility in Geneva, Switzerland).
-               When I am not doing physics you can find me hiking, taking photos, working on my fitness, snowboarding, and taking a boat out on lake Geneva.<br/>
+               My name is Lucas Flores and I a have PhD in experimental elementary particle physics from the the University of Pennsylvania. In my PhD work I searched for new never before seen fundamental particles by analyzing large sets of real and simulated proton proton collision data using strong statistical likelihood techniques. This work was done as a part of the  <a href="https://en.wikipedia.org/wiki/ATLAS_experiment">ATLAS experiment</a>, a massive particle detector that sits along the <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"> Large Hadron Collider</a> (LHC) at <a href="https://en.wikipedia.org/wiki/CERN"> CERN</a> located near Geneva, Switzerland, where I spent 3+ years living and working. Outside of work I like to make things (in code and of atoms), take photos, listen to podcasts about the nature of the mind, and to never speak in absolutes. Check out the blogfolio section to see some of the things I have made over the years.
             </p>
             <a href="resume.pdf"> <Button center >  résumé  </Button></a>
           </Box>
@@ -274,7 +275,7 @@ export default props => {
         <h4>Experience</h4>
         <span>Where I've worked.</span>
         <Item>
-          <span>AUG 2015 - CURRENT</span>
+          <span>AUG 2015 - SEPT 2021</span>
           <h6>UNIVERSITY OF PENNSYLVANIA</h6>
           <p>Reaserch Assistant</p>
         </Item>
@@ -289,6 +290,7 @@ export default props => {
           <p>Undergraduate Researcher</p>
         </Item>
       </Section>
+        <Title>About Me</Title>
 
       <a id="tech">Research</a>
       <Section center>
@@ -296,25 +298,32 @@ export default props => {
         <h3>Selected Publications</h3>
         <span>Work I have published.</span>
         <Item>
-          <span>2020</span>
+          <span>2021</span>
           <h6>Search for trilepton resonances from chargino and neutralino pair production in √s=13 TeV pp collisions with the ATLAS detector</h6>
           <p>ATLAS Collaboration <br/>
-               <a href="https://cds.cern.ch/record/2715448">  (paper)</a> </p> 
+               <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.103.112003"> PHYSICAL REVIEW D 103, 112003 (2021) </a> </p> 
         </Item>
         <Item>
           <span>2019</span>
           <h6>Electron and photon performance measurements with the ATLAS detector using the 2015-2017 LHC proton-proton collision data</h6>
           <p>ATLAS Collaboration <br/>
-               <a href="https://arxiv.org/abs/1908.00005">  (paper)</a> </p> 
+               <a href="https://iopscience.iop.org/article/10.1088/1748-0221/14/12/P12006"> JINST 14 P12006 </a> </p> 
         </Item>
         <Item>
           <span>2019</span>
           <h6>Electron reconstruction and identification in the ATLAS experiment using the 2015 and 2016 LHC proton-proton collision data at √s = 13 TeV</h6>
           <p>ATLAS Collaboration <br/>
-               <a href="https://link.springer.com/article/10.1140%2Fepjc%2Fs10052-019-7140-6">  (paper)</a> </p> 
+               <a href="https://link.springer.com/article/10.1140%2Fepjc%2Fs10052-019-7140-6"> The European Physical Journal C </a> </p> 
         </Item>
-        <h3>Conference Talks and Posters</h3>
+        <h3>Talks and Posters</h3>
         <span>Work I have presented.</span>
+        <Item>
+          <span>2021</span>
+          <h6>Talk at the APS Division of Particles and Fields Meeting</h6>
+          <p>Search for chargino pair-production and chargino-neutralino production with R-Parity Violating decays in pp collisions at √s= 13 TeV with ATLAS <br/>
+               <a href="https://indico.cern.ch/event/1034469/contributions/4427253/">  (contribution)</a>
+               <a href="https://vimeo.com/manage/videos/613296314">  (recorded talk)</a> </p> 
+        </Item>
         <Item>
           <span>2019</span>
           <h6>Poster at The 29th International Symposium on Lepton Photon Interactions at High Energies</h6>
@@ -346,18 +355,18 @@ export default props => {
         <h4>EDUCATION</h4>
         <span>Education I've recieved.</span>
         <Item>
-          <span>2017 - Present</span>
-          <h6>PhD PARTICLE PHYSICS</h6>
+          <span>2017 - 2021</span>
+          <h6>PhD, PARTICLE PHYSICS</h6>
           <p>University of Pennsylvania</p>
         </Item>
         <Item>
           <span>2015 - 2017</span>
-          <h6>MSC PARTICLE PHYSICS</h6>
+          <h6>MSC, PARTICLE PHYSICS</h6>
           <p>University of Pennsylvania</p>
         </Item>
         <Item>
           <span>2010 - 2015</span>
-          <h6>BSC PHYSICS AND APPLIED MATHEMATICS (magna cum laude)</h6>
+          <h6>BSC, PHYSICS AND APPLIED MATHEMATICS (magna cum laude)</h6>
           <p>University of California Riverside</p>
         </Item>
       </Section>

@@ -1,0 +1,121 @@
+\contentsline {chapter}{Acknowledgements}{iii}{chapter*.1}%
+\contentsline {chapter}{Abstract}{iv}{section*.2}%
+\contentsline {chapter}{Contents}{v}{section*.3}%
+\contentsline {chapter}{List of Tables}{x}{section*.4}%
+\contentsline {chapter}{List of Figures}{xi}{section*.5}%
+\contentsline {chapter}{Preface}{xv}{chapter*.6}%
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {2}Theoretical Framework}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Quantum Field Theory}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}The Standard Model}{3}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Quantum Chromodynamics}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Electroweak Unification}{4}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Spontaneous Symmetry Breaking and the Higgs Mechanism}{4}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}The Standard Model Lagrangian}{5}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Supersymmetry}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}\emph {R}-parity}{8}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}The $B-L$ Minimal Supersymmetric Standard Model}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Phenomenology of a Broken $B-L$ Symmetry}{11}{subsection.2.4.1}%
+\contentsline {chapter}{\chapternumberline {3}LHC and the ATLAS Detector}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{14}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Magnets}{15}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Beams, Buckets, and Bunches}{17}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Pileup}{19}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}The ATLAS Detector}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}The Inner Detector}{20}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}Pixel Detector}{21}{subsubsection.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.2}Semiconductor Tracker}{22}{subsubsection.3.2.1.2}%
+\contentsline {subsubsection}{\numberline {3.2.1.3}Transition Radiation Tracker}{23}{subsubsection.3.2.1.3}%
+\contentsline {subsection}{\numberline {3.2.2}The Calorimeters}{24}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}Liquid Argon Calorimeters}{25}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}Tile Calorimeter}{26}{subsubsection.3.2.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}The Muon Spectrometer}{27}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Object Reconstruction and Identification}{28}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Electrons and Photons}{29}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Muons}{29}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Hadrons and Jets}{30}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Missing Transverse Energy}{31}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}The Trigger System}{31}{section.3.4}%
+\contentsline {chapter}{\chapternumberline {4}These are Electrons: Identifying Electrons at ATLAS}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Electron-Efficiency Measurements}{33}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Topo-Cluster Reconstruction}{34}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Electron Candidate Reconstruction}{34}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Sliding-Window}{35}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Superclusters}{36}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Track Reconstruction}{36}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Electron specific track re-fit}{37}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Track-Cluster Matching}{38}{subsection.4.4.5}%
+\contentsline {section}{\numberline {4.5}Electron Identification}{40}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}The Electron Likelihood (LH)}{40}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}LH Calorimeter Variables}{42}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}LH Tracking Variables}{43}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}LH Track-Cluster Matching Variables}{44}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}Non-LH Variables}{44}{subsection.4.5.5}%
+\contentsline {subsection}{\numberline {4.5.6}Constructing the pdfs}{47}{subsection.4.5.6}%
+\contentsline {subsubsection}{\numberline {4.5.6.1}Binning in $E_{\mathrm {T}}$ and \(\ensuremath {\etaa }\)}{51}{subsubsection.4.5.6.1}%
+\contentsline {subsubsection}{\numberline {4.5.6.2}Smoothing: Adaptive Kernel Density Estimation (KDE)}{52}{subsubsection.4.5.6.2}%
+\contentsline {subsection}{\numberline {4.5.7}Being Efficient in a Changing Environment}{54}{subsection.4.5.7}%
+\contentsline {subsubsection}{\numberline {4.5.7.1}Pileup Dependence of Discriminating Variables}{54}{subsubsection.4.5.7.1}%
+\contentsline {subsubsection}{\numberline {4.5.7.2}Alternative pileup measures: TRT Local Track Occupancy}{58}{subsubsection.4.5.7.2}%
+\contentsline {subsection}{\numberline {4.5.8}Tuning the Electron LH}{60}{subsection.4.5.8}%
+\contentsline {subsection}{\numberline {4.5.9}LH-identification Operating Points}{62}{subsection.4.5.9}%
+\contentsline {subsection}{\numberline {4.5.10}The Trigger Electron LH}{62}{subsection.4.5.10}%
+\contentsline {subsubsection}{\numberline {4.5.10.1}Re-tuning the Trigger LH for Large Pileup Environments}{63}{subsubsection.4.5.10.1}%
+\contentsline {chapter}{\chapternumberline {5}An Exercise in Three Lepton Resonances}{70}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Analysis Introduction}{70}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Phenomenological Motivation}{70}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Analysis Strategy}{75}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Signal}{75}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Backgrounds}{77}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Simulated Data: Monte Carlo Generation}{77}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}MC Specifications}{78}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Analysis Regions}{79}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Signal Regions}{80}{subsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.1}\ensuremath {\mathrm {SR}3\ell }\xspace }{80}{subsubsection.5.4.1.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.2}\ensuremath {\mathrm {SRFR}}\xspace }{82}{subsubsection.5.4.1.2}%
+\contentsline {subsubsection}{\numberline {5.4.1.3}\ensuremath {\mathrm {SR}4\ell }\xspace }{84}{subsubsection.5.4.1.3}%
+\contentsline {subsection}{\numberline {5.4.2}Background Estimation and Validation}{86}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}Handling Backgrounds: \emph {fake} Leptons }{87}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}Handling Backgrounds: \ensuremath {WZ}\xspace }{88}{subsubsection.5.4.2.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.3}Handling Backgrounds: \ensuremath {ZZ}\xspace }{89}{subsubsection.5.4.2.3}%
+\contentsline {subsubsection}{\numberline {5.4.2.4}Handling Backgrounds: \ensuremath {t\bar {t}Z}\xspace }{90}{subsubsection.5.4.2.4}%
+\contentsline {section}{\numberline {5.5}Statistical Treatment}{93}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Systematic Uncertainties}{94}{subsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.1}MC Statistics}{95}{subsubsection.5.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.2}Experimental Uncertainties }{95}{subsubsection.5.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.5.1.3}Theoretical Uncertainties }{95}{subsubsection.5.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.5.1.4}Fake Lepton Uncertainties}{96}{subsubsection.5.5.1.4}%
+\contentsline {subsubsection}{\numberline {5.5.1.5}Normalization Uncertainties}{96}{subsubsection.5.5.1.5}%
+\contentsline {subsection}{\numberline {5.5.2}Fit Configuration}{97}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Background-Only Fit}{97}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Model Independent Fit}{99}{subsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.5.5}Model Dependent Fit}{99}{subsection.5.5.5}%
+\contentsline {section}{\numberline {5.6}Results}{100}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Model-Independent Limits on New Physics in Inclusive Regions}{100}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Mass limits on \ensuremath {\mathrm {\textit {B}}-\mathrm {\textit {L}}}\xspace RPV production}{102}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Branching Ratio Limits on \ensuremath {\mathrm {\textit {B}}-\mathrm {\textit {L}}}\xspace production}{103}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}Analysis Preservation: Building Towards the ``Do Analysis" Button}{104}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Analysis Preservation for the Trilepton Resonance Search}{106}{subsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.1}Preserving the Data}{106}{subsubsection.5.7.1.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.2}Preserving the Analysis}{106}{subsubsection.5.7.1.2}%
+\contentsline {subsubsection}{\numberline {5.7.1.3}Workflow Authoring}{107}{subsubsection.5.7.1.3}%
+\contentsline {chapter}{\chapternumberline {6}Conclusion}{110}{chapter.6}%
+\contentsline {chapter}{Appendices}{111}{section*.88}%
+\contentsline {appendix}{\chapternumberline {A}Formulation of QFT}{112}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Formulation of QFT}{112}{section.A.1}%
+\contentsline {appendix}{\chapternumberline {B}Statistical Treatment}{115}{appendix.B}%
+\contentsline {section}{\numberline {B.1}The Likelihood Function}{115}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Goodness of Fit: Maximum Likelihood Estimation}{116}{section.B.2}%
+\contentsline {subsection}{\numberline {B.2.1}The Profile Likelihood}{116}{subsection.B.2.1}%
+\contentsline {subsection}{\numberline {B.2.2}The Statistical Test: Profile Log Likelihood Ratio Test}{117}{subsection.B.2.2}%
+\contentsline {subsection}{\numberline {B.2.3}The Asymptotic Regime}{118}{subsection.B.2.3}%
+\contentsline {subsection}{\numberline {B.2.4}Building the Profile Likelihood: Pseudo-Experiments}{119}{subsection.B.2.4}%
+\contentsline {subsection}{\numberline {B.2.5}Significance and the $\mathrm {CL_{s}}$ Method}{119}{subsection.B.2.5}%
+\contentsline {appendix}{\chapternumberline {C}Baseline Object Selection}{121}{appendix.C}%
+\contentsline {subsection}{\numberline {C.0.1}Electron, Muon, and Jet Selection Summary Tables}{121}{subsection.C.0.1}%
+\contentsline {subsection}{\numberline {C.0.2}Photon Selection}{123}{subsection.C.0.2}%
+\contentsline {subsection}{\numberline {C.0.3}Missing energy}{123}{subsection.C.0.3}%
+\contentsline {subsection}{\numberline {C.0.4}Overlap removal}{123}{subsection.C.0.4}%
+\contentsline {appendix}{\chapternumberline {D}Event Displays}{124}{appendix.D}%
+\contentsline {chapter}{Bibliography}{128}{appendix*.97}%

@@ -125,11 +125,11 @@ And thus came the hack "*Cryptoino*", the portmanteau of Cryptography and Arduin
 
 For those who don't like to have a cryptography paper thrust upon them as required reading in the middle of some random blog post I'll try to distill the main points here. 
 Using the neural net diagram below we will walk through what Kanto and Kinser proved in their paper. 
+
 <div class="image-right">
 <div class="page-image">
   <img src="/images/cryptoino/Tree_Parity_Machine.jpg" width="90%"  alt="Hacky Hackin Again: Pennapps XV">
   <figcaption class="fig-spacing"><i>A Tree Parity Machine nueral network. Two TPMs of identical topology are needed for the key exchange.</i></figcaption>
-  <div class="image-credit-top">image source: <a href="https://" itemprop="citation">Wikipedia</a></div><!-- /.image-credit -->
 </div><!-- /.page-image -->
 </div><!-- /.page-image -->
 
@@ -138,29 +138,34 @@ In this scheme we have two TPMs of identical structure, tree $A$ and tree $B$.
 The same set of $K$ random input vectors $\vec{x}_i$ of size $N$ are fed into each TPM.
 Then *different* sets of $K$ random weight vectors $\vec{w}_{i,j}^{A/B}$ of size $N$ are applied on each TPM.
 The vectors can take on the following values:
+
 $$
 \vec{w}_{i,j}^{A/B} \in \{-L,-L+1,...,L-1,L\};
 $$
+
 $$
 x_{i,j}\in \{-1,+1\}
 $$
+
 The input values are then weighted according to the Hebbian rule:
+
 $$
 \vec{w}_{i}^{A}(t+1)=\vec{w}^{A}_{i}(t)+\vec{x}_{i}
 $$
+
 I'll spend a little more time here since this is essentially the main logical crux of the entire process.
 So this Hebbian rule, or Hebbian learning, is something that comes out of neuroscientific theory and is often summarized as "cells that fire together wire together."
 So a Hebbian rule is a rule that increases (updates) weights (influence) of the network if the neurons of the network are activating together.
 The sign of the inner product of the weight vector and input vector is then taken after the weights have been updated.
 
 $$
-\sigma_{i}^{A}=sign(\vec{w}_{i}^{A} \cdot \vec{x}_{i});  \hspace{1cm}  \sigma_{i}^{B}=sign(\vec{w}_{i}^{B} \cdot \vec{x}_{i})
+\sigma_{i}^{A}=sign(\vec{w}_{i}^{A} \cdot \vec{x}_{i}); \\  \sigma_{i}^{B}=sign(\vec{w}_{i}^{B} \cdot \vec{x}_{i})
 $$
 
 The product of these sigmas is taken resulting in a final output values $\tau^A$ and $\tau^B$, which can take on the numerical value of +1 or -1.
 
 $$
-\tau^{A}=\sigma_{1}^{A}\sigma_{2}^{A}\sigma_{3}^{A}; \hspace{1cm} \tau^{B}=\sigma_{1}^{B}\sigma_{2}^{B}\sigma_{3}^B
+\tau^{A}=\sigma_{1}^{A}\sigma_{2}^{A}\sigma_{3}^{A}; \\  \tau^{B}=\sigma_{1}^{B}\sigma_{2}^{B}\sigma_{3}^B
 $$
 
 The training, and therefore synchronization, are achieved by comparing the outputs between the two trees, only updating the weights of both trees if the outputs are *not* the same.
@@ -266,6 +271,7 @@ def main(): # computes synchronization time of two Tree Parity Machines
 
 main()
 ```
+
 <br>
 
 Alright so "you're basically done" you might say, "just slap that python script on to the Arduinos and go collect your prizes" you tell me.

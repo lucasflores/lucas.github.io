@@ -1,0 +1,100 @@
+electroweak symmetry breaking
+General Relativity
+particle accelerators
+Minimal Supersymmetric Standard Model
+Standard Model
+Quantum Field Theory
+Transition Radiation Tracker
+Gauge Theory
+Grand Unified Theory
+quantum chromodynamics
+hadronization
+quantum electrodynamics
+electroweak
+beyond the standard model
+parton distribution function
+R-parity violating
+R-parity conserving
+same flavor opposite sign
+vacuum expectation value
+hierarchy problem
+Large Hadron Dollider
+lagrangian
+Neyman-Pearson
+Maximum Likelihood Estimate
+profile likelihood
+likelihood-test
+likelihood
+Poisson brackets
+Poisson distribution
+test statistic
+sparticles
+sparticle
+dark matter
+supersymmetry
+planck scale
+superstring
+supermultiplet
+superconducting
+quadrupoles
+quadrupole
+toroid
+renormalization group
+Higgs boson
+Higgs mechanism
+Wino
+Zino
+Bino
+Higgsino
+Gaugino
+photino
+neutralinos
+neutralino
+charginos
+chargino
+electrons
+electron
+photons
+photon
+muons
+muon
+sneutrinos
+sneutrino
+neutrinos
+neutrino
+protons
+proton
+parton
+partons
+gluons
+gluon
+A Toroidal LHC ApparatuS 
+SUSY
+MSSM
+#QFT
+fermions
+fermion
+boson
+isospin
+luminosty
+quarks
+top quark
+quark
+hadronic
+hadrons
+hadron
+leptons
+lepton
+baryon
+graviton
+CERN
+LHC
+dipole
+#B-L
+calorimter
+LEP
+ATLAS
+ALICE
+CMS
+LHcb
+Docker

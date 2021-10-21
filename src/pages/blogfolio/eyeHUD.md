@@ -119,6 +119,7 @@ Yet, we persevered and ultimately were able to get the bare glass out of the mon
   <img src="/images/eyeHUD/MonitorTearDown.jpg" class="image-right" width="50%" alt="First Hackathon: Pennapps XIV" itemprop="image">
 <figcaption class="fig-spacing"><i>The end carnage after the monitor tear down</i></figcaption>
 </div><!-- /.page-image -->
+
 Now with our 'transparent' monitor up and working, a laptop webcam to do the user tracking, and a separate webcam that we bought from a CVS that night to do the object tracking, we had essentially all the hardware we needed to try to get this hack working. 
 
 On the software side we stumbled upon the open-source facial recognition software "OpenCV." We ultimately used OpenCV's haar cascade classifier in python to perform our facial recognition. 
@@ -219,6 +220,7 @@ We were hopeful as we had a lot of interest from the public through out the whol
 However we really only felt we had one judge (out of 4) in on our side, so it was really up to him now to make our case for us. 
 Below we have the video of us pitching our hack in the final round. 
 After our pitch you can skip ahead to the results at 1:37:17.
+
 <div style="position:relative;padding-top:56.25%;">
   <iframe src="https://www.youtube.com/embed/bM09X75omIQ?start=3984" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;">
   </iframe>

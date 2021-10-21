@@ -1,0 +1,128 @@
+\newcommand*{\ATLASLATEXPATH}{style/}
+\documentclass{\ATLASLATEXPATH pennThesis}
+%\documentclass{style/pennThesis}
+
+%%--------------------------------------------------------------------
+%% preamble
+%%-------------------------------------------------------------------
+
+\include{sections/docdefs}
+\include{sections/macros}
+
+%% other std packages
+\usepackage{placeins}
+\usepackage{multirow}
+%\usepackage{multicol}
+%\usepackage{rotating}
+%\usepackage{morefloats}
+\usepackage{subcaption}
+%\usepackage{caption}
+\usepackage{xspace}
+\usepackage{minted}
+\usepackage{listings}
+
+
+
+
+\let\printglossary\relax
+\let\theglossary\relax
+\let\endtheglossary\relax
+\usepackage[toc]{glossaries}
+\makeglossaries
+\loadglsentries{sections/glossary}
+
+%% \usepackage{fontspec}
+%% \newfontfamily\DejaSans{DejaVu Sans}
+
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{bkgcolor}{RGB}{36,36,36}
+\definecolor{comments}{RGB}{146,220,215}
+\definecolor{string}{RGB}{239,179,250}
+\definecolor{var}{RGB}{251,229,117}
+%%--------------------------------------------------------------------
+%% begin the document
+%%--------------------------------------------------------------------
+
+\begin{document}
+
+%%--------------------------------------------------------------------
+%% title page
+%% copyright
+%% acknowledgements
+%% abstract
+%%--------------------------------------------------------------------
+\frontmatter
+\maketitle
+
+%%--------------------------------------------------------------------
+%% table of contents
+%% list of tables
+%% list of figures
+%%--------------------------------------------------------------------
+\begin{Spacing}{\mylinespacing}
+\tableofcontents
+\end{Spacing}
+\clearpage
+
+% use short-form acronyms in all figure/table descriptions                                  
+\glsunsetall
+
+%% let the list of tables and figures use the default single-spacing
+\listoftables
+\clearpage
+\listoffigures
+\clearpage
+
+% reset first long-form use of acronyms                                                 
+\glsresetall
+
+%%--------------------------------------------------------------------
+%% preface
+%%--------------------------------------------------------------------
+\begin{Spacing}{\mylinespacing}
+\include{sections/preface}
+
+%%--------------------------------------------------------------------
+%% main sections
+%%--------------------------------------------------------------------
+\mainmatter
+
+%% Add your chapters here
+\include{sections/introduction}
+\include{sections/theory}
+\include{sections/detector}
+\include{sections/electronid}
+\include{sections/rpvthreel}
+\include{sections/conclusion}
+
+%%--------------------------------------------------------------------
+%% appendix
+%%--------------------------------------------------------------------
+\appendix
+\appendixpage
+%\addappheadtotoc
+\include{appendices/qft}
+\include{appendices/statisticaltreatment}
+\include{appendices/baseline}
+\include{appendices/eventdisplays}
+%\include{appendices/fakes}
+%\include{appendices/limits}
+
+\end{Spacing}
+
+%%--------------------------------------------------------------------
+%% bibliography
+%%--------------------------------------------------------------------
+\backmatter
+\bibliographystyle{style/atlasnote}
+%% ATLAS and CMS bibs will likely need updating for future theses, PubComm's twiki page provides the latest.
+\bibliography{bibs/atlas-confs,bibs/atlas-pubnotes,bibs/atlas-pubs,bibs/atlas-technical,bibs/cms-pubs,bibs/great-papers,bibs/monte-carlo,bibs/other}
+%% Add bib files like this:
+%% \bibliography{bibs/theory,bibs/atlas}
+
+
+% Glossary. Unclear whether this needs to be moved somewhere else to conform to Penn style
+\printglossaries
+
+%%--------------------------------------------------------------------
+\end{document}

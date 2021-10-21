@@ -1,0 +1,130 @@
+\chapter[Baseline Object Selection][Baseline Object Selection]{Baseline Object Selection}
+\label{app:baselineobjectselection}
+
+%\begin{table}[h]
+%  \begin{center}
+%  \begin{tabular}{|r|r|}
+%  \toprule
+%    Electron Triggers & Muon Triggers \\
+%  \midrule
+%  \multicolumn{2}{|c|}{2015} \\
+%  \midrule
+%    \texttt{HLT\_e24\_lhmedium\_L1EM20VH} & \texttt{HLT\_mu20\_iloose\_L1MU15} \\
+%    \texttt{HLT\_e60\_lhmedium} & \texttt{HLT\_mu50} \\
+%    \texttt{HLT\_e120\_lhloose} & \\
+%  \midrule
+%  \multicolumn{2}{|c|}{2016, 2017, 2018} \\
+%  \midrule
+%   \texttt{HLT\_e26\_lhtight\_nod0\_ivarloose} & \texttt{HLT\_mu26\_ivarmedium} \\
+%   \texttt{HLT\_e60\_lhmedium\_nod0} & \texttt{HLT\_mu50} \\
+%   \texttt{HLT\_e140\_lhloose\_nod0} & \\
+% \bottomrule
+% \end{tabular}
+% \end{center}
+% \caption{Electron and muon triggers used for each year.}
+%\label{tab:triggerSelection}
+%\end{table}
+
+\subsection{Electron, Muon, and Jet Selection Summary Tables}
+\begin{table}[h]
+  \begin{center}
+  \begin{tabular}{lc}
+  \toprule
+    \multicolumn{2}{c}{Baseline electron} \\
+  \hline
+    Acceptance & \pT$>$10~\GeV, \(|\eta|<2.47\), crack veto \\
+    Impact parameter & \(z_0\sin (\theta)\leq 0.5\)~mm \\
+    Identification WP & \texttt{LooseAndBLayerLLH} \\
+    Object quality & \texttt{BADCLUSELECTRON} electron veto \\
+  \hline
+    \multicolumn{2}{c}{Signal electron} \\
+  \hline
+    Acceptance & \pT$>$12~\GeV \\
+    Impact parameter &  \(d_0/\sigma(d_0)<5\) \\
+    Identification WP & \texttt{MediumLLH} \\
+    Isolation WP & \texttt{FCTight} \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  \caption{Summary of electron selection criteria. Signal criteria are applied on top of baseline criteria after overlap removal.}
+  \label{tab:eventSelection:elSelection}
+\end{table}
+
+\begin{table}[hp]
+  \begin{center}
+  \begin{tabular}{lc}
+  \toprule
+    \multicolumn{2}{c}{Baseline muon} \\
+  \hline
+    Acceptance & \pT$>$10~GeV, \(|\eta|<2.7\) \\
+    Impact parameter & \(z_0\sin (\theta)\leq 0.5\)~mm \\
+    Identification WP & \texttt{Medium} \\
+  \hline
+    \multicolumn{2}{c}{Signal muon} \\
+  \hline
+    Acceptance & \pT$>$12~\GeV \\
+    Impact parameter &  \(d_0/\sigma(d_0)<3\) \\
+    Identification WP & \texttt{Medium} \\
+    Isolation WP & \texttt{FCTight\_FixedRad} \\
+    Object quality & Cosmic muon veto, bad muon event veto \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+\caption{Summary of muon selection criteria. Signal criteria are applied on top of baseline criteria after overlap removal.}
+\label{tab:eventSelection:muSelection}
+\end{table}
+
+\begin{table}[hp]
+  \begin{center}
+  \begin{tabular}{lc}
+  \toprule
+    \multicolumn{2}{c}{Baseline jet} \\
+  \hline
+    Acceptance & \pT$>$20~\GeV \\
+  \hline
+    \multicolumn{2}{c}{Signal jet} \\
+  \hline
+    Acceptance & \(|\eta|\)$<$2.8 \\
+    JVT & Medium (\pT$<$120~\GeV, \(|\eta|<\)2.5) \\
+    Object quality & \texttt{LooseBad} event veto \\
+  \hline
+    \multicolumn{2}{c}{Signal b-jet} \\
+  \hline
+    Acceptance & \(|\eta|\)$<$2.5 \\
+    b-tagger algorithm & \texttt{MV2c10} \\
+    b-tagging WP & \texttt{Fixed 85\%} \\
+  \bottomrule
+  \end{tabular}
+  \end{center}
+  \caption{Summary of jet selection criteria. Signal criteria are applied on top of baseline criteria after overlap removal.}
+  \label{tab:eventSelection:jetSelection}
+\end{table}
+\newpage
+\subsection{Photon Selection}
+While photons are not used as signal objects in this analysis,
+they are used as input to the missing energy calculation.
+Photons have a minimum transverse momentum of 25~\GeV and a maximum \(|\eta|\) of 2.37, with a veto for photons that fall in the calorimeter crack region, corresponding to \(|\eta|\) between 1.37 and 1.52.
+The \texttt{BADCLUSPHOTON} object quality criteria is required, as well as an author selection.
+
+\subsection{Missing energy}
+The missing transverse energy is calculated with the \texttt{Tight} working point,
+using all calibrated baseline objects in the event (electrons, muons, jets, and photons) as well as all tracks matched to the primary vertex not associated with these objects.
+Baseline jets are used only if they are tagged as originating from the hard scatter, using JVT.
+The \met\ significance is also calculated at this stage using Asg tools.
+
+\subsection{Overlap removal}
+\label{sec:overlapRemoval}
+Overlap removal is performed using the Asg tool and the standard recommendations therein,
+as outlined in \href{https://indico.cern.ch/event/631313/contributions/2683959/}{https://indico.cern.ch/event/631313/contributions/2683959/}, with the alteration that the $b$-jet overlap removal is \pT-dependent as described in the steps below
+Technically, this is achieved by creating a standalone collection of jets which are only $b$-tagged in the desired \pT\ range.
+This collection of $b$-jets, rather than the standard collection used in the rest of the analysis, is then passed to the Asg tool.
+All objects that are rejected by overlap removal are removed from further overlap removal steps, and from future consideration in the analysis.
+Overlap removal follows the steps in the order outlined here:
+\begin{itemize}
+  \item{Electrons that share a track with another higher-\pT\ electron are rejected.}
+  \item{Electrons that share a track with a non-calorimeter-tagged muon are rejected.}
+  \item{Jets that are not $b$-tagged, or that are b-tagged with \pT$>$100~\GeV, and are within \(\Delta R(e,\mathrm{jet})\leq0.2\) of an electron are rejected.}
+  \item{Electrons that are within \(\Delta R(e,\mathrm{jet})\leq0.4\) of a jet are rejected.}
+  \item{Jets that are not $b$-tagged, or that are $b$-tagged with \pT$>$100~\GeV, and are ghost-matched to a muon (or within \(\Delta R(\mu,\mathrm{jet})\leq0.2\)) and which satisfies \(n_{\mathrm{track}}<3\) are rejected.}
+  \item{Muons that are within \(\Delta R(\mu,\mathrm{jet})\leq0.4\) of a jet are rejected.}
+\end{itemize}

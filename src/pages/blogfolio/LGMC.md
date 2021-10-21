@@ -18,11 +18,9 @@ image: './images/LGMC/thumb_LGMC.png'
     float: fixed;
     padding-left:0px;
   }
-  .gatsby-highlight{
-    width: 100%;
-    float: fixed;
-  }
-  
+}
+.katex {
+  white-space: normal;
 }
 .image-left{
   float: left;
@@ -65,8 +63,8 @@ image: './images/LGMC/thumb_LGMC.png'
 
 > ###Google maps, the most ubiquitous mapping software, now with its own above ground Large Hadron Collider. 
 
-# Introduction
 
+# Introduction
 <div class="image-right">
 <img src="./images/LGMC/Location_Large_Hadron_Collider.png"  alt="It big!">
 <figcaption class="fig-spacing"><i>Even with this image, if you are not familiar with the franco-swiss border near Geneva you really don't have a handle on it's scale just due to it being a static image cropped to make the entire LHC visible.</i></figcaption>
@@ -175,6 +173,7 @@ export default () => (
   mapElement={<div style={{ height: `100%` }} />}
   />
 )
+
 ```
 
 
@@ -249,7 +248,7 @@ lat(i, \Delta\phi, r) = x_{0} - r\cos (i(\Delta\phi - \frac{\pi}{2}))
 $$
 
 $$
-long(i, \Delta\phi, r) = y_{0} + 1.44\cdot r \sin (i(\Delta\phi - \frac{\pi}{2}))
+long(i, \Delta\phi, r) = y_{0} + (1.44)r \sin (i(\Delta\phi - \frac{\pi}{2}))
 $$
 
 Putting this all into the code we define a couple functions which generate our two trajectory lists like so:

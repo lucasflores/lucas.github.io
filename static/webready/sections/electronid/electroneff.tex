@@ -1,0 +1,11 @@
+The job of performance groups at \atlas is not only to develop, maintain and improve the algorithms that the vast majority of analyses will use to identify particles at \ATLAS but also to provide data/MC correction factors for selection efficiencies related to the trigger, particle isolation, identification, and reconstruction.
+These factors are derived from the combination of efficiencies measured at every level along the chain leading to an analysis electron/photon object.  
+In the electron and photon performance group, electron efficiencies are estimated directly from data using \tnp methods.
+These methods select, from known resonances such as $Z \rightarrow ee$ or $J/\Psi \rightarrow ee$, unbiased samples of electrons (probes) by using strict selection requirements on the second object (tags) produced from the particle’s decay.
+The events are selected on the basis of the electron–positron invariant mass.
+The efficiency of a given requirement can then be determined by applying it to the probe sample after accounting for residual background contamination.
+The combined total efficiency is then given by the following equation,
+\begin{equation*}
+\epsilon_{total}=\epsilon_{EMclus}\times\epsilon_{reco}\times\epsilon_{id}\times\epsilon_{iso}\times\epsilon_{trig} = \frac{N_{cluster}}{N_{all}}\times\frac{N_{reco}}{N_{cluster}}\times\frac{N_{id}}{N_{reco}}\times\frac{N_{iso}}{N_{id}}\times\frac{N_{trig}}{N_{N_{iso}}}
+\end{equation*}
+The following sections will detail what goes into determining each numerator on the right most side of this equation with special attention paid to the electron identification and recent improvements.
