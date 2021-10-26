@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import TimeAgo from 'react-timeago'
-import { Flex, Box } from 'grid-styled'
+import { Flex, Box } from '@rebass/grid'
 import { media } from '../utils/style'
 import styled, { createGlobalStyle } from 'styled-components'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Flex, Box } from 'grid-styled'
+import { Flex, Box } from '@rebass/grid'
 import styled, { css } from 'styled-components'
 import Img from 'gatsby-image'
 import FlickrHero from 'react-flickr-hero'

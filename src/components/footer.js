@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
-import { Flex, Box } from 'grid-styled'
+import { Flex, Box } from '@rebass/grid'
 import scrollToElement from 'scroll-to-element'
 import FlickrLightbox from 'react-flickr-lightbox'
 

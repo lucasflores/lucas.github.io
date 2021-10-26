@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import { Helmet } from 'react-helmet'
 import styled, { createGlobalStyle } from 'styled-components'
-import { Flex, Box } from 'grid-styled'
+import { Flex, Box } from '@rebass/grid'
 import "katex/dist/katex.min.css"
 
 import Footer from './footer'
