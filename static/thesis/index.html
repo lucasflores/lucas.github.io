@@ -24,7 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('#div1').load("./thesis_stylez.html");
+            $('#thesis').load("./thesis_stylez.html");
         });
     </script>
   <title>Simple Sidebar - Start Bootstrap Template</title>
@@ -36,11 +36,12 @@
 <!-- Sidebar  -->
 <nav id="sidebar" class="sidebar-font">
     <div class="sidebar-header">
-        <h3>Lucas Flores's Doctoral  Thesis</h3>
+         <h5 style="font-family:'Pacifico', cursive; font-weight:bold; font-size:11pt; padding:0px 0px 0px 65px; -ms-transform: skewY(-9deg); transform: skewY(-9deg);">Lucas Flores's</h5>
+         <h5 style="font-family:'Pacifico', cursive; font-weight:bold; font-size:21pt; padding:4px 0px 0px 18px;">Doctoral Thesis</h5>
     </div>
     <ul class="list-unstyled components">
         <li>
-            <a href="#Q1-1-2"></a>
+            <a href="#Q1-1-2">Acknowledgements</a>
         </li>
         <li>
             <a href="#Q1-1-3">Abstract</a>
@@ -144,13 +145,16 @@
             <a href="#Q1-1-105191" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Appendices</a>
             <ul class="collapse list-unstyled" id="Q1-1-105191">
                 <li>
-                    <a href="#x1-102000A.1">Formulation of QFT</a>
+                    <a href="#x1-101000A">Appendix A: Formulation of QFT</a>
                 </li>
                 <li>
-                    <a href="#x1-104000B.1">The Likelihood Function</a>
+                    <a href="#x1-103000B">Appendix D: Statistical Treatment</a>
                 </li>
                 <li>
-                    <a href="#x1-105000B.2">Goodness of Fit: Maximum Likelihood Estimation</a>
+                    <a href="#x1-111000C">Appendix C: Baseline Object Selection</a>
+                </li>
+                <li>
+                    <a href="#x1-116000D">Appendix D: Event Displays</a>
                 </li>
             </ul>
         </li>
@@ -158,39 +162,32 @@
             <a href="#Q1-1-123">Bibliography</a>
         </li>
     </ul>
-    <ul class="list-unstyled CTAs">
+    <div class="sidebar-header">
+      <ul class="list-unstyled CTAs">
         <li>
             <a href="https://repository.upenn.edu/dissertations/AAI28722112/" class="download">Download Paper</a>
         </li>
-        <li>
-            <a href="https://www.hepdata.net/record/90608" class="download">HEPData Space</a>
-        </li>
-    </ul>
+        <div style="margin-top:15px">
+          <img src="./otherfigs/pennlogo.png" alt="PIC" max-height="50px" width="19%" style="padding: 0px 0px 5px 5px;">
+          <img src="./otherfigs/cernlogo.png" alt="PIC" max-height="50px" width="23%" style="padding: 0px 0px 5px 5px;">
+          <img src="./otherfigs/atlaslogo.png" alt="PIC" max-height="50px" width="52%" style="padding: 0px 0px 5px 5px;"/>
+        </div>
+      </ul>
+    </div>
 </nav>
-
-
 
         <!-- Page Content  -->
         <div id="content">
             <nav class="sticky-top"> 
                 <div class="container-fluid" id="HASH">
-                    <p><button class="hamburger hamburger--collapse is-active" type="button" id="sidebarCollapse"> 
+                    <button class="hamburger hamburger--collapse is-active" type="button" id="sidebarCollapse"> 
                         <span class="hamburger-box">
                               <span class="hamburger-inner"></span>
                         </span>
                     </button>
-                    <div style="width: 960px;">
-                    </div>
-                    <div>
-                        <a class="btn zoom"><i class="fas fa-search-plus"></i></a></p>
-                        <p><a class="btn zoom-out"><i class="fas fa-search-minus"></i></a></p>
-                        <a class="btn zoom-init"><i class="fas fa-recycle"></i></a>
-                    </div>
                 </div>
             </nav>
-            <div class="box target">    <!-- enables zoomy stuff -->
-                <div id="div1" style="width: calc(100% - 150px); margin-left:75px;"><div>    <!-- thesis.html loaded via this div here -->
-           </div>
+            <div id="thesis"><div>    <!-- thesis.html loaded via this div here -->
         </div>
     </div>
 
@@ -220,26 +217,26 @@
             $hamburger.toggleClass("is-active");
             // Do something else, like open/close menu
         });
-        var zoom = 1;
-        
-        $('.zoom').on('click', function(){
-        	zoom += 0.1;
-        	$('.target').css('zoom', zoom);
-        });
-        $('.zoom-init').on('click', function(){
-        	zoom = 1;
-        	$('.target').css('zoom', zoom);
-        });
-        $('.zoom-out').on('click', function(){
-        	zoom -= 0.1;
-        	$('.target').css('zoom', zoom);
-        });
-        $(function(){
-            $('html, body').animate({
-                scrollTop: $('.box').offset().top 
-            }, 1500);
-            return false;
-        });
+        //var zoom = 1;
+        //
+        //$('.zoom').on('click', function(){
+        //	zoom += 0.1;
+        //	$('.target').css('zoom', zoom);
+        //});
+        //$('.zoom-init').on('click', function(){
+        //	zoom = 1;
+        //	$('.target').css('zoom', zoom);
+        //});
+        //$('.zoom-out').on('click', function(){
+        //	zoom -= 0.1;
+        //	$('.target').css('zoom', zoom);
+        //});
+        //$(function(){
+        //    $('html, body').animate({
+        //        scrollTop: $('.box').offset().top 
+        //    }, 1500);
+        //    return false;
+        //});
     </script>
 <script src="hovercard/docs/demo.js"></script>
 <script src="hovercard/docs/index.js"></script>

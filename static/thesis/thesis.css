@@ -4,7 +4,7 @@
 .cmr-8{font-size:80%;}
 .cmr-9{font-size:90%;}
 .cmcsc-10x-x-172{font-size:172%;}
-.cmr-12{font-size:120%;}
+.cmr-12{font-size:120%;  white-space:normal; }
 .cmcsc-10x-x-120{font-size:120%;}
 .cmbx-12x-x-172{font-size:206%; font-weight: bold;}
 .cmbx-12x-x-172{ font-weight: bold;}
@@ -56,8 +56,8 @@ div + p, pre + p {margin-top:1em;}
 a { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; }
 @media print {div.crosslinks {visibility:hidden;}}
 a img { border-top: 0; border-left: 0; border-right: 0; }
-center { margin-top:1em; margin-bottom:1em; }
-td center { margin-top:0em; margin-bottom:0em; }
+center { margin-top:1em; margin-bottom:1em;  overflow-x:scroll; }
+td center { margin-top:0em; margin-bottom:0em;  overflow-x:scroll; }
 .Canvas { position:relative; }
 img.math{vertical-align:middle;}
 div.par-math-display, div.math-display{text-align:center;}
@@ -70,20 +70,20 @@ li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
 .enumerate3 {list-style-type:lower-roman;}
 .enumerate4 {list-style-type:upper-alpha;}
 div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
-.obeylines-h,.obeylines-v {white-space: nowrap; }
+.obeylines-h,.obeylines-v {white-space: normal; }
 div.obeylines-v p { margin-top:0; margin-bottom:0; }
 .overline{ text-decoration:overline; }
 .overline img{ border-top: 1px solid black; }
-td.displaylines {text-align:center; white-space:nowrap;}
+td.displaylines {text-align:center; white-space:normal;}
 .centerline {text-align:center;}
 .rightline {text-align:right;}
 pre.verbatim {font-family: monospace,monospace; text-align:left; clear:both; }
 .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
 div.fbox {display:table}
-div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt;  overflow-x:scroll; }
 div.minipage{width:100%;}
-div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
-div.center div {text-align: left;}
+div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;  overflow-x:scroll;}
+div.center div {text-align: left;  overflow-x:scroll;}
 div.flushright, div.flushright div.flushright {text-align: right;}
 div.flushright div {text-align: left;}
 div.flushleft {text-align: left;}
@@ -97,9 +97,9 @@ span.thank-mark{ vertical-align: super }
 span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
 div.footnotes{border-top:solid 1px black; border-bottom:solid 1px black; padding-bottom:1ex; padding-top:0.5ex; margin-right:15%; margin-top:2ex; font-style:italic; font-size:85%;}
 div.footnotes p{margin-top:0; margin-bottom:0; text-indent:0;}
-div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
-table.tabular td p{margin-top:0em;}
-table.tabular {margin-left: auto; margin-right: auto;}
+div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; overflow-x:scroll;}
+table.tabular td p{margin-top:0em; overflow-x:scroll;}
+table.tabular {margin-left: auto; margin-right: auto; overflow-x:scroll;}
 td p:first-child{ margin-top:0em; }
 td p:last-child{ margin-bottom:0em; }
 div.td00{ margin-left:0pt; margin-right:0pt; }
@@ -122,34 +122,34 @@ div.figure img {text-align:center;}
 .marginpar,.reversemarginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
 .marginpar p,.reversemarginpar p{margin-top:0.4em; margin-bottom:0.4em;}
 .reversemarginpar{float:left;}
-table.equation {width:100%;}
+table.equation {width:100%; overflow-x:scroll;}
 .equation td{text-align:center; }
 td.equation { margin-top:1em; margin-bottom:1em; } 
 td.equation-label { width:5%; text-align:center; }
 td.eqnarray4 { width:5%; white-space: normal; }
 td.eqnarray2 { width:5%; }
-table.eqnarray-star, table.eqnarray {width:100%;}
+table.eqnarray-star, table.eqnarray {width:100%; overflow-x:scroll;}
 div.eqnarray{text-align:center;}
 div.array {text-align:center;}
 div.pmatrix {text-align:center;}
-table.pmatrix {width:100%;}
+table.pmatrix {width:100%; overflow-x:scroll;}
 span.pmatrix img{vertical-align:middle;}
 div.pmatrix {text-align:center;}
-table.pmatrix {width:100%;}
+table.pmatrix {width:100%; overflow-x:scroll;}
 span.bar-css {text-decoration:overline;}
-table.tabular{border-collapse: collapse; border-spacing: 0;}
+table.tabular{border-collapse: collapse; border-spacing: 0; overflow-x:scroll;}
 img.cdots{vertical-align:middle;}
 .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
 .chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}
 .index-item, .index-subitem, .index-subsubitem {display:block}
 div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
-div.caption span.id{font-weight: bold; white-space: nowrap; }
+div.caption span.id{font-weight: bold; white-space: normal; }
 h1.partHead{text-align: center}
 p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
 p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
 .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
 .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
-.verse{white-space:nowrap; margin-left:2em}
+.verse{white-space:normal; margin-left:2em}
 div.maketitle {text-align:center;}
 h2.titleHead{text-align:center;}
 div.maketitle{ margin-bottom: 2em; }
@@ -169,10 +169,10 @@ figure.float, div.figure {margin-left: auto; margin-right: auto;}
 figure.float img, figure.figure img {display: block; margin-left: auto; margin-right: auto;}
 figure.figure {text-align:center;}
 figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}
-figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
+figcaption.caption span.id{font-weight: bold; white-space: normal; }
 .poemtitle, likepoemtitle {margin-left:2em; margin-bottom:0.5em;}
 .skip-verseline {margin-top: 1em;}
-.skip-verseline, .verseline {white-space: nowrap;}
+.skip-verseline, .verseline {white-space: normal;}
 .flagverse {float:right; font-size:85%; text-decoration:underline;}
 .verse p{margin-bottom:0;}
 .poemline {text-align:right; width:6em;}
@@ -184,11 +184,11 @@ figure.float, div.figure {margin-left: auto; margin-right: auto;}
 figure.float img, figure.figure img {display: block; margin-left: auto; margin-right: auto;}
 figure.figure {text-align:center;}
 figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}
-figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
+figcaption.caption span.id{font-weight: bold; white-space: normal; }
 .abstract{margin:1em;}
-div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
-table.tabular td p{margin-top:0em;}
-table.tabular {margin-left: auto; margin-right: auto;}
+div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; overflow-x:scroll;}
+table.tabular td p{margin-top:0em; overflow-x:scroll;}
+table.tabular {margin-left: auto; margin-right: auto; overflow-x:scroll;}
 td p:first-child{ margin-top:0em; }
 td p:last-child{ margin-bottom:0em; }
 div.td00{ margin-left:0pt; margin-right:0pt; }
@@ -208,28 +208,31 @@ div.array {text-align:center;}
 .rotatebox{display: inline-block;}
 .equation td{text-align:center; }
 .equation-star td{text-align:center; }
-table.equation-star { width:100%; }
-table.equation { width:100%; }
-table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:95%; margin-left:5%; white-space: nowrap;}
-table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
+table.equation-star { width:100%; overflow-x:scroll;}
+table.equation { width:100%;  overflow-x:scroll;}
+table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:95%; margin-left:5%; white-space: normal;  overflow-x:scroll;}
+table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: normal;  overflow-x:scroll;}
 td.align-label { width:5%; text-align:center; }
 td.align-odd { text-align:right; padding-right:0.3em;}
 td.align-even { text-align:left; padding-right:0.6em;}
-table.multline, table.multline-star {width:100%;}
-td.gather {text-align:center; }
-table.gather {width:100%;}
+table.multline, table.multline-star {width:100%;  overflow-x:scroll;}
+td.gather {text-align:center;  overflow-x:scroll;}
+table.gather {width:100%; overflow-x:scroll;}
 div.gather-star {text-align:center;}
 table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
 div.longtable{text-align:center;}
-table.longtable{margin-left:auto; margin-right: auto;}
+table.longtable{margin-left:auto; margin-right: auto; overflow-x:scroll;}
 div.subfigure {text-align:center;display:inline-block; max-width:45%;}
 pre.fancyvrb {white-space: pre-wrap; margin:0em;font-family:monospace,monospace;}
 .framedenv{border: 1px solid black;}
 .lstlisting .label{margin-right:0.5em; }
-div.lstlisting{font-family: monospace,monospace; white-space: nowrap; margin-top:0.5em; margin-bottom:0.5em; }
-div.lstinputlisting{ font-family: monospace,monospace; white-space: nowrap; }
+div.lstlisting{font-family: monospace,monospace; white-space: pre-wrap; margin-top:0.5em; margin-bottom:0.5em; background-color:#323437; overflow-x:scroll; color:#fff; }
+div.lstinputlisting{ font-family: monospace,monospace; white-space: pre-wrap; }
 .lstinputlisting .label{margin-right:0.5em;}
 .supertabular {text-align:center}
+#TBL-1-1-1{width:21.64993em;}
+#TBL-1-2-1{width:21.64993em;}
+#TBL-1-3-1{width:21.64993em;}
 #TBL-2 colgroup{border-left: 1px solid black;border-right:1px solid black;}
 #TBL-2{border-collapse:collapse;}
 #TBL-2 colgroup{border-left: 1px solid black;border-right:1px solid black;}

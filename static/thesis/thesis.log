@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2021.8.28)  8 APR 2022 13:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2021.8.28)  10 APR 2022 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,8 +7,8 @@ de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
 {\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
 documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
  tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
-\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode xhtml,mathjax,fn-in,charset
-=utf-8,html5.a.b.c.\input "\detokenize{thesis.tex}"
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode MyConfig,mathjax,fn-in,p-wi
+dth,charset=utf-8,html5.a.b.c.\input "\detokenize{thesis.tex}"
 (./thesis.tex (./style/pennThesis.cls
 
 LaTeX Warning: You have requested document class `style/pennThesis',
@@ -1017,8 +1017,8 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 ty
 Package: glossary-tree 2020/03/19 v4.46 (NLCT)
 \glstreeindent=\skip280
-)) (./sections/glossary.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/te
-x4ht/tex4ht.4ht
+)) (./sections/glossary.tex) (./MyConfig.cfg (/usr/local/texlive/2021/texmf-dis
+t/tex/generic/tex4ht/tex4ht.4ht
 version 2020-03-12-14:03
 --------------------------------------
 --- Note --- for additional information, use the command line option `info'
@@ -1098,7 +1098,8 @@ option `frames-fn'
 --------------------------------------
 --- Note --- for file extension name xht, use the command line option `xht'
 --------------------------------------
-TeX4ht package options: xhtml,mathjax,fn-in,charset=utf-8,html5,html,htex4ht
+TeX4ht package options: mathjax,fn-in,p-width,charset=utf-8,html5,html,htex4ht,
+xhtml
 --------------------------------------
 --- Note --- To print a timestamp, use the command line option timestamp
 --------------------------------------
@@ -1199,11 +1200,6 @@ ommand line option `enumerate-'
 --------------------------------------
 --- Note --- for tracing of latex font commands, use the command line option `f
 onts'
---------------------------------------
---------------------------------------
---- Note --- for width specifications of tabular p entries, use the `p-width' c
-ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
-style="width:\HColWidth"}}
 --------------------------------------
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2021-02-06-14:21
@@ -1698,8 +1694,8 @@ See the minted package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 \begin{document}
-                     
+l.2 \begin{document}
+                    
 Refer to the installation instructions in the minted documentation for more inf
 ormation.
 
@@ -1710,27 +1706,27 @@ s/statisticaltreatment.aux) (./appendices/baseline.aux) (./appendices/eventdisp
 lays.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-Package hyperref Info: Link coloring ON on input line 46.
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+Package hyperref Info: Link coloring ON on input line 2.
+LaTeX Info: Redefining \ref on input line 2.
+LaTeX Info: Redefining \pageref on input line 2.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
@@ -1738,7 +1734,7 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 \c@lstlisting=\count406
 --- file thesis.css ---
-[1
+) [1
 
 
 
@@ -2725,55 +2721,28 @@ l. 9 --- needs --- figs/egamma/electron_variables.png ---
 [107
 
 ]
-
-LaTeX Warning: Reference `eq:likelihoods' on page 108 undefined on input line 1
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
 8.
-
-
-LaTeX Warning: Reference `eq:egamma:discriminant' on page 108 undefined on inpu
-t line 36.
-
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
 [108
 
-] [109
+] [109] [110
 
 ]
 l. 54 --- needs --- figs/egamma/example_lh_output.png ---
 l. 61 --- needs --- figs/egamma/ROC.png ---
-[110
-
-]
-! Argument of \strip@prefix has an extra }.
-<inserted text> 
-                \par 
-l.76 \label{sec:egamma:calvars}
-                               
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-undefined
-! Paragraph ended before \strip@prefix was complete.
-<to be read again> 
-                   \par 
-l.76 \label{sec:egamma:calvars}
-                               
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 [111
 
 ]
 ! Argument of \strip@prefix has an extra }.
 <inserted text> 
                 \par 
-l.103 \label{sec:egamma:trackvars}
-                                  
+l.76 \label{sec:egamma:calvars}
+                               
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -2786,75 +2755,92 @@ undefined
 ! Paragraph ended before \strip@prefix was complete.
 <to be read again> 
                    \par 
-l.103 \label{sec:egamma:trackvars}
-                                  
+l.76 \label{sec:egamma:calvars}
+                               
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[112]
-! Argument of \strip@prefix has an extra }.
-<inserted text> 
-                \par 
-l.126 \label{sec:egamma:trackcalvars}
-                                     
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-undefined
-! Paragraph ended before \strip@prefix was complete.
-<to be read again> 
-                   \par 
-l.126 \label{sec:egamma:trackcalvars}
-                                     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \strip@prefix has an extra }.
-<inserted text> 
-                \par 
-l.133 \label{sec:egamma:nonLHvars}
-                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-undefined
-! Paragraph ended before \strip@prefix was complete.
-<to be read again> 
-                   \par 
-l.133 \label{sec:egamma:nonLHvars}
-                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-[113] [114
+[112
 
 ]
+! Argument of \strip@prefix has an extra }.
+<inserted text> 
+                \par 
+l.103 \label{sec:egamma:trackvars}
+                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
 
-LaTeX Warning: Reference `eq:likelihoods' on page 115 undefined on input line 1
-48.
+Runaway argument?
+undefined
+! Paragraph ended before \strip@prefix was complete.
+<to be read again> 
+                   \par 
+l.103 \label{sec:egamma:trackvars}
+                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
+[113]
+! Argument of \strip@prefix has an extra }.
+<inserted text> 
+                \par 
+l.126 \label{sec:egamma:trackcalvars}
+                                     
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
 
-LaTeX Warning: Reference `eq:likelihoods' on page 115 undefined on input line 1
-48.
+Runaway argument?
+undefined
+! Paragraph ended before \strip@prefix was complete.
+<to be read again> 
+                   \par 
+l.126 \label{sec:egamma:trackcalvars}
+                                     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-[115
+! Argument of \strip@prefix has an extra }.
+<inserted text> 
+                \par 
+l.133 \label{sec:egamma:nonLHvars}
+                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+undefined
+! Paragraph ended before \strip@prefix was complete.
+<to be read again> 
+                   \par 
+l.133 \label{sec:egamma:nonLHvars}
+                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[114] [115
 
 ] [116
 
 ] [117
+
+] [118
 
 ]
 l. 254 --- needs --- figs/egamma/R_had1.png ---
@@ -3067,11 +3053,11 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[118
-
-] [119
+[119
 
 ] [120
+
+] [121
 
 ]
 l. 285 --- needs --- figs/egamma/w_eta2.png ---
@@ -3354,11 +3340,11 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[121
-
-] [122
+[122
 
 ] [123
+
+] [124
 
 ]
 l. 324 --- needs --- figs/egamma/d0_sig.png ---
@@ -3711,17 +3697,15 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[124
-
-] [125
+[125
 
 ] [126
 
+] [127
+
 ]
 l. 364 --- needs --- figs/egamma/TRTGasConfig.png ---
-[127
-
-] [128
+[128
 
 ] [129
 
@@ -3736,6 +3720,8 @@ l. 364 --- needs --- figs/egamma/TRTGasConfig.png ---
 ] [134
 
 ] [135
+
+] [136
 
 ]
 ! Argument of \AltMathOne has an extra }.
@@ -3784,9 +3770,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[136
-
-] [137
+[137
 
 ] [138
 
@@ -3800,18 +3784,20 @@ My plan is to forget the whole thing and hope for the best.
 
 ] [143
 
+] [144
+
 ]
 l. 621 --- needs --- figs/egamma/LHpdfEtaBinning.png ---
-[144
-
-] [145
+[145
 
 ] [146
+
+] [147
 
 ]
 l. 646 --- needs --- figs/egamma/KDEMethod.png ---
 l. 653 --- needs --- figs/egamma/new_kde_example.png ---
-[147
+[148
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -3837,48 +3823,48 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[148
+[149
 
-] [149
+] [150
 
 ]
 l. 681 --- needs --- figs/egamma/rhad_hilomu.png ---
 l. 688 --- needs --- figs/egamma/rphi_hilomu.png ---
-[150
-
-] [151
+[151
 
 ] [152
 
+] [153
+
 ]
 l. 699 --- needs --- figs/egamma/nminus1_plot.png ---
-[153
-
-] [154
+[154
 
 ] [155
+
+] [156
 
 ]
 l. 721 --- needs --- figs/egamma/nvtxdepSignal.png ---
 l. 728 --- needs --- figs/egamma/nvtxdepBackground.png ---
-[156
-
-] [157
+[157
 
 ] [158
+
+] [159
 
 ]
 l. 747 --- needs --- figs/egamma/equiEfficiency.png ---
 l. 754 --- needs --- figs/egamma/nvtx.png ---
-[159
-
-] [160
+[160
 
 ] [161
 
+] [162
+
 ]
 l. 779 --- needs --- figs/egamma/pileupCorrection.png ---
-[162
+[163
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -3904,13 +3890,13 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[163
+[164
 
-] [164
+] [165
 
 ]
 l. 830 --- needs --- figs/egamma/TRTLocalTrackOcc.png ---
-[165
+[166
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -3936,16 +3922,16 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[166
+[167
 
-] [167] [168
+] [168] [169
 
 ]
 l. 861 --- needs --- figs/egamma/f3_DataVSMC.png ---
 l. 867 --- needs --- figs/egamma/R_had_DataVsMC.png ---
-[169
+[170
 
-] [170
+] [171
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -3971,7 +3957,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[171]
+[172]
 l. 942 --- needs --- figs/egamma/trig_eProb_highet.png ---
 ! Argument of \strip@prefix has an extra }.
 <inserted text> 
@@ -4392,7 +4378,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[172] [173] [174
+[173] [174] [175
 
 ]
 l. 987 --- needs --- figs/egamma/trig_rphi_highet.png ---
@@ -4675,11 +4661,11 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[175
-
-] [176
+[176
 
 ] [177
+
+] [178
 
 ]
 l. 1022 --- needs --- figs/egamma/trig_eProb_lowet.png ---
@@ -5102,11 +5088,11 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[178
-
-] [179
+[179
 
 ] [180
+
+] [181
 
 ]
 l. 1067 --- needs --- figs/egamma/trig_rphi_lowet.png ---
@@ -5389,9 +5375,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[181
-
-] [182
+[182
 
 ] [183
 
@@ -5400,6 +5384,8 @@ My plan is to forget the whole thing and hope for the best.
 ] [185
 
 ] [186
+
+] [187
 
 ]
 l. 1143 --- needs --- figs/egamma/trig_eff_lhtight.png ---
@@ -5612,11 +5598,11 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[187
+[188
 
-])) [188
+])) [189
 
-] [189
+] [190
 
 ]
 ! Extra \else.
@@ -5626,12 +5612,12 @@ l.94 \include{sections/electronid}
                                   
 I'm ignoring this; it doesn't match any \if.
 
-[190
+[191
 
 ]
 \openout2 = `sections/rpvthreel.aux'.
 
-(./sections/rpvthreel.tex [191
+(./sections/rpvthreel.tex [192
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -5680,47 +5666,47 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(./sections/rpvthreel/introduction.tex [192
+(./sections/rpvthreel/introduction.tex [193
 
-] [193
+] [194
 
 ]
 l. 10 --- needs --- figs/rpvthreel/fig_01b.png ---
 l. 17 --- needs --- figs/rpvthreel/fig_01b.png ---
-[194
-
-] [195
+[195
 
 ] [196
 
+] [197
+
 ]
 l. 35 --- needs --- figs/rpvthreel/statthrows.png ---
-[197
-
-] [198
+[198
 
 ] [199
 
+] [200
+
 ]
 l. 45 --- needs --- figs/rpvthreel/LSPprobability.png ---
-[200
-
-] [201
+[201
 
 ] [202
 
+] [203
+
 ]
 l. 53 --- needs --- figs/rpvthreel/xsec10_13_SM.png ---
-[203
+[204
 
-] [204
+] [205
 
-] [205] [206
+] [206] [207
 
 ]
 l. 104 --- needs --- figs/rpvthreel/MassDegenerateChipm.png ---
 l. 111 --- needs --- figs/rpvthreel/MassDegenerateChi0.png ---
-[207
+[208
 
 ])
 ! Argument of \strip@prefix has an extra }.
@@ -5770,11 +5756,11 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[208
+[209
 
-] [209] [210
+] [210] [211
 
-] [211
+] [212
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -5800,13 +5786,13 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[212
+[213
 
-] [213
+] [214
 
 ]
 l. 91 --- needs --- figs/rpvthreel/SMcrossSections.png ---
-[214
+[215
 
 ])
 ! Argument of \strip@prefix has an extra }.
@@ -5832,11 +5818,11 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(./sections/rpvthreel/MC.tex [215
+(./sections/rpvthreel/MC.tex [216
 
-] [216] [217
+] [217] [218
 
-] [218
+] [219
 
 ])
 ! Argument of \strip@prefix has an extra }.
@@ -5862,13 +5848,13 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(./sections/rpvthreel/regions.tex [219
+(./sections/rpvthreel/regions.tex [220
 
-] [220] [221
+] [221] [222
 
 ]
 l. 18 --- needs --- figs/rpvthreel/3LRPVSchematic.png ---
-[222
+[223
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -5894,17 +5880,13 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
+[224
 
-LaTeX Warning: Reference `eq:trilep:acc' on page 223 undefined on input line 47
-.
-
-[223
-
-] [224] [225
+] [225] [226
 
 ]
 l. 77 --- needs --- figs/rpvthreel/MC_Acc_MassvsProcess_SROL3l_emutau.png ---
-[226
+[227
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -5930,13 +5912,13 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[227
+[228
 
-] [228
+] [229
 
 ]
 l. 104 --- needs --- figs/rpvthreel/MC_Acc_MassvsProcess_SRTL_emutau.png ---
-[229
+[230
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -5962,58 +5944,53 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[230
+[231
 
-] [231
+] [232
 
 ]
 l. 126 --- needs --- figs/rpvthreel/MC_Acc_MassvsProcess_SROL4l_emutau.png ---
-[232
-
-] [233
+[233
 
 ] [234
+
+] [235
 
 ]
 l. 140 --- needs --- figs/rpvthreel/bkgYields_SROL3l_noCuts.png ---
 l. 147 --- needs --- figs/rpvthreel/bkgYields_SRTL_noCuts.png ---
 l. 154 --- needs --- figs/rpvthreel/bkgYields_SROL4l_noCuts.png ---
-[235
-
-]
-! Argument of \strip@prefix has an extra }.
-<inserted text> 
-                \par 
-l.179 \label{sec:fakes}
-                       
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-undefined
-! Paragraph ended before \strip@prefix was complete.
-<to be read again> 
-                   \par 
-l.179 \label{sec:fakes}
-                       
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 [236
 
 ]
+! Argument of \strip@prefix has an extra }.
+<inserted text> 
+                \par 
+l.179 \label{sec:fakes}
+                       
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
 
-LaTeX Warning: Reference `eq:fakefactors' on page 237 undefined on input line 2
-00.
+Runaway argument?
+undefined
+! Paragraph ended before \strip@prefix was complete.
+<to be read again> 
+                   \par 
+l.179 \label{sec:fakes}
+                       
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
+[237
 
-LaTeX Warning: Reference `eq:pTcone' on page 237 undefined on input line 208.
-
+]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 200.
 ! Argument of \strip@prefix has an extra }.
 <inserted text> 
                 \par 
@@ -6037,27 +6014,21 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-
-LaTeX Warning: Reference `eq:mTmin' on page 237 undefined on input line 231.
-
-
-LaTeX Warning: Reference `eq:mT' on page 237 undefined on input line 231.
-
-[237] [238] [239
+[238] [239] [240
 
 ]
 l. 247 --- needs --- figs/rpvthreel/3lregions.png ---
-[240
-
-] [241
+[241
 
 ] [242
+
+] [243
 
 ]
 l. 260 --- needs --- figs/rpvthreel/CRWZ_yields.png ---
 l. 267 --- needs --- figs/rpvthreel/VRMet_yields.png ---
 l. 274 --- needs --- figs/rpvthreel/VRmTmin_yields.png ---
-[243
+[244
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -6083,22 +6054,22 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[244
+[245
 
-] [245
+] [246
 
 ]
 l. 303 --- needs --- figs/rpvthreel/4lregions.png ---
-[246
-
-] [247
+[247
 
 ] [248
+
+] [249
 
 ]
 l. 315 --- needs --- figs/rpvthreel/CRZZ_yields.png ---
 l. 322 --- needs --- figs/rpvthreel/VRZZ_yields.png ---
-[249
+[250
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -6124,29 +6095,29 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[250
+[251
 
-] [251
+] [252
 
 ]
 l. 350 --- needs --- figs/rpvthreel/dRbb_PreSel_logy_incl.png ---
 l. 357 --- needs --- figs/rpvthreel/dRbb_PreSel.png ---
-[252
-
-] [253
+[253
 
 ] [254
+
+] [255
 
 ]
 l. 368 --- needs --- figs/rpvthreel/CRttZ_yields.png ---
 l. 375 --- needs --- figs/rpvthreel/VRttZ_yields.png ---
-[255
-
-] [256
+[256
 
 ] [257
 
 ] [258
+
+] [259
 
 ])
 ! Argument of \strip@prefix has an extra }.
@@ -6172,98 +6143,92 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(./sections/rpvthreel/statisticalanalysis.tex [259
+(./sections/rpvthreel/statisticalanalysis.tex [260
 
-] [260
+] [261
 
 ]
 l. 7 --- needs --- figs/rpvthreel/systsflat_dist_SRTL.png ---
 l. 14 --- needs --- figs/rpvthreel/systsflat_dist_SROL4l.png ---
 l. 21 --- needs --- figs/rpvthreel/systsflat_dist_SROL3l.png ---
-
-LaTeX Warning: Reference `eq:binning' on page 261 undefined on input line 29.
-
-
-LaTeX Warning: Reference `eq:binning' on page 261 undefined on input line 29.
-
-[261
-
-]
-! Argument of \strip@prefix has an extra }.
-<inserted text> 
-                \par 
-l.33 \label{sec:stats:systs}
-                            
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-undefined
-! Paragraph ended before \strip@prefix was complete.
-<to be read again> 
-                   \par 
-l.33 \label{sec:stats:systs}
-                            
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \strip@prefix has an extra }.
-<inserted text> 
-                \par 
-l.47 \label{sec:stats:systs:MCstats}
-                                    
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-undefined
-! Paragraph ended before \strip@prefix was complete.
-<to be read again> 
-                   \par 
-l.47 \label{sec:stats:systs:MCstats}
-                                    
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \strip@prefix has an extra }.
-<inserted text> 
-                \par 
-l.51 \label{sec:stats:systs:exp}
-                                
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-undefined
-! Paragraph ended before \strip@prefix was complete.
-<to be read again> 
-                   \par 
-l.51 \label{sec:stats:systs:exp}
-                                
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
 [262
 
 ]
 ! Argument of \strip@prefix has an extra }.
 <inserted text> 
                 \par 
+l.33 \label{sec:stats:systs}
+                            
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+undefined
+! Paragraph ended before \strip@prefix was complete.
+<to be read again> 
+                   \par 
+l.33 \label{sec:stats:systs}
+                            
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \strip@prefix has an extra }.
+<inserted text> 
+                \par 
+l.47 \label{sec:stats:systs:MCstats}
+                                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+undefined
+! Paragraph ended before \strip@prefix was complete.
+<to be read again> 
+                   \par 
+l.47 \label{sec:stats:systs:MCstats}
+                                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \strip@prefix has an extra }.
+<inserted text> 
+                \par 
+l.51 \label{sec:stats:systs:exp}
+                                
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+undefined
+! Paragraph ended before \strip@prefix was complete.
+<to be read again> 
+                   \par 
+l.51 \label{sec:stats:systs:exp}
+                                
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[263
+
+]
+! Argument of \strip@prefix has an extra }.
+<inserted text> 
+                \par 
 l.65 \label{sec:stats:systs:theory}
                                    
 I've run across a `}' that doesn't seem to match anything.
@@ -6280,53 +6245,6 @@ undefined
                    \par 
 l.65 \label{sec:stats:systs:theory}
                                    
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-[263]
-! Argument of \strip@prefix has an extra }.
-<inserted text> 
-                \par 
-l.85 \label{sec:stats:systs:fakes}
-                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-undefined
-! Paragraph ended before \strip@prefix was complete.
-<to be read again> 
-                   \par 
-l.85 \label{sec:stats:systs:fakes}
-                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \strip@prefix has an extra }.
-<inserted text> 
-                \par 
-l.93 \label{sec:stats:systs:normalization}
-                                          
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-undefined
-! Paragraph ended before \strip@prefix was complete.
-<to be read again> 
-                   \par 
-l.93 \label{sec:stats:systs:normalization}
-                                          
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -6335,6 +6253,53 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \strip@prefix has an extra }.
 <inserted text> 
                 \par 
+l.85 \label{sec:stats:systs:fakes}
+                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+undefined
+! Paragraph ended before \strip@prefix was complete.
+<to be read again> 
+                   \par 
+l.85 \label{sec:stats:systs:fakes}
+                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \strip@prefix has an extra }.
+<inserted text> 
+                \par 
+l.93 \label{sec:stats:systs:normalization}
+                                          
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+undefined
+! Paragraph ended before \strip@prefix was complete.
+<to be read again> 
+                   \par 
+l.93 \label{sec:stats:systs:normalization}
+                                          
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[265]
+! Argument of \strip@prefix has an extra }.
+<inserted text> 
+                \par 
 l.110 \label{sec:stats:bkgonly}
                                
 I've run across a `}' that doesn't seem to match anything.
@@ -6355,21 +6320,13 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-
-LaTeX Warning: Reference `eq:statmodel' on page 265 undefined on input line 118
-.
-
-
-LaTeX Warning: Reference `eq:statmodel' on page 265 undefined on input line 119
-.
-
-[265] [266
-
-] [267
+[266] [267
 
 ] [268
 
 ] [269
+
+] [270
 
 ]
 l. 145 --- needs --- figs/rpvthreel/CRWZ_Nm1_mTmin_logy.png ---
@@ -6377,15 +6334,15 @@ l. 152 --- needs --- figs/rpvthreel/CRWZ_Nm1_met_logy.png ---
 l. 159 --- needs --- figs/rpvthreel/VRMet_met_logy.png ---
 l. 166 --- needs --- figs/rpvthreel/CRZZ_Nm1_m_allLeptonicZs_1_logy.png ---
 l. 173 --- needs --- figs/rpvthreel/CRttZ_Nm1_mydRbb.png ---
-[270
-
-] [271
+[271
 
 ] [272
 
+] [273
+
 ]
 l. 183 --- needs --- figs/rpvthreel/histpull_all_doSRsInBkg_CRVR.png ---
-[273
+[274
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -6458,31 +6415,25 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(./sections/rpvthreel/results.tex [274
+(./sections/rpvthreel/results.tex [275
 
-] [275] [276
+] [276] [277
 
-] (./figs/rpvthreel/yieldsTable_Combined.tex) [277
+] (./figs/rpvthreel/yieldsTable_Combined.tex) [278
 
-] [278] [279
+] [279] [280
 
-] [280
+] [281
 
 ]
 l. 50 --- needs --- figs/rpvthreel/histpull_all_doSRsInBkg_SROL3l.png ---
 l. 57 --- needs --- figs/rpvthreel/histpull_all_doSRsInBkg_SROL4l.png ---
 l. 64 --- needs --- figs/rpvthreel/histpull_all_doSRsInBkg_SRTL.png ---
-
-LaTeX Warning: Reference `eq:binning' on page 281 undefined on input line 74.
-
-
-LaTeX Warning: Reference `eq:binning' on page 281 undefined on input line 74.
-
-[281
-
-] [282
+[282
 
 ] [283
+
+] [284
 
 ]
 l. 91 --- needs --- figs/rpvthreel/contours_bre_33_brm_33_brt_33_Nominal.png --
@@ -6493,7 +6444,7 @@ l. 105 --- needs --- figs/rpvthreel/contours_bre_0_brm_100_brt_0_Nominal.png --
 -
 l. 111 --- needs --- figs/rpvthreel/contours_bre_0_brm_0_brt_100_Nominal.png --
 -
-[284
+[285
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -6519,9 +6470,9 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[285
+[286
 
-] [286] [287
+] [287] [288
 
 ]
 l. 154 --- needs --- figs/rpvthreel/triangleLimits_bre_33_brm_33_brt_33_mass_60
@@ -6532,7 +6483,7 @@ l. 168 --- needs --- figs/rpvthreel/triangleLimits_bre_0_brm_100_brt_0_mass_600
 .png ---
 l. 174 --- needs --- figs/rpvthreel/triangleLimits_bre_0_brm_0_brt_100_mass_600
 .png ---
-[288
+[289
 
 ])
 ! Argument of \strip@prefix has an extra }.
@@ -6558,26 +6509,26 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-(./sections/rpvthreel/analysispreservation.tex [289
+(./sections/rpvthreel/analysispreservation.tex [290
 
 ] (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [290]
+) [291]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
 78.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [291] [292
+) [292] [293
 
 ]
 l. 148 --- needs --- figs/rpvthreel/yadage_workflow_instance.png ---
-[293
+[294
 
-])) [294
+])) [295
 
-] [295
+] [296
 
 ]
 ! Extra \else.
@@ -6587,16 +6538,16 @@ l.95 \include{sections/rpvthreel}
                                  
 I'm ignoring this; it doesn't match any \if.
 
-[296
+[297
 
 ]
 \openout2 = `sections/conclusion.aux'.
 
-(./sections/conclusion.tex [297
+(./sections/conclusion.tex [298
 
-]) [298
+]) [299
 
-] [299
+] [300
 
 ]
 ! Extra \else.
@@ -6606,14 +6557,14 @@ l.96 \include{sections/conclusion}
                                   
 I'm ignoring this; it doesn't match any \if.
 
-[300
+[301
 
-] [301
+] [302
 
-] [302]
+] [303]
 \openout2 = `appendices/qft.aux'.
 
-(./appendices/qft.tex [303
+(./appendices/qft.tex [304
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -6639,31 +6590,16 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
+[305
 
-LaTeX Warning: Reference `eq:theory:hammy' on page 304 undefined on input line 
-48.
+]) [306] [307
 
-
-LaTeX Warning: Reference `eq:theory:quantumhammy' on page 304 undefined on inpu
-t line 59.
-
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 6
-5.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
-[304
-
-]) [305] [306
-
-] [307
+] [308
 
 ]
 \openout2 = `appendices/statisticaltreatment.aux'.
 
-(./appendices/statisticaltreatment.tex [308
+(./appendices/statisticaltreatment.tex [309
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -6689,11 +6625,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-
-LaTeX Warning: Reference `eq:statmodel' on page 309 undefined on input line 24.
-
-
-[309
+[310
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -6742,11 +6674,11 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[310] [311
+[311] [312
 
 ]
 l. 57 --- needs --- figs/rpvthreel/LikelihoodProfileCartoon.png ---
-[312
+[313
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -6772,22 +6704,15 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
+[314
 
-LaTeX Warning: Reference `eq:LR' on page 313 undefined on input line 70.
-
-[313
-
-] [314
+] [315
 
 ]
 l. 98 --- needs --- figs/rpvthreel/teststatdistpvalue.png ---
-[315
+[316
 
 ]
-
-LaTeX Warning: Reference `eq:statmodel' on page 316 undefined on input line 118
-.
-
 ! Argument of \strip@prefix has an extra }.
 <inserted text> 
                 \par 
@@ -6811,9 +6736,9 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[316
+[317
 
-]) [317] [318
+]) [318] [319
 
 ]
 ! Extra \else.
@@ -6823,12 +6748,12 @@ l.105 \include{appendices/statisticaltreatment}
                                                
 I'm ignoring this; it doesn't match any \if.
 
-[319
+[320
 
 ]
 \openout2 = `appendices/baseline.aux'.
 
-(./appendices/baseline.tex [320
+(./appendices/baseline.tex [321
 
 ]
 ! Argument of \strip@prefix has an extra }.
@@ -6854,9 +6779,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[321
-
-] [322
+[322
 
 ] [323
 
@@ -6874,6 +6797,8 @@ My plan is to forget the whole thing and hope for the best.
 
 ] [330
 
+] [331
+
 ]
 ! Argument of \strip@prefix has an extra }.
 <inserted text> 
@@ -6898,7 +6823,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[331]) [332]
+[332]) [333]
 \openout2 = `appendices/eventdisplays.aux'.
 
 (./appendices/eventdisplays.tex
@@ -6925,73 +6850,70 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[333
+[334
 
 
 
 
-] [334
+] [335
 
 ]
 l. 5 --- needs --- figs/rpvthreel/SRFR.png ---
-[335
-
-] [336
+[336
 
 ] [337
 
+] [338
+
 ]
 l. 19 --- needs --- figs/rpvthreel/SR4l.png ---
-[338
-
-] [339
+[339
 
 ] [340
 
+] [341
+
 ]
 l. 31 --- needs --- figs/rpvthreel/SR3l.png ---
-[341
+[342
 
-]) [342
-
-] [343
+]) [343
 
 ] [344
+
+] [345
 
 ] (./thesis.bbl (./thesis.brf)
 \tf@brf=\write8
 \openout8 = `thesis.brf'.
 
-[345
+[346
 
 ]
 bibitemlist
-[346
+[347
 
-] [347] [348] [349] [350] [351] [352] [353] [354] [355] [356] [357] [358] [359]
-[360] [361] [362] [363] [364] [365] [366] [367] [368] [369] [370] [371] [372] [
-373] [374] [375] [376] [377] [378] [379] [380]
+] [348] [349] [350] [351] [352] [353] [354] [355] [356] [357] [358] [359] [360]
+[361] [362] [363] [364] [365] [366] [367] [368] [369] [370] [371] [372] [373] [
+374] [375] [376] [377] [378] [379] [380] [381]
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
 (Font)              using `OT1/cmr/m/sc' instead on input line 402.
 
-[381] [382]
+[382] [383]
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
 (Font)              using `OT1/cmr/m/sc' instead on input line 422.
 
-[383] [384] [385] [386] [387] [388] [389] [390] [391] [392] [393] [394] [395])
+[384] [385] [386] [387] [388] [389] [390] [391] [392] [393] [394] [395] [396])
 No file thesis.gls.
-[396] [397] [398
+[397] [398] [399
 
 ] (./thesis.aux (./sections/preface.aux) (./sections/introduction.aux) (./secti
 ons/theory.aux) (./sections/detector.aux) (./sections/electronid.aux) (./sectio
 ns/rpvthreel.aux) (./sections/conclusion.aux) (./appendices/qft.aux) (./appendi
 ces/statisticaltreatment.aux) (./appendices/baseline.aux) (./appendices/eventdi
 splays.aux))
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -7208,12 +7130,12 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (\end occurred when \ifnum on line 91 was incomplete)
 (\end occurred when \ifx on line 103 was incomplete) 
 Here is how much of TeX's memory you used:
- 34868 strings out of 478995
- 570772 string characters out of 5858210
- 1287039 words of memory out of 5000000
- 51161 multiletter control sequences out of 15000+600000
+ 34862 strings out of 478995
+ 570666 string characters out of 5858210
+ 1287075 words of memory out of 5000000
+ 51152 multiletter control sequences out of 15000+600000
  422204 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,10n,141p,1779b,3062s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 113i,10n,141p,1790b,3038s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (420 pages, 950960 bytes).
+Output written on thesis.dvi (421 pages, 952012 bytes).
