@@ -3,6 +3,7 @@
 */
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Pacifico:300,400,500,600,700";
 @import url(http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:600);
@@ -26,7 +27,14 @@
     -moz-font-feature-settings: "liga" on;
     line-height: 1.5;
     text-align: left;
+
   }
+
+  #thesis {
+    width: calc(100% - 110px); 
+    margin-left:65px;
+  }
+
 
   header,
   article {
@@ -90,7 +98,18 @@
   }
 
   .equation {
+    width: 100%;
+    overflow-x: scroll;
     margin: 2rem 0 3rem;
+    -webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 7px;
+    }
+    -webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, .5);
+      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
   }
 
   .footnotes {
@@ -284,9 +303,9 @@ background-color: #fff;
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #011F5B;
+    background: #2770CA;
     color: #fff;
-    transition: all 0.3s;
+    transition: all 0.5s;
     font-family: 'Poppins', sans-serif;
     line-height: 0.9;
 }
@@ -296,13 +315,12 @@ background-color: #fff;
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: #143D8A;
+    padding: 10px;
+    background: #153C6A;
 }
 
 #sidebar ul.components {
     padding: 10px 0px;
-    border-bottom: 1px solid #47748b;
 }
 
 #sidebar ul p {
@@ -325,7 +343,7 @@ background-color: #fff;
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #011F5B;
+    background: #4782EA;
 }
 
 a[data-toggle="collapse"] {
@@ -343,12 +361,12 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #011F5B;
+    background: #315AA2;
 }
 
 ul.CTAs {
     padding: 10px;
-    background: #143D8A;
+    background: #153C6A;
 }
 
 ul.CTAs a {
@@ -360,8 +378,13 @@ ul.CTAs a {
     border-width: thin;
 }
 
-a.download {
-
+#sidebar  a.download {
+    color: #011F5B;
+    background: #fff;
+}
+#sidebar a.download:hover {
+    color: #fff;
+    background: #66B27A;
 }
 
 
@@ -440,27 +463,28 @@ div.caption {
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #content {
-        width: 100%;
-    }
-    #content.active {
-        width: calc(100% - 250px);
-    }
-    .dropdown-menu {
-      width:500px;
-    }
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 15px;
+  .wrapper {
+      display: relative;
+  }
+  #sidebar {
+    margin-left: -250px;
+    overflow-x: hidden;
+  }
+  #sidebar.active {
+    margin-left: 0;
+    overflow-x: hidden;
+  }
+  #content {
+    width: 100%;
+  }
+  .dropdown-menu {
+    width:500px;
   }
 
+  #thesis {
+    width: calc(100% - 70px); 
+    margin-left:55px;
+  }
   header,
   article {
     margin: 0 auto;
