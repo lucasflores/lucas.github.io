@@ -32,7 +32,8 @@
 
   #thesis {
     width: calc(100% - 110px); 
-    margin-left:65px;
+    margin-left:55px;
+    margin-top:45px;
   }
 
 
@@ -185,8 +186,7 @@
     margin: auto;
   }
   #HASH {
-    display: flex;
-    justify-content: space-between;
+    display: none;
   }
 }
 
@@ -462,7 +462,11 @@ div.caption {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
+  #HASH {
+    display: flex;
+    justify-content: space-between;
+  }
   .wrapper {
       display: relative;
   }
@@ -483,7 +487,8 @@ div.caption {
 
   #thesis {
     width: calc(100% - 70px); 
-    margin-left:55px;
+    margin-left:40px;
+    margin-top:10px;
   }
   header,
   article {
