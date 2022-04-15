@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2021.8.28)  10 APR 2022 13:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2021.8.28)  14 APR 2022 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,8 +7,8 @@ de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
 {\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
 documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
  tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
-\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode MyConfig,mathjax,fn-in,p-wi
-dth,charset=utf-8,html5.a.b.c.\input "\detokenize{thesis.tex}"
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode EquationRefHack,mathjax,fn-
+in,p-width,charset=utf-8,html5.a.b.c.\input "\detokenize{thesis.tex}"
 (./thesis.tex (./style/pennThesis.cls
 
 LaTeX Warning: You have requested document class `style/pennThesis',
@@ -630,10 +630,10 @@ Package: tex4ht
 \tmp:toks=\toks32
 )) (/usr/local/texlive/2021/texmf-dist/tex/generic/tex4ht/usepackage.4ht
 version 2021-02-07-14:58
-) (/usr/local/texlive/2021/texmf-dist/tex/latex/cite/cite.sty
+) (./style/chapterbib/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \c@r@tfl@t=\count337
@@ -1017,8 +1017,8 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 ty
 Package: glossary-tree 2020/03/19 v4.46 (NLCT)
 \glstreeindent=\skip280
-)) (./sections/glossary.tex) (./MyConfig.cfg (/usr/local/texlive/2021/texmf-dis
-t/tex/generic/tex4ht/tex4ht.4ht
+)) (./sections/glossary.tex) (./EquationRefHack.cfg (/usr/local/texlive/2021/te
+xmf-dist/tex/generic/tex4ht/tex4ht.4ht
 version 2020-03-12-14:03
 --------------------------------------
 --- Note --- for additional information, use the command line option `info'
@@ -1694,7 +1694,7 @@ See the minted package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2 \begin{document}
+l.3 \begin{document}
                     
 Refer to the installation instructions in the minted documentation for more inf
 ormation.
@@ -1706,27 +1706,27 @@ s/statisticaltreatment.aux) (./appendices/baseline.aux) (./appendices/eventdisp
 lays.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-Package hyperref Info: Link coloring ON on input line 2.
-LaTeX Info: Redefining \ref on input line 2.
-LaTeX Info: Redefining \pageref on input line 2.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+Package hyperref Info: Link coloring ON on input line 3.
+LaTeX Info: Redefining \ref on input line 3.
+LaTeX Info: Redefining \pageref on input line 3.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
@@ -7130,12 +7130,12 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (\end occurred when \ifnum on line 91 was incomplete)
 (\end occurred when \ifx on line 103 was incomplete) 
 Here is how much of TeX's memory you used:
- 34862 strings out of 478995
- 570666 string characters out of 5858210
- 1287075 words of memory out of 5000000
- 51152 multiletter control sequences out of 15000+600000
+ 34867 strings out of 478995
+ 570646 string characters out of 5858210
+ 1287183 words of memory out of 5000000
+ 51157 multiletter control sequences out of 15000+600000
  422204 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,10n,141p,1790b,3038s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 113i,10n,141p,1797b,3046s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (421 pages, 952012 bytes).
+Output written on thesis.dvi (421 pages, 951712 bytes).
