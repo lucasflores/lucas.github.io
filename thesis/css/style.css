@@ -152,11 +152,15 @@
     box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
   }
 
+  img {
+    loading:lazy;
+  }
+
   figure img,
   figure svg {
     cursor: pointer;
   }
-
+  
   .lightbox {
     box-sizing: border-box;
     position: fixed;
@@ -299,6 +303,7 @@ background-color: #fff;
 #sidebar {
     width: 250px;
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     left: 0;
     height: 100vh;
@@ -317,6 +322,13 @@ background-color: #fff;
 #sidebar .sidebar-header {
     padding: 10px;
     background: #153C6A;
+}
+
+#sidebar .sidebar-footer {
+    padding: 10px;
+    background: #153C6A;
+    margin-bottom:-27px;
+    width: 250px;
 }
 
 #sidebar ul.components {
@@ -463,6 +475,8 @@ div.caption {
 ----------------------------------------------------- */
 
 @media (max-width: 968px) {
+  html {
+  }
   #HASH {
     display: flex;
     justify-content: space-between;
@@ -480,15 +494,25 @@ div.caption {
   }
   #content {
     width: 100%;
+    font-size: 15px;
   }
+  .title {
+    font-size: 20px;
+  }
+
+  .author {
+    font-size: 10px;
+  }
+
+
   .dropdown-menu {
     width:500px;
   }
 
   #thesis {
-    width: calc(100% - 70px); 
-    margin-left:40px;
-    margin-top:10px;
+    width: calc(100% - 24px); 
+    margin-left:12px;
+    margin-top:30px;
   }
   header,
   article {
