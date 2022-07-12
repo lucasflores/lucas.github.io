@@ -299,6 +299,12 @@ export default props => {
         <span>Work I have published.</span>
         <Item>
           <span>2021</span>
+          <h6>Identifying Electrons and Searching for Electroweak R-Parity Violating Supersymmetry at ATLAS</h6>
+          <p>Flores, Lucas Macrorie<br/>
+               <a href="https://cds.cern.ch/record/2812667"> CERN Document Server </a> </p> 
+        </Item>
+        <Item>
+          <span>2021</span>
           <h6>Search for trilepton resonances from chargino and neutralino pair production in √s=13 TeV pp collisions with the ATLAS detector</h6>
           <p>ATLAS Collaboration <br/>
                <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.103.112003"> PHYSICAL REVIEW D 103, 112003 (2021) </a> </p> 
