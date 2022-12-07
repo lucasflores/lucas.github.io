@@ -27,7 +27,7 @@ const Tile = styled.div`
     opacity: 0.5;
   }
   img {
-    height: 55% !important;
+    height: 61% !important;
   }
   ${media.ws`
     & > a > div, & > a > div::after {
@@ -81,7 +81,7 @@ const TileContent = styled.a`
       top: 1vw;
     }
  }
- @media (max-width: 1258px) {
+ @media (max-width: 1358px) {
    p {
      line-height: 1em;
    }

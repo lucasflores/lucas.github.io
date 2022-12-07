@@ -263,6 +263,7 @@ export default props => {
                My name is Lucas Flores and I a have PhD in experimental elementary particle physics from the the University of Pennsylvania. In my PhD work I searched for new never before seen fundamental particles by analyzing large sets of real and simulated proton proton collision data using strong statistical likelihood techniques. This work was done as a part of the  <a href="https://en.wikipedia.org/wiki/ATLAS_experiment">ATLAS experiment</a>, a massive particle detector that sits along the <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider"> Large Hadron Collider</a> (LHC) at <a href="https://en.wikipedia.org/wiki/CERN"> CERN</a> located near Geneva, Switzerland, where I spent 3+ years living and working. Outside of work I like to make things (in code and of atoms), take photos, listen to podcasts about the nature of the mind, and to never speak in absolutes. Check out the blogfolio section to see some of the things I have made over the years.
             </p>
             <a href="resume.pdf"> <Button center >  résumé  </Button></a>
+            <a href="resume_long.pdf"> <Button center >  résumé long  </Button></a>
           </Box>
         </Flex>
       </Section>
