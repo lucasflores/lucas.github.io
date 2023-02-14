@@ -2,7 +2,8 @@
 title:  "The Hack Strikes Back: Pennapps XVII"
 slug: /Pennapps-XVII
 date: "2018-01-20"
-tags: ["Hackathon", "Touch Keyboard", "VR"]
+tags: ["hackathon", "touch keyboard", "vr"]
+description: "bleh"
 image: './images/keypacitance/thumb2.jpg'
 ---
 

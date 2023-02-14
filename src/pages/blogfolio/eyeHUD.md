@@ -3,6 +3,7 @@ title: "First Hackathon: Pennapps XIV"
 slug: /First-Hackathon-Pennapps-XIV
 date: "2016-09-12"
 tags: ["hackathon", "eyeHUD", "pennapps", ""]
+description: "bleh"
 image: './images/eyeHUD/thumb3.jpg'
 ---
 

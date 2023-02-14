@@ -103,9 +103,9 @@ class Footer extends React.Component {
                     <a href="mailto:lucasmacrorieflores@gmail.com"> lucasmacrorieflores@gmail.com </a> <br></br> 
                     <br></br>
                     <br></br>
-                    Route F.Bloch 22 <br></br> 
-                    1217 Meyrin <br></br>
-                    Switzerland <br></br>
+                     <br></br> 
+                    California <br></br>
+                    United States <br></br>
                   </h6>
                 </FooterText>
               </Box> 

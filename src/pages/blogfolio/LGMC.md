@@ -3,6 +3,7 @@ title:  "The Large Google Maps Collider"
 slug: /The-Large-Google-Maps-Collider
 date: "2021-04-05"
 tags: ["Google Maps", "LHC", "CERN", "physics"]
+description: "bleh"
 image: './images/LGMC/thumb_LGMC.png'
 ---
 

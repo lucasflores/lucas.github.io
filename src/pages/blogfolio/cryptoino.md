@@ -2,7 +2,8 @@
 title:  "Hacky Hackin Again: Pennapps XV"
 slug: /Hacky-Hackin-Again-Pennapps-XV
 date: "2017-01-24"
-tags: ["Hackathon", "Neural Net", "Cryptography"]
+tags: ["hackathon", "neural net", "cryptography"]
+description: "bleh"
 image: './images/cryptoino/thumb2.png'
 ---
 
