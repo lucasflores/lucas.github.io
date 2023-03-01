@@ -1,33 +1,19 @@
 import React from 'react'
-import styled from 'styled-components'
 import Typist from 'react-typist'
+import styled from 'styled-components'
 
-import { media } from '../utils/style'
 
 const StyledTypist = styled(Typist)`
-  color: #fff;
-  letter-spacing: 17px;
+  color: #2262e;
+  letter-spacing: 13px;
   max-width: 100%;
   font-size: 72px;
   line-height: 80px;
   font-weight: 100;
   text-transform: uppercase;
+  text-align: center;
   font-family: 'Raleway';
-  position: absolute;
-  top: 28%;
-  left: 30%;
-  ${media.md`
-  left: 25%;
-  top: 28%;
-`}
-  ${media.xs`
-  left: 3%;
-  top: 15%;
-  letter-spacing: 8px;
-  font-size: 58px;
-  font-weight: 150;
-  line-height: 66px;
-`}
+  top: 2%;
   a {
     color: #ffffff;
   }
@@ -60,22 +46,22 @@ class HeroText extends React.Component {
     }
     return (
       <StyledTypist cursor={{ show: false }} {...this.props}>
-        <Typist.Delay ms={4000} />
-        <strong>Hello!</strong> 
-        <Typist.Delay ms={500} />
-        <span> I'm Lucas</span> 
-        <strong>.</strong> 
-        <Typist.Delay ms={1000} />
-        <Typist.Backspace count={1} />
-        <Typist.Delay ms={500} />
-        <strong>,</strong> 
-        <Typist.Delay ms={700} />
-        <span> And this is my website</span> 
-        <strong>.</strong> 
-        <Typist.Delay ms={1250} />
-        <Typist.Backspace count={41} delay={200} />
-        <Typist.Delay ms={800} />
-        <strong><a href="https://www.flickr.com/photos/161538372@N02/albums/72157711430913826">:)</a></strong>
+        <Typist.Delay ms={300} />
+        <strong>A</strong> 
+        <Typist.Delay ms={300} />
+        <strong>b</strong> 
+        <Typist.Delay ms={300} />
+        <strong>o</strong> 
+        <Typist.Delay ms={200} />
+        <strong>u</strong> 
+        <Typist.Delay ms={100} />
+        <strong>t</strong> 
+        <Typist.Delay ms={100} />
+        <strong>  </strong> 
+        <Typist.Delay ms={100} />
+        <span>M</span> 
+        <Typist.Delay ms={100} />
+        <span>E</span> 
       </StyledTypist>
     )
   }

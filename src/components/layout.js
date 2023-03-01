@@ -1,53 +1,48 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import { Helmet } from 'react-helmet'
-import styled, { createGlobalStyle } from 'styled-components'
-import { Flex, Box } from '@rebass/grid'
-import "katex/dist/katex.min.css"
+import { StaticQuery, graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 
-import Footer from './footer'
+import Sidebar from '.././components/sidebar'
+import '../styles/main.scss'
+import '../styles/fonts/font-awesome/css/font-awesome.min.css'
 
-const GlobalStyle = createGlobalStyle`
-  @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+const DefaultLayout = ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            author
+            description
+            social {
+              twitter
+              facebook
+              linkedin
+              github
+              email
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <div className="wrapper">
+        <Helmet>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+            rel="stylesheet"
+          />
+        </Helmet>
+        <Sidebar siteMetadata={data.site.siteMetadata} />
+        {children}
+      </div>
+    )}
+  />
+)
 
-  html {
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
-`
-
-const Body = styled.div`
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  width: 100vw;
-
-  img {
-    margin-bottom: 0;
-  }
-`
-
-const Content = styled.div`
-  flex: 1;
-`
-
-const PageBase = ({ location, children }) => {
-  return (
-    <Body>
-      <GlobalStyle />
-      <Helmet
-        title="Lucas Flores"
-        meta={[
-          { name: 'description', content: 'portfolio' },
-          { name: 'keywords', content: 'lucas, flores, portfolio' },
-          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        ]}
-      />
-      <Content>{children}</Content>
-      {location && location.pathname != '/404' && <Footer />}
-    </Body>
-  )
+DefaultLayout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
-export default PageBase
+export default DefaultLayout

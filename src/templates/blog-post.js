@@ -1,168 +1,94 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import TimeAgo from 'react-timeago'
-import { Flex, Box } from '@rebass/grid'
-import { media } from '../utils/style'
-import styled, { createGlobalStyle } from 'styled-components'
+import { Link, graphql } from 'gatsby'
+import { kebabCase } from 'lodash'
+import { GatsbyImage } from 'gatsby-plugin-image'
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
-import Breadcrumb from '../components/breadcrumb'
-import Bar from '../components/bar'
-import "katex/dist/katex.min.css"
-import { DiscussionEmbed } from "disqus-react"
+import DefaultLayout from '../components/layout'
+import SEO from '../components/seo'
 
-import Footer from '../components/footer'
+import 'katex/dist/katex.min.css'
 
-import SocialIcons from '../components/socialIcons'
-
-const GlobalStyle = createGlobalStyle`
-  @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
-
-  html {
-    max-width: 100vw;
-    overflow-x: hidden;
+const BlogPostTemplate = ({ data, location, children }) => {
+    const post = data.mdx
+let disqusConfig = {
+    identifier: post.id,
+    title: post.frontmatter.title.mdx,
   }
-`
-
-const Body = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-
-  img {
-    margin-bottom: 0;
-  }
-`
-
-const imgRight = styled.div`
-  & > div {
-    float: right;
-    width: 54%;
-    padding-left:25px;
-  }
-`
-
-const Header = styled.div`
-  height: fit-contents;
-  padding: 0;
-  background: #292929;
-  position: relative;
-  overflow: hidden;
-
-  & > div {
-    padding-top: 30px;
-    margin: auto;
-    max-width: 1100px;
-  }
-`
-
-const Tags = styled.ol`
-  float: right;
-  list-style: none;
-  margin: 0;
-  & li a,
-  & li {
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    color: #222;
-
-
-  }
-  & > li + li:before {
-    padding: 0 8px;
-    font-weight: 400;
-    color: #444;
-    content: '|';
-  }
-`
-
-const Content = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  min-width: 0;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 5vh;
-  hr {
-    margin: 0 0 40px;
-  }
-`
-
-const Title = styled.h1`
-  margin-top: 0;
-  text-transform: capitalize;
-  color: #fff;
-`
-
-const Timestamp = styled.i`
-  float: right;
-`
-
-const TimeToRead = styled.h5`
-  text-transform: uppercase;
-  margin-top: 0.5em;
-  display: inline-block;
-`
-
-export const disqusConfig = ({ slug, title }) => ({
-  shortname: process.env.GATSBY_DISQUS_NAME,
-  config: { identifier: title },
-})
-
-export default ({ data, location }) => {
-  const post = data.markdownRemark
-  const crumbs = [
-    { name: 'home', link: '/' },
-    { name: 'blogfolio', link: '/#blogfolio' },
-    { name: post.frontmatter.title, link: location.pathname },
-  ]
-  const tags = post.frontmatter.tags.map(function(tag) {
-    return <li key={tag}>{tag}</li>
-  })
-  const { frontmatter, excerpt, body, timeToRead } = post
-  const { title, slug, cover, showToc } = frontmatter
-  return (
-    <div>
-      <Body>
-      <GlobalStyle />
-      <Header>
-        <Flex flexWrap="wrap">
-          <Box px={2} width={[1, 2 / 3, 1 / 3]}>
-            <Title>{post.frontmatter.title}</Title>
-          </Box>
-          <Box px={2} width={[1, 2 / 3]}>
-            <Breadcrumb crumbs={crumbs} />
-          </Box>
-          <Box px={2} width={[1]}>
-            <Bar />
-          </Box>
-        </Flex>
-      </Header>
-      <Content>
-        <TimeToRead>{post.timeToRead} min read</TimeToRead>
-        <Tags>{tags}</Tags>
-        <Bar />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <DiscussionEmbed {...disqusConfig({ slug, title })} />
-        <Timestamp>
-          Posted: <TimeAgo date={post.frontmatter.date} />
-        </Timestamp>
-      </Content>
-      <Footer/>
-      </Body>
-    </div>
-  )
+    return (
+      <DefaultLayout>
+        <SEO title={post.frontmatter.title.mdx} description={post.excerpt} />
+        <div className="clearfix post-content-box">
+          <article className="article-page">
+            <div className="page-content">
+              {post.frontmatter.img && (
+                <div className="page-cover-image">
+                  <figure>
+                    <GatsbyImage
+                      image={
+                        post.frontmatter.img.childImageSharp.gatsbyImageData
+                      }
+                      className="page-image"
+                      key={
+                        post.frontmatter.img.childImageSharp.gatsbyImageData.src
+                      }
+                      alt=""
+                    />
+                  </figure>
+                </div>
+              )}
+              <div className="wrap-content">
+                <header className="header-page">
+                  <h1 className="page-title">{post.frontmatter.title}</h1>
+                  <div className="page-date">
+                    <span>{post.frontmatter.date}</span>
+                  </div>
+                </header>
+                <div itemProp="articleBody">{children}</div>
+                  <div className="page-footer">
+                    <div className="page-tag">
+                      {post.frontmatter.tags &&
+                        post.frontmatter.tags.map((tag) => (
+                          <span key={tag}>
+                            <Link className="tag" to={`/tags/${kebabCase(tag)}/`}>
+                               {tag}
+                            </Link>
+                          </span>
+                        ))}
+                    </div>
+                  </div>
+                </div>
+      <CommentCount config={disqusConfig} placeholder={'...'} />
+      <Disqus config={disqusConfig} />
+              </div>
+          </article>
+        </div>
+      </DefaultLayout>
+    )
 }
 
-export const query = graphql`
-  query BlogPostQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      timeToRead
+export default BlogPostTemplate
+
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        title
+        author
+      }
+    }
+    mdx(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt(pruneLength: 160)
       frontmatter {
         title
-        date
+        date(formatString: "YYYY, MMM DD")
         tags
+        img {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH, formats: [AUTO, AVIF, WEBP])
+          }
+        }
       }
     }
   }
