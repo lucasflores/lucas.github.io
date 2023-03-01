@@ -386,5 +386,5 @@ Lastly we add this to the `<GoogleMap>` tag with the other map objects in order 
 
 Well that's all folks! You can view this working on my home page at the bottom and I hope you learned something about particle physics and geography. Feel free to ask any questions in the comments section below!
 
-<Map defCenter={{ lat: 46.224690, lng: 6.110898 }} />
+<Map/>
 

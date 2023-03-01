@@ -81,7 +81,7 @@ class Map extends React.Component {
     return (
       <GoogleMap
         defaultZoom={13}
-        defaultCenter={this.props.defCenter}
+        defaultCenter={{ lat: 46.224690, lng: 6.110898 }}
         >
         <Circle  
           center = {{ lat: 46.272948, lng: 6.064695 }} 
