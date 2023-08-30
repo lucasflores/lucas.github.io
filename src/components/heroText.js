@@ -46,7 +46,6 @@ class HeroText extends React.Component {
     }
     return (
       <StyledTypist cursor={{ show: false }} {...this.props}>
-        <Typist.Delay ms={300} />
         <strong>A</strong> 
         <Typist.Delay ms={300} />
         <strong>b</strong> 

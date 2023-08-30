@@ -2,9 +2,10 @@
 title: "First Hackathon: Pennapps XIV"
 slug: /eyeHUD
 date: 2016-09-12
-tags: ["hackathon", "augmented reality", "pennapps"]
+tags: ["hackathon", "augmented reality", "opencv", "machine learning", "facial recognition", "tracking", "pennapps"]
 description: bleh
 img: ./pennapps3.jpg
+thumbimg: ./pennapps3_thumb.jpg
 ---
 
 import ramear from "./ramear.png"

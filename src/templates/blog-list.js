@@ -82,7 +82,7 @@ class BlogIndex extends React.Component {
                     <Link to={node.fields.slug} className="post-thumbnail">
                       <GatsbyImage
                         image={
-                          node.frontmatter.img.childImageSharp.gatsbyImageData
+                          node.frontmatter.thumbimg.childImageSharp.gatsbyImageData
                         }
                         className="page-image"
                         key={
@@ -165,7 +165,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 200)
           fields {
             slug
             timeToRead { 
@@ -179,12 +179,23 @@ export const pageQuery = graphql`
             date(formatString: "YYYY, MMM DD")
             title
             tags
+            thumbimg {
+              childImageSharp {
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  layout: FULL_WIDTH
+                  formats: [AUTO, AVIF, WEBP]
+                  transformOptions: {fit: FILL, cropFocus: ATTENTION} 
+                )
+              }
+            }
             img {
               childImageSharp {
                 gatsbyImageData(
                   placeholder: BLURRED
                   layout: FULL_WIDTH
                   formats: [AUTO, AVIF, WEBP]
+                  transformOptions: {fit: FILL, cropFocus: ATTENTION} 
                 )
               }
             }

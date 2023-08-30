@@ -2,9 +2,10 @@
 title: "The Hack Strikes Back: Pennapps XVII"
 slug: /keypacitance
 date: 2018-01-20
-tags: ["hackathon", "touch keyboard", "vr"]
+tags: ["hackathon", "touch keyboard", "vr", "user interface", "unity" ]
 description: bleh
-img: ./thumb3.jpg
+img: ./platy.jpg
+thumbimg: ./platy_thumb.jpg
 ---
 
 import keypacitancelogo from "./keypacitancelogo.png"

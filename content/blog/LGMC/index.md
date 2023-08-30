@@ -2,9 +2,10 @@
 title: "The Large Google Maps Collider"
 slug: /LGMC
 date: 2021-04-05
-tags: [Google Maps, LHC, CERN, physics]
+tags: ["LHC", "CERN","physics", "geneva", "javascript", "react", "Google Maps" ]
 description: bleh
 img: ./LGMC.png
+thumbimg: ./LGMC_thumb.png
 ---
 
 import LHCloc from "./LHCloc.png";

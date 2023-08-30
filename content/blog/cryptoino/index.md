@@ -2,9 +2,10 @@
 title: "Hacky Hackin Again: Pennapps XV"
 slug: /cryptoino
 date: 2017-01-24
-tags: ["hackathon", "neural net", "cryptography"]
+tags: ["hackathon", "neural net", "cryptography" , "machine learning", "microcontrollers", "arduino", "electronics"]
 description: bleh
 img: ./donuts.jpg
+thumbimg: ./donuts_thumb.jpg
 ---
 
 
