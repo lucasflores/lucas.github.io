@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Map from '../components/map.js'
+import SFMap from '../components/sfmap.js'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import HeroText from '../components/heroText'
 import { kebabCase } from 'lodash'
@@ -30,7 +30,7 @@ const AboutMePage = ({ data }) => {
           </ul>
         </section>
         </div>
-    <Map defaultCenter={{ lat: 37.784298, lng: -122.423073 }} />
+    <SFMap/>
       </div>
     </Layout>
   )
