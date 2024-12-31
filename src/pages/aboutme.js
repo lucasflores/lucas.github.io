@@ -14,7 +14,7 @@ const AboutMePage = ({ data }) => {
       <div className="content-box clearfix" style={{ textAlign: 'center' }}>
         <div className="aboutme" >
           <HeroText style={{ textAlign: 'center' }}/>
-	  <p>My name is Lucas Flores and I a have PhD in experimental elementary particle physics from the the University of Pennsylvania. In my PhD work I searched for new never before seen fundamental particles by analyzing large sets of real and simulated proton proton collision data using strong statistical likelihood techniques. This work was done as a part of the  ATLAS experiment, a massive particle detector that sits along the  Large Hadron Collider (LHC) at  CERN located near Geneva, Switzerland, where I spent 3+ years living and working. Outside of work I like to make things (in code and of atoms), take photos, listen to podcasts about the nature of the mind, and to never speak in absolutes. Check out my blog posts to see some of the things I have made over the years.</p>
+	  <p> I am a Senior AI Scientist and Engineer at Albeado (<a href="https://albeado.com/team/core-team/"> https://albeado.com/team/core-team/</a>), focused on the research and development of sophisticated and novel data-driven algorithms in the field of causal inference, leading in the application of novel causal AI and ML solutions for Albeado’s partners. I hold a PhD in experimental high energy particle physics from the University of Pennsylvania. During my PhD I worked at the The European Organization for Nuclear Research (CERN) where I performed searches for theorized subatomic particles in petabytes of physics data produced by the Large Hadron Collider (LHC) physics experiment. Check out my blog posts to see some of the things I have made over the years.</p>
         <section className="contact">
           <ul style={{ textAlign: 'center' }}>
               <li>
@@ -30,7 +30,7 @@ const AboutMePage = ({ data }) => {
           </ul>
         </section>
         </div>
-    <Map defCenter={{ lat: 26.224690, lng: 2.110898 }} />
+    <Map defCenter={{ lat: 37.784298, lng: -122.423073 }} />
       </div>
     </Layout>
   )

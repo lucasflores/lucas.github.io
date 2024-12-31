@@ -8,11 +8,9 @@ const Sidebar = ({ siteMetadata }) => (
     <aside className="sidebar">
       <header>
         <div className="about">
-          <div className="cover-author-image">
             <Link to="/">
               <img src={Logo} alt={siteMetadata.author} />
             </Link>
-          </div>
           <div className="author-name">{siteMetadata.author}</div>
           <p>{siteMetadata.description}</p>
         </div>
@@ -32,6 +30,7 @@ const Sidebar = ({ siteMetadata }) => (
               </li>
           </ul>
           <p></p>
+          <hr />
           <ul>
             {siteMetadata.social.github && (
               <li>
