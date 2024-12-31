@@ -30,7 +30,7 @@ const AboutMePage = ({ data }) => {
           </ul>
         </section>
         </div>
-    <Map defCenter={{ lat: 37.784298, lng: -122.423073 }} />
+    <Map defaultCenter={{ lat: 37.784298, lng: -122.423073 }} />
       </div>
     </Layout>
   )
