@@ -8,11 +8,13 @@ const Sidebar = ({ siteMetadata }) => (
     <aside className="sidebar">
       <header>
         <div className="about">
-            <Link to="/">
-              <img src={Logo} alt={siteMetadata.author} />
-            </Link>
+          <Link to="/">
+            <img src={Logo} alt={siteMetadata.author} />
+          </Link>
           <div className="author-name">{siteMetadata.author}</div>
-          <p>{siteMetadata.description}</p>
+          <p> > Data/AI Scientist @ Albeado</p>
+          <p> > Ex-CERN Physicist</p> 
+          <p> > Physics PhD</p>
         </div>
         <section className="contact">
           <ul>

@@ -36,13 +36,14 @@
     margin: 0 0 10px;
     position: relative;
     padding-bottom: 15px;
+    padding-top: 25px;
     font-size: 26px;
     color: $dark;
     font-weight: 700;
   }
   p {
     font-size: 16px;
-    margin: 0 0 10px;
+    margin: 0 0 0;
   }
 }
 
@@ -159,7 +160,7 @@ footer {
     width: 70%;
     .post-date,
     .post-words {
-      font-size: 12px;
+      font-size: 13px;
     }
     .post-title {
       margin: 0 0 10px;
@@ -182,7 +183,7 @@ footer {
         overflow:scroll;
         white-space:pre-line;
         text-decoration: none;
-        font-size: 10px;
+        font-size: 13px;
         padding: 5px 10px;
         margin-left: 10px;
         color: $dark-blue;

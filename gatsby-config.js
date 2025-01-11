@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Lucas Flores`,
-    description: `Ex-CERN Physicist | Physics PhD`,
+    description: ` Data/AI Scientist @ Albeado | Ex-CERN Physicist | Physics PhD`,
     author: `Lucas Flores`,
     siteUrl: `https://www.lucasflores.com`,
     social: {
