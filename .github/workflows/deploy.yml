@@ -36,7 +36,7 @@ jobs:
         env:
           GATSBY_GOOGLE_MAPS_API_KEY: ${{ secrets.GATSBY_GOOGLE_MAPS_API_KEY }}
           NODE_OPTIONS: "--max_old_space_size=4096"
-        run: npm run build -- --verbose
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
