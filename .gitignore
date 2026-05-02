@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Gatsby build output
+.cache/
+public/
+
+# Environment variables (never commit real keys)
+.env
+.env.development
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+*.swp
+*.swo

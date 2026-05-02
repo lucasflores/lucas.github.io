@@ -116,7 +116,7 @@ const MapComponent = withScriptjs(withGoogleMap(Map))
 
 export default () => (
   <MapComponent
-  googleMapURL='https://maps.googleapis.com/maps/api/js?key=AIzaSyCWyx2MYBOK6_hn6mKBQEMFKu2aqRTqbQI&libraries=geometry,drawing,places'
+  googleMapURL='https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=geometry,drawing,places'
   isMarkerShown
   loadingElement={<div style={{ height: `100%` }} />}
   containerElement={ <div style={{ height: '450px', width: '100%' }} /> }
